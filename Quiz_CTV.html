@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Tra cứu câu hỏi & đáp án (1 file)</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #f7f7f7; color: #111; }
+  header { position: sticky; top: 0; background: #ffffffcc; backdrop-filter: saturate(150%) blur(6px); border-bottom: 1px solid #eee; z-index: 10; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 16px; }
+  #search { width: 100%; padding: 12px 14px; font-size: 16px; border: 1px solid #ddd; border-radius: 10px; }
+  .meta { font-size: 12px; color: #666; margin-top: 8px; }
+  .card { background: #fff; border: 1px solid #eee; border-radius: 14px; padding: 14px; margin: 12px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+  .qid { font-weight: 600; font-size: 14px; color: #666; }
+  .question { font-size: 16px; margin: 6px 0 10px; }
+  .options { display: grid; gap: 8px; grid-template-columns: 1fr; } @media(min-width: 700px){ .options{ grid-template-columns: 1fr 1fr; } }
+  .opt { border: 1px solid #eee; border-radius: 10px; padding: 10px 12px; background: #fafafa; }
+  .opt b { margin-right: 6px; }
+  .opt.correct { background: #ecfdf5; border-color: #a7f3d0; }
+  .answer { margin-top: 8px; font-size: 13px; color: #0a7d4f; font-weight: 600; }
+  .controls { display: flex; gap: 8px; margin: 10px 0 0; flex-wrap: wrap; }
+  .btn { padding: 8px 10px; border: 1px solid #ddd; border-radius: 8px; background: #fff; font-size: 13px; cursor: pointer; }
+  .btn.active { border-color: #999; }
+  @media (min-width: 700px) {
+    .options { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ---- Branding ---- */
+  header .wrap { position: relative; }
+  .brand {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+    user-select: none;
+    pointer-events: none;
+  }
+
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand" aria-label="logo">Power by Thiên Long</div>
+    <input id="search" type="search" placeholder="Nhập từ khóa để tìm câu hỏi hoặc đáp án (ví dụ: 1965, Truyền thống, luật sĩ quan, ...)" />
+    <div class="controls">
+      <button id="toggleAns" class="btn">Ẩn/Hiện đáp án</button>
+      <button id="onlyCorrect" class="btn">Chỉ hiển thị đáp án đúng (A–E)</button>
+      <span class="meta" id="meta"></span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div id="results"></div>
+</main>
+
+<script src="qna_data.js"></script>
+<script src="qna_data_from_docx.js"></script>
+<script>
+  // DỮ LIỆU GỐC (nhúng trực tiếp)
+  // ===== DỮ LIỆU ĐƯỢC TÁCH RA =====
+// Vui lòng tạo file "qna_data.js" và khai báo dữ liệu toàn cục như sau:
+//   var qaList = [ ... ];
+// hoặc: window.qaList = [ ... ];
+// (File qna_data.js đã được nạp trước đoạn mã logic phía dưới)
+
+// Bảo vệ: nếu chưa có dữ liệu thì tạo mảng rỗng để trang vẫn chạy được
+if (typeof qaList === 'undefined') {
+  var qaList = (typeof window !== 'undefined' && window.qaList) ? window.qaList : [];
+}
+
+
+  // Trạng thái UI
+  let showAnswers = true;
+  let onlyShowCorrect = false;
+
+  const elSearch = document.getElementById('search');
+  const elResults = document.getElementById('results');
+  const elMeta = document.getElementById('meta');
+  const btnToggleAns = document.getElementById('toggleAns');
+  const btnOnlyCorrect = document.getElementById('onlyCorrect');
+
+  function normalizeVN(str) {
+    return (str || '').toLowerCase()
+      .normalize('NFD')
+      .replace(/\p{Diacritic}+/gu, '')
+      .replace(/đ/g, 'd');
+  }
+
+  function render(items) {
+    elResults.innerHTML = '';
+    elMeta.textContent = `Hiển thị ${items.length} / ${qaList.length} câu`;
+    const frag = document.createDocumentFragment();
+    items.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'card';
+
+      const top = document.createElement('div');
+      top.className = 'qid';
+      top.textContent = `Câu ${item.id}`;
+      card.appendChild(top);
+
+      const q = document.createElement('div');
+      q.className = 'question';
+      q.textContent = item.q;
+      card.appendChild(q);
+
+      // options
+      const optsWrap = document.createElement('div');
+      optsWrap.className = 'options';
+      const correctLetters = (item.correct || '').toUpperCase();
+
+      Object.entries(item.options || {}).forEach(([k, v]) => {
+        const opt = document.createElement('div');
+        opt.className = 'opt';
+        const isCorrect = correctLetters.includes(k);
+        if (isCorrect) opt.classList.add('correct');
+        if (onlyShowCorrect && !isCorrect) {
+          opt.style.display = 'none';
+        }
+        opt.innerHTML = `<b>${k})</b> <span>${v}</span>`;
+        optsWrap.appendChild(opt);
+      });
+      card.appendChild(optsWrap);
+
+      // answer
+      const ans = document.createElement('div');
+      ans.className = 'answer';
+      ans.textContent = item.correct ? `Đáp án: ${item.correct}` : 'Đáp án: (chưa xác định)';
+      ans.style.display = showAnswers ? '' : 'none';
+      card.appendChild(ans);
+
+      frag.appendChild(card);
+    });
+    elResults.appendChild(frag);
+  }
+
+  function doSearch() {
+    const q = normalizeVN(elSearch.value);
+    if (!q) { render(qaList); return; }
+    const filtered = qaList.filter(item => {
+      const text = [
+        item.q,
+        Object.entries(item.options || {}).map(([k, v]) => `${k}) ${v}`).join(' '),
+        item.correct
+      ].join(' ');
+      return normalizeVN(text).includes(q);
+    });
+    render(filtered);
+  }
+
+  // events
+  elSearch.addEventListener('input', doSearch);
+  btnToggleAns.addEventListener('click', () => {
+    showAnswers = !showAnswers;
+    btnToggleAns.classList.toggle('active', showAnswers);
+    doSearch();
+  });
+  btnOnlyCorrect.addEventListener('click', () => {
+    onlyShowCorrect = !onlyShowCorrect;
+    btnOnlyCorrect.classList.toggle('active', onlyShowCorrect);
+    doSearch();
+  });
+
+  // init
+  render(qaList);
+</script>
+</body>
+</html>
