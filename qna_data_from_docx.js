@@ -974,34 +974,34 @@ var qaList = [
   },
   {
     id: 89,
-    q: "Đồng chí cho biết vì sao đổi mới, sáng tạo được coi là nhân tố then chốt để nâng cao hiệu quả, hiệu suất công việc trong quân đội?<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
+    q: "Đồng chí cho biết vì sao đổi mới, sáng tạo được coi là nhân tố then chốt để nâng cao hiệu quả, hiệu suất công việc trong quân đội?",
     options: {
-    A: "Vì giúp tăng cường tính tự phát và giảm sự kiểm soát.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    B: "Vì tạo điều kiện cho cán bộ làm việc độc lập, không cần phối hợp.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    C: "Vì giúp tiết kiệm thời gian, nguồn lực, nâng cao chất lượng công tác.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    D: "Vì giúp giảm yêu cầu về huấn luyện chính quy.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"sv-SE\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rStyle w:val=\"Strong\"/><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>"
+    A: "Vì giúp tăng cường tính tự phát và giảm sự kiểm soát.",
+    B: "Vì tạo điều kiện cho cán bộ làm việc độc lập, không cần phối hợp.",
+    C: "Vì giúp tiết kiệm thời gian, nguồn lực, nâng cao chất lượng công tác.",
+    D: "Vì giúp giảm yêu cầu về huấn luyện chính quy."
   },
     correct: "C"
   },
   {
     id: 90,
-    q: "Đồng chí cho biết giải pháp nào được coi là nền tảng trong việc phát huy tinh thần đổi mới, sáng tạo của đội ngũ cán bộ, đảng viên?<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
+    q: "Đồng chí cho biết giải pháp nào được coi là nền tảng trong việc phát huy tinh thần đổi mới, sáng tạo của đội ngũ cán bộ, đảng viên?",
     options: {
-    A: "Đẩy mạnh tuyên truyền, giáo dục nâng cao nhận thức.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    B: "Đẩy mạnh phong trào thi đua.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    C: "Tăng cường đầu tư cơ sở vật chất kỹ thuật.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    D: "Tổ chức các hội nghị sơ kết, tổng kết định kỳ.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"sv-SE\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"007378B5\"><w:rPr><w:rStyle w:val=\"Strong\"/><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>"
+    A: "Đẩy mạnh tuyên truyền, giáo dục nâng cao nhận thức.",
+    B: "Đẩy mạnh phong trào thi đua.",
+    C: "Tăng cường đầu tư cơ sở vật chất kỹ thuật.",
+    D: "Tổ chức các hội nghị sơ kết, tổng kết định kỳ."
   },
     correct: "A"
   },
   {
     id: 91,
-    q: "Đồng chí cho biết vì sao việc tuyên truyền, giáo dục về đổi mới, sáng tạo có ý nghĩa đặc biệt quan trọng?<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
+    q: "Đồng chí cho biết vì sao việc tuyên truyền, giáo dục về đổi mới, sáng tạo có ý nghĩa đặc biệt quan trọng?",
     options: {
-    A: "Giúp cán bộ giảm tải khối lượng công việc.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    B: "Tạo ra sự chuyển biến mạnh mẽ về tư duy và hành động.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    C: "Bảo đảm sự đồng bộ về cơ sở vật chất giữa các đơn vị.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>",
-    D: "Giúp rút ngắn thời gian huấn luyện.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"sv-SE\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rStyle w:val=\"Strong\"/><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>"
+    A: "Giúp cán bộ giảm tải khối lượng công việc.",
+    B: "Tạo ra sự chuyển biến mạnh mẽ về tư duy và hành động.",
+    C: "Bảo đảm sự đồng bộ về cơ sở vật chất giữa các đơn vị.",
+    D: "Giúp rút ngắn thời gian huấn luyện."
   },
     correct: "B"
   },
@@ -1012,7 +1012,7 @@ var qaList = [
     A: "Giúp đơn vị giảm áp lực về công tác quản lý tài chính.",
     B: "Hạn chế việc cán bộ luân chuyển sang lĩnh vực khác.",
     C: "Giúp cấp trên dễ dàng kiểm soát mọi hoạt động của cấp dưới.",
-    D: "Tạo điều kiện để cán bộ, đảng viên mạnh dạn đề xuất ý tưởng.<w:rPr><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:b/><w:bCs/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/><w:lang w:val=\"sv-SE\"/></w:rPr></w:pPr><w:r w:rsidRPr=\"00870650\"><w:rPr><w:rStyle w:val=\"Strong\"/><w:rFonts w:ascii=\"Times New Roman\" w:hAnsi=\"Times New Roman\" w:cs=\"Times New Roman\"/><w:sz w:val=\"28\"/><w:szCs w:val=\"28\"/></w:rPr><w:t>"
+    D: "Tạo điều kiện để cán bộ, đảng viên mạnh dạn đề xuất ý tưởng."
   },
     correct: "D"
   },
