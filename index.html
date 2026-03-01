@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiên Long Search</title>
+  <style>
+    /* Reset some default styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fdfdfd;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Background text "THIÊN LONG" diagonally */
+    .background-text {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-35deg);
+      font-size: 20vw;
+      font-weight: 700;
+      /* Use a darker color and slightly higher opacity so the watermark is visible on light backgrounds. */
+      color: rgba(0, 0, 0, 0.1);
+      white-space: nowrap;
+      user-select: none;
+      pointer-events: none;
+      /* Place the watermark beneath other content but still above the page background */
+      z-index: 0;
+    }
+
+    /* Centering the search container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Search bar styling */
+    .search-wrapper {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    #searchInput:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 3px rgba(0,123,255,0.5);
+    }
+
+    /* Autocomplete suggestion (appears behind input text) */
+    .suggestion {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1rem;
+      color: #aaa;
+      pointer-events: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Search button */
+    #searchButton {
+      margin-top: 12px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    #searchButton:hover {
+      background-color: #0056b3;
+    }
+
+    /* Results styling */
+    #results {
+      margin-top: 24px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .question-block {
+      background-color: #fafafa;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .question-block h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .question-block ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .question-block li {
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .correct {
+      /* Highlight the correct answer with a subtle blue background */
+      background-color: #d0e7ff;
+      color: #003d99;
+      font-weight: bold;
+      padding: 2px 4px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background text -->
+  <div class="background-text">THIÊN LONG</div>
+
+  <div class="container">
+    <div class="search-wrapper">
+      <!-- Suggestion overlay -->
+      <div id="suggestion" class="suggestion"></div>
+      <input id="searchInput" type="text" placeholder="Nhập câu hỏi hoặc từ khóa..." autocomplete="off" />
+    </div>
+    <button id="searchButton">Tìm kiếm</button>
+    
+    <div id="results"></div>
+  </div>
+
+  <!-- Load questions data -->
+  
+  <script>
+const questions = [
+  {
+    "number": "1",
+    "question": "Phương châm Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": [
+      [
+        "a",
+        "Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Sáng tạo”."
+      ],
+      [
+        "b",
+        "Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Vươn mình”."
+      ],
+      [
+        "c",
+        "Đoàn kết - Dân chủ - Kỷ luật - Đổi mới - Sáng tạo”."
+      ],
+      [
+        "d",
+        "Đoàn kết - Thống nhất - Kỷ cương - Đổi mới - Sáng tạo”."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "2",
+    "question": "Chủ đề Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": [
+      [
+        "a",
+        "Phát huy truyền thống, đổi mới, trách nhiệm; xây dựng Đảng bộ trong sạch vững mạnh, cơ quan, đơn vị vững mạnh toàn diện “Mẫu mực, tiêu biểu”, đáp ứng yêu cầu nhiệm vụ xây dựng và bảo vệ Tổ quốc trong tình hình mới”."
+      ],
+      [
+        "b",
+        "Phát huy truyền thống, đổi mới, trách nhiệm; đáp ứng yêu cầu nhiệm vụ xây dựng và bảo vệ Tổ quốc trong tình hình mới”."
+      ],
+      [
+        "c",
+        "Phát huy truyền thống; xây dựng Đảng bộ trong sạch vững mạnh, cơ quan, đơn vị vững mạnh toàn diện “Mẫu mực, tiêu biểu”, đáp ứng yêu cầu nhiệm vụ xây dựng và bảo vệ Tổ quốc trong tình hình mới”."
+      ],
+      [
+        "d",
+        "Phát huy truyền thống, đổi mới, trách nhiệm; xây dựng Đảng bộ trong sạch vững mạnh, cơ quan, đơn vị vững mạnh toàn diện “Mẫu mực, tiêu biểu”."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "3",
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": [
+      [
+        "a",
+        "Nâng cao năng lực tham mưu, chỉ đạo LLVT Quân khu thực hiện hiệu quả nhiệm vụ QS, QP."
+      ],
+      [
+        "b",
+        "Chủ động, sáng tạo, lãnh đạo nâng cao năng lực tham mưu, chỉ đạo LLVT Quân khu thực hiện hiệu quả nhiệm vụ QS, QP."
+      ],
+      [
+        "c",
+        "Chủ động, sáng tạo, chỉ đạo LLVT Quân khu thực hiện hiệu quả nhiệm vụ QS, QP."
+      ],
+      [
+        "d",
+        "Nâng cao chất lượng thực hiện hiệu quả nhiệm vụ QS, QP."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "4",
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": [
+      [
+        "a",
+        "Nâng cao năng lực nghiên cứu và ứng dụng KHCN; đẩy mạnh CCHCQS và CĐS."
+      ],
+      [
+        "b",
+        "Nâng cao chất lượng huấn luyện, SSCĐ, xây dựng chính quy, chấp hành pháp luật, kỷ luật, bảo đảm an toàn cơ quan, đơn vị Bộ Tham mưu."
+      ],
+      [
+        "c",
+        "Nâng cao chất lượng huấn luyện, SSCĐ; nâng cao năng lực nghiên cứu và ứng dụng KHCN; đẩy mạnh CCHCQS và CĐS."
+      ],
+      [
+        "d",
+        "Nâng cao chất lượng huấn luyện, SSCĐ, xây dựng chính quy, chấp hành pháp luật, kỷ luật, bảo đảm an toàn cơ quan, đơn vị Bộ Tham mưu; nâng cao năng lực nghiên cứu và ứng dụng KHCN; đẩy mạnh CCHCQS và CĐS."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "5",
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": [
+      [
+        "a",
+        "Nâng cao năng lực lãnh đạo, sức chiến đấu của các cấp ủy, tổ chức đảng."
+      ],
+      [
+        "b",
+        "Xây dựng đội ngũ cán bộ mẫu mực, trách nhiệm cao, làm việc hiệu quả."
+      ],
+      [
+        "c",
+        "Nâng cao năng lực lãnh đạo, sức chiến đấu của các cấp ủy, tổ chức đảng; xây dựng đội ngũ cán bộ mẫu mực, trách nhiệm cao, làm việc hiệu quả."
+      ],
+      [
+        "d",
+        "Nâng cao năng lực lãnh đạo, sức chiến đấu của đảng; xây dựng đội ngũ đảng viên mẫu mực, trách nhiệm cao, làm việc hiệu quả."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "6",
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": [
+      [
+        "a",
+        "Trên 20% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 90% các văn bản không mật."
+      ],
+      [
+        "b",
+        "Trên 20% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 80% các văn bản không mật."
+      ],
+      [
+        "c",
+        "Trên 30% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 100% các văn bản không mật."
+      ],
+      [
+        "d",
+        "Hằng năm, phấn đấu xây dựng trên 20% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 100% các văn bản không mật."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "7",
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": [
+      [
+        "a",
+        "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 75% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi"
+      ],
+      [
+        "b",
+        "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 80% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi"
+      ],
+      [
+        "a",
+        "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 85% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi"
+      ],
+      [
+        "a",
+        "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 90% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi"
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "8",
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": [
+      [
+        "a",
+        "Định lượng thực phẩm chính vượt từ 15-20%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật)."
+      ],
+      [
+        "b",
+        "Định lượng thực phẩm chính vượt từ 10-15%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật)."
+      ],
+      [
+        "c",
+        "Định lượng thực phẩm chính vượt trên 15%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật)."
+      ],
+      [
+        "d",
+        "Định lượng thực phẩm chính vượt trên 20%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật)."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "9",
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": [
+      [
+        "a",
+        "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 80% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên."
+      ],
+      [
+        "b",
+        "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 95% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên."
+      ],
+      [
+        "c",
+        "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 90% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên."
+      ],
+      [
+        "d",
+        "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 100% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "10",
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": [
+      [
+        "a",
+        "Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 80% đảng viên."
+      ],
+      [
+        "b",
+        "Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 90% đảng viên."
+      ],
+      [
+        "c",
+        "Trong nhiệm kỳ, Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 100% đảng viên."
+      ],
+      [
+        "d",
+        "Trong nhiệm kỳ, Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 95% đảng viên."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "1",
+    "question": "Thời gian, địa điểm diễn ra Đại hội đại biểu Đảng bộ Quân đội lần thứ XII?",
+    "options": [
+      [
+        "a",
+        "Diễn ra trong 04 ngày, từ ngày 29/9 đến ngày 03/10/2025 tại Thủ đô Hà Nội."
+      ],
+      [
+        "b",
+        "Diễn ra trong 03 ngày, từ ngày 28/9 đến ngày 01/10/2025 tại Thủ đô Hà Nội."
+      ],
+      [
+        "c",
+        "Diễn ra trong 04 ngày, từ ngày 28/9 đến ngày 02/10/2025 tại Thủ đô Hà Nội."
+      ],
+      [
+        "d",
+        "Diễn ra trong 03 ngày, từ ngày 29/9 đến ngày 02/10/2025 tại Thủ đô Hà Nội."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "2",
+    "question": "Chủ đề của Đại hội đại biểu Đảng bộ Quân đội lần thứ XII?",
+    "options": [
+      [
+        "a",
+        "Phát huy truyền thống Quân đội anh hùng, xây dựng Đảng bộ trong sạch, vững mạnh, mẫu mực, tiêu biểu, Quân đội cách mạng, chính quy, tinh nhuệ, hiện đại; nâng cao sức mạnh quốc phòng, bảo vệ vững chắc Tổ quốc Việt Nam xã hội chủ nghĩa, góp phần xây dựng đất nước phồn vinh, văn minh, hạnh phúc”."
+      ],
+      [
+        "b",
+        "Phát huy truyền thống anh hùng, xây dựng Đảng bộ trong sạch, vững mạnh toàn diện, mẫu mực, tiêu biểu, Quân đội cách mạng, chính quy, tinh nhuệ, hiện đại; bảo vệ vững chắc Tổ quốc Việt Nam xã hội chủ nghĩa, góp phần xây dựng đất nước hòa bình, giàu mạnh, phồn vinh, văn minh, hạnh phúc”."
+      ],
+      [
+        "c",
+        "Phát huy truyền thống Quân đội anh hùng, xây dựng Đảng bộ trong sạch, vững mạnh toàn diện, mẫu mực, tiêu biểu, Quân đội cách mạng, chính quy, tinh nhuệ, hiện đại; nâng cao sức mạnh quốc phòng, bảo vệ vững chắc Tổ quốc Việt Nam xã hội chủ nghĩa, góp phần xây dựng đất nước hòa bình, giàu mạnh, phồn vinh, văn minh, hạnh phúc”."
+      ],
+      [
+        "d",
+        "Phát huy truyền thống Quân đội anh hùng, xây dựng Đảng bộ trong sạch, vững mạnh toàn diện, mẫu mực, tiêu biểu, Quân đội cách mạng, chính quy, tinh nhuệ, hiện đại; nâng cao sức mạnh quốc phòng, góp phần xây dựng đất nước hòa bình, giàu mạnh, phồn vinh, văn minh, hạnh phúc”."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "3",
+    "question": "Phương châm của Đại hội đại biểu Đảng bộ Quân đội lần thứ XII?",
+    "options": [
+      [
+        "a",
+        "Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Đột phá - Phát triển”."
+      ],
+      [
+        "b",
+        "Đoàn kết - Dân chủ - Kỷ cương - Kiên định - Đột phá - Phát triển”."
+      ],
+      [
+        "c",
+        "Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Đột phá - Phát triển”."
+      ],
+      [
+        "d",
+        "Đoàn kết - Dân chủ - Kỷ cương - Kiên định - Sáng tạo - Phát triển”."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "4",
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025 - 2030 là gì?",
+    "options": [
+      [
+        "a",
+        "Hoàn thiện đồng bộ thể chế quân sự, quốc phòng; tiếp tục xây dựng quân đội theo hướng tinh - gọn - mạnh, huy động hiệu quả các nguồn lực xây dựng quân đội cách mạng, chính quy, tinh nhuệ, hiện đại."
+      ],
+      [
+        "b",
+        "Tập trung phát triển nguồn nhân lực chất lượng cao; đẩy mạnh thu hút, trọng dụng nhân tài, xây dựng đội ngũ cán bộ đáp ứng yêu cầu xây dựng quân đội hiện đại; nâng cao chất lượng xây dựng chính quy, quản lý kỷ luật; phát huy giá trị văn hóa “Bộ đội Cụ Hồ” thời kỳ mới."
+      ],
+      [
+        "c",
+        "Đẩy mạnh phát triển khoa học, công nghệ; tiếp tục xây dựng quân đội theo hướng tinh - gọn - mạnh;  nâng cao năng lực phòng thủ, tự chủ, tự lực, tự cường, lưỡng dụng, hiện đại."
+      ],
+      [
+        "d",
+        "Chủ động nâng cao năng lực lãnh đạo, tham mưu, chỉ đạo LLVT thực hiện hiệu quả nhiệm vụ QS, QP. Nâng cao chất lượng xây dựng chính quy, quản lý kỷ luật; phát huy giá trị văn hóa “Bộ đội Cụ Hồ” thời kỳ mới."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "5",
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025 - 2030 là gì?",
+    "options": [
+      [
+        "a",
+        "Hoàn thiện đồng bộ thể chế quân sự, quốc phòng; tiếp tục xây dựng quân đội theo hướng tinh - gọn - mạnh, huy động hiệu quả các nguồn lực xây dựng quân đội cách mạng, chính quy, tinh nhuệ, hiện đại."
+      ],
+      [
+        "b",
+        "Đẩy mạnh phát triển khoa học, công nghệ; tiếp tục xây dựng quân đội theo hướng tinh - gọn - mạnh;  nâng cao năng lực phòng thủ, tự chủ, tự lực, tự cường, lưỡng dụng, hiện đại."
+      ],
+      [
+        "c",
+        "Chủ động nâng cao năng lực lãnh đạo, tham mưu, chỉ đạo LLVT thực hiện hiệu quả nhiệm vụ QS, QP. Nâng cao chất lượng xây dựng chính quy, quản lý kỷ luật; phát huy giá trị văn hóa “Bộ đội Cụ Hồ” thời kỳ mới."
+      ],
+      [
+        "d",
+        "Hoàn thiện đồng bộ thể chế quân sự, quốc phòng; huy động hiệu quả các nguồn lực xây dựng quân đội cách mạng, chính quy, tinh nhuệ, hiện đại."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "6",
+    "question": "Trong phương hướng, mục tiêu nhiệm kỳ 2025-2030 được nêu ra trong Đại hội Đảng bộ Quân đội lần thứ XII, yêu cầu thực hiện 6 nội dung nào?",
+    "options": [
+      [
+        "a",
+        "Hai kiên định, hai đẩy mạnh, hai ngăn ngừa."
+      ],
+      [
+        "b",
+        "Hai kiên định, hai đột phá, hai đổi mới."
+      ],
+      [
+        "c",
+        "Hai kiên định, hai đẩy mạnh, hai đột phá."
+      ],
+      [
+        "d",
+        "Hai kiên định, hai đẩy mạnh, hai đổi mới."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "7",
+    "question": "Nội dung của hai kiên định được nêu ra trong Đại hội Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025-2030 là gì?",
+    "options": [
+      [
+        "a",
+        "Kiên định đường lối quân sự, quốc phòng của Đảng; kiên định xây dựng Quân đội vững mạnh về chính trị, góp phần giữ vững và tăng cường sự lãnh đạo tuyệt đối, trực tiếp về mọi mặt của Đảng đối với Quân đội."
+      ],
+      [
+        "b",
+        "Kiên định đường lối quân sự, quốc phòng của Đảng; kiên định xây dựng Quân đội nhân dân cách mạng, chính quy, tinh nhuệ, hiện đại."
+      ],
+      [
+        "c",
+        "Kiên định đường lối quân sự, quốc phòng của Đảng; kiên định đường lối hội nhập quốc tế và đối ngoại quốc phòng."
+      ],
+      [
+        "d",
+        "Kiên định đường lối hội nhập quốc tế và đối ngoại quốc phòng; kiên định xây dựng Quân đội vững mạnh về chính trị, góp phần giữ vững và tăng cường sự lãnh đạo tuyệt đối, trực tiếp về mọi mặt của Đảng đối với Quân đội."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "1",
+    "question": "Đại hội đại biểu toàn quốc lần thứ XIV của Đảng diễn ra vào thời gian nào? Địa điểm?",
+    "options": [
+      [
+        "a",
+        "Diễn ra từ ngày 19 đến ngày 23/01/2026 tại thủ đô Hà Nội"
+      ],
+      [
+        "b",
+        "Diễn ra từ ngày 19 đến ngày 24/01/2026 tại thủ đô Hà Nội"
+      ],
+      [
+        "c",
+        "Diễn ra từ ngày 18 đến ngày 24/01/2026 tại thủ đô Hà Nội"
+      ],
+      [
+        "d",
+        "Diễn ra từ ngày 18 đến ngày 25/01/2026 tại thủ đô Hà Nội"
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "2",
+    "question": "Phương châm Đại hội đại biểu toàn quốc lần thứ XIV của Đảng là gì?",
+    "options": [
+      [
+        "a",
+        "Đoàn kết, dân chủ, kỷ cương, đột phá, phát triển, xác định tư duy, tầm nhìn, những quyết sách chiến lược đưa đất nước tiến mạnh trong kỷ nguyên mới, vì hoà bình, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc, vững bước đi lên chủ nghĩa xã hội"
+      ],
+      [
+        "b",
+        "Đoàn kết, dân chủ, kỷ cương, đột phá, phát triển, xác định tư duy, tầm nhìn, những quyết sách chiến lược đưa đất nước tiến mạnh trong kỷ nguyên mới, vì hoà bình, độc lập, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc, vững bước đi lên chủ nghĩa xã hội"
+      ],
+      [
+        "c",
+        "Đoàn kết, dân chủ, kỷ cương, đột phá, phát triển, xác định tư duy, tầm nhìn, những quyết sách chiến lược đưa đất nước tiến mạnh trong kỷ nguyên mới, vì độc lập, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc"
+      ],
+      [
+        "d",
+        "Đoàn kết, dân chủ, kỷ cương, đột phá, phát triển, xác định tư duy, tầm nhìn, những quyết sách chiến lược đưa đất nước tiến mạnh trong kỷ nguyên mới, vì hoà bình, độc lập, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc, vững bước đi lên chủ nghĩa xã hội"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "3",
+    "question": "Chủ đề Đại hội đại biểu toàn quốc lần thứ XIV của Đảng là gì?",
+    "options": [
+      [
+        "a",
+        "Dưới lá cờ vẻ vang của Đảng, chung sức, đồng lòng thực hiện thắng lợi các nhiệm vụ phát triển đất nước đến năm 2030; tự lực, tự tin, tiến mạnh trong kỷ nguyên vươn mình của dân tộc, vì hoà bình, độc lập, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc"
+      ],
+      [
+        "b",
+        "Dưới lá cờ vẻ vang của Đảng, chung sức, đồng lòng, quyết tâm thực hiện thắng lợi các mục tiêu phát triển đất nước đến năm 2030; tự lực, tự tin, tiến mạnh trong kỷ nguyên vươn mình của dân tộc, vì hoà bình, độc lập, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc"
+      ],
+      [
+        "c",
+        "Dưới lá cờ vẻ vang của Đảng, chung sức, đồng lòng thực hiện thắng lợi các mục tiêu phát triển đất nước đến năm 2030; tự lực, tự tin, tiến mạnh trong kỷ nguyên vươn mình của dân tộc, vì hoà bình, độc lập, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc"
+      ],
+      [
+        "d",
+        "Dưới lá cờ vẻ vang của Đảng, chung sức, đồng lòng thực hiện thắng lợi các mục tiêu phát triển đất nước đến năm 2030; tự lực, tự cường, tiến mạnh trong kỷ nguyên vươn mình của dân tộc, vì hoà bình, độc lập, dân chủ, giàu mạnh, phồn vinh, văn minh, hạnh phúc"
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "4",
+    "question": "Đại hội đại biểu toàn quốc lần thứ XIV của Đảng tiến hành trọng tâm mấy nội dung chính?",
+    "options": [
+      [
+        "a",
+        "Tiến hành 03 nội dung"
+      ],
+      [
+        "b",
+        "Tiến hành 04 nội dung"
+      ],
+      [
+        "c",
+        "Tiến hành 05 nội dung"
+      ],
+      [
+        "d",
+        "Tiến hành 06 nội dung"
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "5",
+    "question": "Tổng số Đại biểu tham dự Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": [
+      [
+        "a",
+        "Gồm 1.588 đại biểu"
+      ],
+      [
+        "b",
+        "Gồm 1.508 đại biểu"
+      ],
+      [
+        "c",
+        "Gồm 1.568 đại biểu"
+      ],
+      [
+        "d",
+        "Gồm 1.558 đại biểu"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "6",
+    "question": "Hội nghị Ban Chấp hành Trung ương lần thứ 8 khoá XIII đã quyết định thành lập mấy tiểu ban chuẩn bị Đại hội XIV của Đảng?",
+    "options": [
+      [
+        "a",
+        "4 Tiểu ban"
+      ],
+      [
+        "b",
+        "5 Tiểu ban"
+      ],
+      [
+        "c",
+        "6 Tiểu ban"
+      ],
+      [
+        "d",
+        "7 Tiểu ban"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "7",
+    "question": "Năm tiểu ban được thành lập trong Hội nghị Ban Chấp hành Trung ương lần thứ 8 khoá XIII để chuẩn bị cho Đại hội XIV của Đảng gồm?",
+    "options": [
+      [
+        "a",
+        "Tiểu ban Văn kiện - chính sách, Tiểu ban Kinh tế - xã hội, Tiểu ban Điều lệ Đảng, Tiểu ban Nhân sự, Tiểu ban Tổ chức phục vụ Đại hội."
+      ],
+      [
+        "b",
+        "Tiểu ban Văn kiện, Tiểu ban Kinh tế - xã hội, Tiểu ban Điều lệ Đảng, Tiểu ban Nhân sự, Tiểu ban Tổ chức Đại hội."
+      ],
+      [
+        "c",
+        "Tiểu ban Văn kiện, Tiểu ban Kinh tế - xã hội, Tiểu ban Điều lệ Đảng, Tiểu ban Nhân sự, Tiểu ban Tổ chức phục vụ Đại hội."
+      ],
+      [
+        "d",
+        "Tiểu ban Văn kiện, Tiểu ban Kinh tế, Tiểu ban Điều lệ Đảng, Tiểu ban Nhân sự, Tiểu ban Tổ chức phục vụ Đại hội."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "8",
+    "question": "Tại Hội nghị Ban Chấp hành Trung ương Đảng lần thứ 12 đã quyết định tích hợp nội dung 3 văn kiện nào thành Báo cáo Chính trị?",
+    "options": [
+      [
+        "a",
+        "Báo cáo chính trị; Báo cáo kinh tế; Báo cáo tổng kết xây dựng Đảng"
+      ],
+      [
+        "b",
+        "Báo cáo chính trị; Báo cáo kinh tế - xã hội; Báo cáo tổng kết xây dựng lý luận Đảng"
+      ],
+      [
+        "c",
+        "Báo cáo chính trị; Báo cáo kinh tế; Báo cáo tổng kết xây dựng Đảng"
+      ],
+      [
+        "d",
+        "Báo cáo chính trị; Báo cáo kinh tế - xã hội; Báo cáo tổng kết xây dựng Đảng"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "9",
+    "question": "Tại Đại hội đại biểu toàn quốc lần thứ XIV của Đảng, Ban Chấp hành Trung ương Đảng khoá XIII đã trình Đại hội các văn kiện gồm?",
+    "options": [
+      [
+        "a",
+        "Báo cáo chính trị của Ban Chấp hành Trung ương Đảng khoá XIII; Báo cáo tổng kết một số vấn đề lý luận và thực tiễn về công cuộc đổi mới theo định hướng xã hội chủ nghĩa trong 40 năm qua ở Việt Nam; Báo cáo tổng kết 15 năm thi hành Điều lệ Đảng (2011-2025) và đề xuất định hướng bổ sung, sửa đổi Điều lệ Đảng; Báo cáo kiểm điểm sự lãnh đạo, chỉ đạo của Ban Chấp hành Trung ương Đảng khoá XIII."
+      ],
+      [
+        "b",
+        "Báo cáo chính trị của Ban Chấp hành Trung ương Đảng khoá XIII; Báo cáo tổng kết 15 năm thi hành Điều lệ Đảng (2011-2025) và đề xuất định hướng bổ sung, sửa đổi Điều lệ Đảng; Báo cáo kiểm điểm sự lãnh đạo, chỉ đạo của Ban Chấp hành Trung ương Đảng khoá XIII."
+      ],
+      [
+        "c",
+        "Báo cáo chính trị của Ban Chấp hành Trung ương Đảng khoá XIII; Báo cáo tổng kết một số vấn đề lý luận và thực tiễn về công cuộc đổi mới theo định hướng xã hội chủ nghĩa trong 40 năm qua ở Việt Nam; Báo cáo tổng kết 15 năm thi hành Điều lệ Đảng (2011-2025) và đề xuất định hướng bổ sung, sửa đổi Điều lệ Đảng; Báo cáo kiểm điểm sự lãnh đạo của Ban Chấp hành Trung ương Đảng khoá XIII."
+      ],
+      [
+        "d",
+        "Báo cáo chính trị của Ban Chấp hành Trung ương Đảng khoá XIII; Báo cáo tổng kết một số vấn đề lý luận và thực tiễn về công cuộc đổi mới theo định hướng xã hội chủ nghĩa trong 40 năm qua ở Việt Nam; Báo cáo tổng kết 15 năm thi hành Điều lệ Đảng (2011-2025)."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "10",
+    "question": "Trong nội dung Báo cáo Chính trị của Ban Chấp hành Trung ương Đảng khoá XIII đưa ra đúc kết mấy nội dung kinh nghiệm?",
+    "options": [
+      [
+        "a",
+        "5 bài học kinh nghiệm"
+      ],
+      [
+        "b",
+        "6 bài học kinh nghiệm"
+      ],
+      [
+        "c",
+        "7 bài học kinh nghiệm"
+      ],
+      [
+        "d",
+        "8 bài học kinh nghiệm"
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "11",
+    "question": "Trong nội dung Báo cáo Chính trị của Ban Chấp hành Trung ương Đảng khoá XIII xác định?",
+    "options": [
+      [
+        "a",
+        "Tốc độ tăng trưởng tổng sản phẩm trong nước (GDP) bình quân cho giai đoạn 2026-2030 từ 10%/năm trở lên; GDP bình quân đầu người đến năm 2030 đạt khoảng 9.500 USD/năm"
+      ],
+      [
+        "b",
+        "Tốc độ tăng trưởng tổng sản phẩm trong nước (GDP) bình quân cho giai đoạn 2026-2030 từ 12%/năm trở lên; GDP bình quân đầu người đến năm 2030 đạt khoảng 8.500 USD/năm"
+      ],
+      [
+        "c",
+        "Tốc độ tăng trưởng tổng sản phẩm trong nước (GDP) bình quân cho giai đoạn 2026-2030 từ 12%/năm trở lên; GDP bình quân đầu người đến năm 2030 đạt khoảng 8.500 USD/năm"
+      ],
+      [
+        "d",
+        "Tốc độ tăng trưởng tổng sản phẩm trong nước (GDP) bình quân cho giai đoạn 2026-2030 từ 10%/năm trở lên; GDP bình quân đầu người đến năm 2030 đạt khoảng 8.500 USD/năm"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "12",
+    "question": "Trong nội dung Mục tiêu phát triển 2026 - 2030 và tầm nhìn 2045 của Báo cáo Chính trị của Ban Chấp hành Trung ương Đảng khoá XIII xác định mấy quan điểm chỉ đạo?",
+    "options": [
+      [
+        "a",
+        "4 Quan điểm chỉ đạo"
+      ],
+      [
+        "b",
+        "5 Quan điểm chỉ đạo"
+      ],
+      [
+        "c",
+        "6 Quan điểm chỉ đạo"
+      ],
+      [
+        "a",
+        "7 Quan điểm chỉ đạo"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "13",
+    "question": "Trong nội dung Báo cáo Chính trị của Ban Chấp hành Trung ương Đảng khoá XIII xác định mấy định hướng lớn?",
+    "options": [
+      [
+        "a",
+        "6 Định hướng lớn"
+      ],
+      [
+        "b",
+        "7 Định hướng lớn"
+      ],
+      [
+        "c",
+        "8 Định hướng lớn"
+      ],
+      [
+        "d",
+        "9 Định hướng lớn"
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "14",
+    "question": "Đâu không phải nội dung định hướng lớn trong Báo cáo Chính trị của Ban Chấp hành Trung ương Đảng khoá XIII?",
+    "options": [
+      [
+        "a",
+        "Hoàn thiện thể chế phát triển và Nhà nước pháp quyền xã hội chủ nghĩa"
+      ],
+      [
+        "b",
+        "Xác lập mô hình tăng trưởng mới"
+      ],
+      [
+        "c",
+        "Phát triển văn hoá và con người"
+      ],
+      [
+        "d",
+        "Đẩy mạnh đối ngoại và Quốc phòng"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "15",
+    "question": "Đâu không phải nội dung định hướng lớn trong Báo cáo Chính trị của Ban Chấp hành Trung ương Đảng khoá XIII?",
+    "options": [
+      [
+        "a",
+        "Khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số"
+      ],
+      [
+        "b",
+        "Quốc phòng, an ninh và đối ngoại"
+      ],
+      [
+        "c",
+        "Xây dựng, chỉnh đốn Đảng và hệ thống chính trị"
+      ],
+      [
+        "d",
+        "Hoàn thiện lý luận, mô hình tăng trưởng mới"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "16",
+    "question": "Trên cơ sở 7 định hướng lớn, Báo cáo xác định giai đoạn 2026-2030 cần tập trung tạo đột phá mạnh mẽ ở mấy lĩnh vực có tính quyết định?",
+    "options": [
+      [
+        "a",
+        "02 lĩnh vực có tính quyết định"
+      ],
+      [
+        "b",
+        "03 lĩnh vực có tính quyết định"
+      ],
+      [
+        "c",
+        "04 lĩnh vực có tính quyết định"
+      ],
+      [
+        "d",
+        "05 lĩnh vực có tính quyết định"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "17",
+    "question": "Trong nội dung Báo cáo Chính trị của Ban Chấp hành trung ưởng Đảng khoá XIII; Đảng xác định phải tiếp tục đẩy mạnh xây dựng, chỉnh đốn Đảng trong sạch, vững mạnh toàn diện; nâng cao năng lực lãnh đạo, cầm quyền và sức chiến đấu của Đảng. Trong đó, tập trung vào mấy nhóm việc để chuyển từ quyết tâm sang kết quả?",
+    "options": [
+      [
+        "a",
+        "03 nhóm việc"
+      ],
+      [
+        "b",
+        "04 nhóm việc"
+      ],
+      [
+        "c",
+        "05 nhóm việc"
+      ],
+      [
+        "d",
+        "06 nhóm việc"
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "18",
+    "question": "Trong nội dung định hướng lớn, định hướng nào được coi là “Điểm nghẽn của điểm nghẽn” nhưng cũng là “Đột phá của đột phá”?",
+    "options": [
+      [
+        "a",
+        "Hoàn thiện thể chế phát triển và Nhà nước pháp quyền xã hội chủ nghĩa"
+      ],
+      [
+        "b",
+        "Xác lập mô hình tăng trưởng mới"
+      ],
+      [
+        "c",
+        "Khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số"
+      ],
+      [
+        "d",
+        "Phát triển văn hoá và con người"
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "19",
+    "question": "Nội dung công tác cán bộ được xác định là “then chốt của then chốt” nằm trong định hướng nào?",
+    "options": [
+      [
+        "a",
+        "Hoàn thiện thể chế phát triển và Nhà nước pháp quyền xã hội chủ nghĩa"
+      ],
+      [
+        "b",
+        "Xác lập mô hình tăng trưởng mới"
+      ],
+      [
+        "c",
+        "Khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số"
+      ],
+      [
+        "d",
+        "Xây dựng, chỉnh đốn Đảng và hệ thống chính trị"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "20",
+    "question": "Trong nội dung Báo cáo Chính trị đã nêu Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam có mấy đặc trưng?",
+    "options": [
+      [
+        "a",
+        "07 đặc trưng"
+      ],
+      [
+        "b",
+        "08 đặc trưng"
+      ],
+      [
+        "c",
+        "09 đặc trưng"
+      ],
+      [
+        "d",
+        "10 đặc trưng"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "1",
+    "question": "Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị nói về nội dung gì?",
+    "options": [
+      [
+        "a",
+        "Đột phá phát riển khoa học, công nghệ, đổi mới sáng tạo trong tình hình mới"
+      ],
+      [
+        "b",
+        "Đột phát phát triển khoa học, công nghệ, sáng tạo và chuyển đối số quốc gia"
+      ],
+      [
+        "c",
+        "Đột phát phát triển khoa học, công nghệ, đổi mới sáng tạo, tiến mạnh về chuyển đối số quốc gia"
+      ],
+      [
+        "d",
+        "Đột phát phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đối số quốc gia"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "2",
+    "question": "Nghị quyết số 59-NQ/TW về Hội nhập quốc tế trong tình hình mới được Bộ Chính trị ban hành vào thời gian nào?",
+    "options": [
+      [
+        "a",
+        "Ngày 14/01/2025"
+      ],
+      [
+        "b",
+        "Ngày 24/01/2025"
+      ],
+      [
+        "c",
+        "Ngày 04/01/2025"
+      ],
+      [
+        "d",
+        "Ngày 25/01/2025"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "3",
+    "question": "Nghị quyết số 66-NQ/TW của Bộ Chính trị về đổi mới công tác xây dựng và thi hành pháp luật đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới được ban hành vào thời gian nào?",
+    "options": [
+      [
+        "a",
+        "Ngày 30/4/2025"
+      ],
+      [
+        "b",
+        "Ngày 30/5/2025"
+      ],
+      [
+        "c",
+        "Ngày 30/6/2025"
+      ],
+      [
+        "d",
+        "Ngày 30/7/2025"
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "4",
+    "question": "Nghị quyết số 68-NQ/TW ngày 04/5/2025 của Bộ Chính trị nói về nội dung gì?",
+    "options": [
+      [
+        "a",
+        "Phát triển kinh tế tư nhân, hộ gia đình"
+      ],
+      [
+        "b",
+        "Phát triển kinh tế tư nhân trong tình hình mới"
+      ],
+      [
+        "c",
+        "Phát triển kinh tế tư nhân đặt ra mục tiêu đến năm 2045"
+      ],
+      [
+        "d",
+        "Phát triển kinh tế tư nhân đặt ra mục tiêu đến năm 2030"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "5",
+    "question": "Phương châm “5 vững” theo tinh thần của đồng chí Tổng Bí thư là gì?",
+    "options": [
+      [
+        "a",
+        "Chính trị vững - Kỷ luật vững - Công nghệ vững - Khoa học quân sự vững - Đời sống bộ đội vững"
+      ],
+      [
+        "b",
+        "Chính trị vững - Kỷ luật vững - Công nghệ vững - Nghệ thuật quân sự vững - Đời sống bộ đội vững"
+      ],
+      [
+        "c",
+        "Chính trị vững - Kỷ luật vững - Công nghệ vững - Khoa học quân sự vững - Nghệ thuật quân sự vững"
+      ],
+      [
+        "d",
+        "Chính trị vững - Kỷ luật, kỷ cương vững - Công nghệ vững - Nghệ thuật quân sự vững - Đời sống bộ đội vững"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "6",
+    "question": "Nội dung “Hai kiên định” được nêu tại Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025-2030 là gì?",
+    "options": [
+      [
+        "a",
+        "Kiên định về đường lối quân sự và nghệ thuật quân sự"
+      ],
+      [
+        "b",
+        "Kiên định về đường lối quân sự và khoa học quân sự"
+      ],
+      [
+        "c",
+        "Kiên định về nghệ thuật quân sự và sự lãnh đạo của Đảng"
+      ],
+      [
+        "d",
+        "Kiên định về đường lối quân sự và sự lãnh đạo của Đảng"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "7",
+    "question": "Nội dung “Hai đẩy mạnh” được nêu tại Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025-2030 là gì?",
+    "options": [
+      [
+        "a",
+        "Đẩy mạnh xây dựng Quân đội hiện đại và hội nhập quốc tế"
+      ],
+      [
+        "b",
+        "Đẩy mạnh xây dựng Quân đội hiện đại và hội nhập quốc tế trong thời đại mới"
+      ],
+      [
+        "c",
+        "Đẩy mạnh xây dựng Quân đội chính quy và hội nhập quốc tế"
+      ],
+      [
+        "d",
+        "Đẩy mạnh xây dựng Quân đội chính quy và hội nhập quốc tế trong thời đại mới"
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "8",
+    "question": "Nội dung “Hai ngăn ngừa” được nêu tại Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025-2030 là gì?",
+    "options": [
+      [
+        "a",
+        "Ngăn ngừa nguy cơ chiến tranh, xung đột vũ trang hiện đại và ngăn ngừa suy thoái tư tưởng, đạo đức"
+      ],
+      [
+        "b",
+        "Ngăn ngừa nguy cơ chiến tranh, xung đột và ngăn ngừa suy thoái tư tưởng, đạo đức"
+      ],
+      [
+        "c",
+        "Ngăn ngừa nguy cơ chiến tranh, xung đột vũ trang hiện đại và ngăn ngừa suy thoái chính trị, tư tưởng, đạo đức"
+      ],
+      [
+        "d",
+        "Ngăn ngừa nguy cơ chiến tranh, xung đột vũ trang và ngăn ngừa suy thoái tư tưởng, đạo đức"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "9",
+    "question": "Nội dung “Năm tránh” theo tinh thần của đồng chí Chính uỷ Quân khu 5 là?",
+    "options": [
+      [
+        "a",
+        "Tránh buông lỏng nguyên tắc, coi thường kỷ luật, kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm; tránh thấy đúng không bảo vệ, thấy sai không đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm"
+      ],
+      [
+        "b",
+        "Tránh buông lỏng nguyên tắc, coi thường kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm, không đổi mới; tránh thấy đúng không bảo vệ, thấy sai không đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm"
+      ],
+      [
+        "c",
+        "Tránh buông lỏng nguyên tắc, coi thường kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm; tránh thấy đúng không bảo vệ, thấy sai không phế phán, đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm"
+      ],
+      [
+        "d",
+        "Tránh buông lỏng nguyên tắc, coi thường kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm; tránh thấy đúng không bảo vệ, thấy sai không đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "10",
+    "question": "Nội dung nào sau đây không đúng khi nói về vai trò của “Bộ tứ trụ cột Nghị quyết”?",
+    "options": [
+      [
+        "a",
+        "Đổi mới tư duy phát triển toàn diện, khơi thông nguồn lực"
+      ],
+      [
+        "b",
+        "Đưa đất nước Việt Nam bứt phá, hội nhập sâu rộng trong kỷ nguyên mới"
+      ],
+      [
+        "c",
+        "Giải quyết được những vấn đề tồn đọng trước mắt về kinh tế"
+      ],
+      [
+        "d",
+        "Là đòn bẩy chiến lược để nước Việt Nam cất cánh, chuyển đổi mô hình tăng trưởng, hướng tới mục tiêu trở thành quốc gia phát triển, thu nhập cao"
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "1",
+    "question": "Nhiệm vụ của quân và dân Liên khu 5 trong năm 1948 là gì ?",
+    "options": [
+      [
+        "a",
+        "Đẩy mạnh chiến tranh du kích vùng địch tạm chiếm, đánh bại kế hoạch “bình định” của địch, biến hậu phương địch thành tiền phương của ta."
+      ],
+      [
+        "b",
+        "Xây dựng và củng cố vùng tự do thành căn cứ vững chắc, thành hậu phương chiến lược trực tiếp của chiến trường Liên khu 5, Nam Lào và Đông Bắc Campuchia."
+      ],
+      [
+        "c",
+        "Phối hợp với cách mạng 2 nước Lào và Campuchia phát động chiến tranh du kích, xây dựng thế trận đánh địch ở khu vực biên giới 3 nước Đông Dương."
+      ],
+      [
+        "d",
+        "Bao vây, bóp nghẹt, làm suy yếu hậu phương của địch."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "2",
+    "question": "Chủ trương về quân sự của Liên khu 5 trong năm 1948 là gì ?",
+    "options": [
+      [
+        "a",
+        "Chấn chỉnh tổ chức lực lượng bộ đội chủ lực, bộ đội địa phương cho phù hợp, tích cực luyện tập nâng cao sức chiến đấu, phát triển rộng khắp phong trào dân quân du kích."
+      ],
+      [
+        "a",
+        "Đẩy mạnh phòng thủ bảo vệ vùng tự do."
+      ],
+      [
+        "c",
+        "Cường tập, kỳ tập đánh tiêu diệt các cứ điểm, đồn bốt quy mô nhỏ do đại đội, trung đội địch đóng giữ."
+      ],
+      [
+        "d",
+        "Mở rộng các xưởng quân giới, sản xuất nhiều vũ khí đạn dược cho cả lực lượng chủ lực và dân quân du kích."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "3",
+    "question": "Đại hội Đảng bộ Liên khu lần thứ II (họp từ ngày 16/7 - 21/8/1951) đã xác định Yêu cầu nhiệm vụ chính trị đối với Nam Trung Bộ là gì ?",
+    "options": [
+      [
+        "a",
+        "Nâng cao hơn nữa chất lượng hiệu quả chiến đấu, phát động cho được một cao trào du kích chiến tranh, liên tục tiến công địch khắp vùng bị tạm chiếm."
+      ],
+      [
+        "b",
+        "Chỉnh huấn, chỉnh quân để chuẩn bị cho giai đoạn chiến đấu mới."
+      ],
+      [
+        "c",
+        "Nâng cao sức chiến đấu, trình độ kỹ chiến thuật của bộ đội."
+      ],
+      [
+        "d",
+        "Cử quân tình nguyện sang Nam Lào và Đông Bắc Campuchia phối hợp với lực lượng bạn vừa tác chiến, vừa xây dựng cơ sở."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "4",
+    "question": "Hội nghị Liên khu ủy, Đảng ủy - Bộ Tư lệnh Liên khu 5 đầu tháng 12/1953 quyết định vấn đề gì ?",
+    "options": [
+      [
+        "a",
+        "Củng cố mở rộng vùng căn cứ du kích sau lưng địch, xây dựng và bảo vệ vùng tự do ngày càng vững chắc."
+      ],
+      [
+        "b",
+        "Đẩy mạnh hoạt động tác chiến đánh tiêu hao tiêu diệt, cầm chân địch làm chúng bị động đối phó khắp nơi."
+      ],
+      [
+        "c",
+        "Tập trung toàn bộ chủ lực cho nhiệm vụ tiến công Tây Nguyên, đánh chắc thắng chắc và thắng ngay trận đầu."
+      ],
+      [
+        "d",
+        "Nối liền vùng tự do Nam - Ngãi với căn cứ cách mạng của bạn ở Nam Lào, Đông Bắc Campuchia."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "5",
+    "question": "Trong năm 1965, đã hình thành phong trào gì trong LLVT Quân khu 5 ?",
+    "options": [
+      [
+        "a",
+        "Một ngày bằng 20 năm”."
+      ],
+      [
+        "b",
+        "Đạp lên đầu thù xốc tới”."
+      ],
+      [
+        "c",
+        "Tất cả cho phía trước, tất cả để giải phóng miền Nam"
+      ],
+      [
+        "d",
+        "Tìm Mỹ mà đánh, tìm ngụy mà diệt"
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "6",
+    "question": "Trong năm 1975, trên địa bàn Quân khu 5 diễn ra những chiến dịch lớn nào ?",
+    "options": [
+      [
+        "a",
+        "Chiến dịch Tây Nguyên, Chiến dịch Huế - Đà Nẵng."
+      ],
+      [
+        "b",
+        "Chiến dịch đường 9 Nam Lào."
+      ],
+      [
+        "c",
+        "Chiến dịch Cánh đồng Chum - Xiêng Khoản."
+      ],
+      [
+        "d",
+        "Chiến dịch Bắc Tây Nguyên, Chiến dịch Huế - Đà Nẵng."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "7",
+    "question": "Để đáp ứng yêu cầu nhiệm vụ chiến đấu bảo vệ biên giới Tây Nam, làm nhiệm vụ quốc tế, Quân khu 5 đã thành lập mới 3 sư đoàn nào ?",
+    "options": [
+      [
+        "a",
+        "Sư đoàn 3, Sư đoàn 309 và Sư đoàn 315."
+      ],
+      [
+        "b",
+        "Sư đoàn 307, Sư đoàn 309 và Sư đoàn 315."
+      ],
+      [
+        "b",
+        "Sư đoàn 307, Sư đoàn 9 và Sư đoàn 315."
+      ],
+      [
+        "b",
+        "Sư đoàn 307, Sư đoàn 309 và Sư đoàn 5."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "8",
+    "question": "Truyền thống vẻ vang của Quân khu 5 là gì ?",
+    "options": [
+      [
+        "a",
+        "Tự lực tự cường, khắc phục khó khăn, chịu đựng gian khổ, mưu trí sáng tạo, chiến đấu kiên cường, chiến thắng vẻ vang”."
+      ],
+      [
+        "b",
+        "Trung thành anh dũng, mưu trí sáng tạo, khoa học chuẩn xác, đoàn kết hiệp đồng, trưởng thành toàn diện”."
+      ],
+      [
+        "c",
+        "Đoàn kết, chủ động, sáng tạo, hy sinh, chiến thắng”."
+      ],
+      [
+        "d",
+        "Đoàn kết, chủ động, kiên trung, chiến thắng”."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "9",
+    "question": "Nét tiêu biểu Truyền thống của Quân khu 5 là gì ?",
+    "options": [
+      [
+        "a",
+        "Vượt qua mọi khó khăn, gian khổ, vừa chiến đấu, vừa xây dựng, không ngừng lớn mạnh và trưởng thành."
+      ],
+      [
+        "b",
+        "Đề cao trách nhiệm, giữ tốt, dùng bền, an toàn, tiết kiệm, không tham nhũng, lãng phí."
+      ],
+      [
+        "c",
+        "Luôn nêu cao tinh thần độc lập tự chủ, tự lực tự cường vượt qua khó khăn, gian khổ, hoàn thành xuất sắc nhiệm vụ được giao."
+      ],
+      [
+        "d",
+        "Lao động sáng tạo, có kỹ thuật, có kỷ luật, đạt năng suất, chất lượng, hiệu quả cao, luôn luôn vươn lên làm chủ vũ khí trang bị, khoa học công nghệ hiện đại."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "10",
+    "question": "Nét tiêu biểu Truyền thống của Quân khu 5 là gì ?",
+    "options": [
+      [
+        "a",
+        "Luôn nêu cao tinh thần quốc tế cao cả, đoàn kết thủy chung, trọn nghĩa vẹn tình với hai nước bạn Lào và Campuchia."
+      ],
+      [
+        "b",
+        "Đoàn kết thủy chung son sắt, chí nghĩa, chí tình với bạn bè quốc tế."
+      ],
+      [
+        "c",
+        "Luôn tăng cường củng cố tình đoàn kết với các nước láng giềng, nhất là hai nước bạn Lào và Campuchia."
+      ],
+      [
+        "d",
+        "Xây dựng tình đoàn kết hữu nghị giữa các dân tộc, chống áp bức, bóc lột, cường quyền vì mục tiêu hòa bình, tiến bộ của nhân loại."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "1",
+    "question": "Tư tưởng Hồ Chí Minh về vai trò của người cán bộ trong phát huy tinh thần đổi mới, sáng tạo là gì ?",
+    "options": [
+      [
+        "a",
+        "Cán bộ là cái gốc của mọi công việc”."
+      ],
+      [
+        "b",
+        "Cán bộ, đảng viên là lực lượng tiên phong trong đổi mới, sáng tạo."
+      ],
+      [
+        "c",
+        "Muôn việc thành công hay thất bại, đều do cán bộ tốt hay kém”."
+      ],
+      [
+        "d",
+        "Đổi mới, sáng tạo của cán bộ, đảng viên không chỉ dừng lại ở việc thay đổi phương pháp công tác mà còn là khả năng tìm kiếm những cách làm phù hợp, hiệu quả hơn."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "2",
+    "question": "Tư tưởng Hồ Chí Minh về đổi mới, sáng tạo phải gắn với nhiệm vụ chính trị và yêu cầu thực tiễn của quân đội yêu cầu như thế nào ?",
+    "options": [
+      [
+        "a",
+        "Phải có dũng khí để thực hiện những ý tưởng đổi mới và sáng tạo."
+      ],
+      [
+        "b",
+        "Tinh thần đổi mới và sáng tạo được thể hiện qua việc hoàn thành nhiệm vụ được giao."
+      ],
+      [
+        "c",
+        "Chúng ta không sợ sai lầm, nhưng đã nhận biết sai lầm thì phải ra sức sửa chữa”."
+      ],
+      [
+        "d",
+        "Đổi mới không phải là xa rời lý tưởng, mà là cách để thực hiện lý tưởng một cách tốt hơn, hiệu quả hơn”."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "3",
+    "question": "Quy định số 144-QĐ/TW ngày 09/5/2024 của Bộ Chính trị về chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong giai đoạn mới đề ra 05 chuẩn mực đạo đức cách mạng cho cán bộ, đảng viên trong giai đoạn mới, trong đó có nội dung nào sau đây ?",
+    "options": [
+      [
+        "a",
+        "Bản lĩnh, đổi mới, sáng tạo, hội nhập."
+      ],
+      [
+        "b",
+        "Năng động, sáng tạo, dám nghĩ, dám làm, dám chịu trách nhiệm vì lợi ích chung."
+      ],
+      [
+        "c",
+        "Năng động, sáng tạo, dám nghĩ, dám làm, dám chịu trách nhiệm và vì nhân dân phục vụ."
+      ],
+      [
+        "d",
+        "Có kiến thức và năng lực tiếp thu và cụ thể hóa các nghị quyết của Đảng."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "4",
+    "question": "Một trong những giải pháp phát huy tinh thần đổi mới, sáng tạo của đội ngũ cán bộ, đảng viên góp phần xây dựng cơ quan, đơn vị vững mạnh toàn diện “mẫu mực, tiêu biểu” là gì ?",
+    "options": [
+      [
+        "a",
+        "Đẩy mạnh việc giáo dục để cấp ủy, chỉ huy các cấp và đội ngũ cán bộ, đảng viên."
+      ],
+      [
+        "b",
+        "Nâng cao nhận thức về vai trò của đổi mới, sáng tạo trong việc thực hiện nhiệm vụ chính trị."
+      ],
+      [
+        "c",
+        "Đẩy mạnh tuyên truyền, giáo dục nâng cao nhận thức cho cán bộ, đảng viên về vai trò và giá trị của đổi mới, sáng tạo."
+      ],
+      [
+        "d",
+        "Đổi mới nội dung và phương pháp tuyên truyền, giáo dục."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "5",
+    "question": "Một trong những giải pháp chủ yếu để phát huy tinh thần đổi mới, sáng tạo của đội ngũ cán bộ, đảng viên góp phần xây dựng cơ quan, đơn vị vững mạnh toàn diện “mẫu mực, tiêu biểu” là gì ?",
+    "options": [
+      [
+        "a",
+        "Xây dựng cơ chế, chính sách hỗ trợ sát thực tiễn; tạo điều kiện để tư duy đổi mới, cách làm sáng tạo được hiện thực hóa."
+      ],
+      [
+        "b",
+        "Xây dựng cơ chế, chính sách hỗ trợ thực chất và linh hoạt để khuyến khích, bảo vệ và tạo điều kiện cho đội ngũ cán bộ, đảng viên phát huy tinh thần đổi mới, sáng tạo."
+      ],
+      [
+        "c",
+        "Xây dựng cơ chế, chính sách bảo vệ cán bộ, đảng viên trong quá trình thực hiện các sáng kiến đổi mới."
+      ],
+      [
+        "d",
+        "Xây dựng các chính sách hỗ trợ thực chất về nguồn lực, bao gồm tài chính, nhân lực, và thời gian để bảo đảm các sáng kiến đổi mới có đủ điều kiện để được triển khai."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "1",
+    "question": "Theo tư tưởng Hồ Chí Minh, một trong những biểu hiện của đạo đức cách mạng là gì ?",
+    "options": [
+      [
+        "a",
+        "Trung với nước, hiếu với dân."
+      ],
+      [
+        "b",
+        "Trung với vua, hiếu với cha mẹ."
+      ],
+      [
+        "c",
+        "Trung quân, ái quốc."
+      ],
+      [
+        "d",
+        "Quân xử thần tử."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "2",
+    "question": "Nội dung đầy đủ nhất một trong những chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong giai đoạn mới là gì ?",
+    "options": [
+      [
+        "a",
+        "Nêu cao tinh thần yêu nước, lòng tự hào dân tộc."
+      ],
+      [
+        "b",
+        "Tạo điều kiện để Nhân dân phát huy quyền làm chủ, dựa vào Nhân dân để xây dựng Đảng và hệ thống chính trị trong sạch, vững mạnh."
+      ],
+      [
+        "c",
+        "Yêu nước, tôn trọng Nhân dân, tuyệt đối trung thành với Đảng, với Tổ quốc."
+      ],
+      [
+        "d",
+        "Kiên quyết, kiên trì đấu tranh với mọi hành vi gây phương hại đến lợi ích quốc gia - dân tộc."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "3",
+    "question": "Nội dung đầy đủ nhất một trong những chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong giai đoạn mới là gì ?",
+    "options": [
+      [
+        "a",
+        "Bản lĩnh, đổi mới, sáng tạo, hội nhập."
+      ],
+      [
+        "b",
+        "Thực hiện nghiêm Cương lĩnh chính trị, Điều lệ Đảng."
+      ],
+      [
+        "c",
+        "Cống hiến cho sự nghiệp xây dựng và bảo vệ Tổ quốc, góp phần phát triển đất nước, địa phương, cơ quan, đơn vị."
+      ],
+      [
+        "d",
+        "Chủ động nâng cao kiến thức, kỹ năng; năng lực công tác, làm việc trong môi trường quốc tế."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "4",
+    "question": "Nội dung đầy đủ nhất một trong những chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong giai đoạn mới là gì ?",
+    "options": [
+      [
+        "a",
+        "Tâm huyết, trách nhiệm, dấn thân, nỗ lực hoàn thành tốt nhất nhiệm vụ được giao."
+      ],
+      [
+        "b",
+        "Cần, kiệm, liêm, chính, chí công vô tư."
+      ],
+      [
+        "c",
+        "Quản lý, sử dụng tài sản công đúng mục đích, đúng quy định."
+      ],
+      [
+        "d",
+        "Chủ động phòng ngừa, đấu tranh ngăn chặn tham nhũng, tiêu cực, suy thoái về tư tưởng, chính trị, đạo đức, lối sống, chủ nghĩa cá nhân, lợi ích nhóm, những biểu hiện \"tự diễn biến\", \"tự chuyển hoá\" trong nội bộ."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "5",
+    "question": "Nội dung đầy đủ nhất một trong những chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong giai đoạn mới là gì ?",
+    "options": [
+      [
+        "a",
+        "Luôn luôn giữ gìn sự đoàn kết, thống nhất trong Đảng, cơ quan, tổ chức và trong Nhân dân."
+      ],
+      [
+        "b",
+        "Nêu cao ý thức tổ chức kỷ luật, kỷ cương, nhất là kỷ luật phát ngôn."
+      ],
+      [
+        "c",
+        "Sống có nghĩa tình, chân thành, thương yêu, đối xử, giúp đỡ đồng chí, đồng nghiệp."
+      ],
+      [
+        "d",
+        "Đoàn kết, kỷ cương, tình thương, trách nhiệm."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "6",
+    "question": "Nội dung đầy đủ nhất một trong những chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong giai đoạn mới là gì ?",
+    "options": [
+      [
+        "a",
+        "Gương mẫu, khiêm tốn, tu dưỡng rèn luyện, học tập suốt đời."
+      ],
+      [
+        "b",
+        "Gương mẫu trong công tác và sinh hoạt, tích cực học tập."
+      ],
+      [
+        "c",
+        "Cấp trên gương mẫu trước cấp dưới, cấp ủy gương mẫu trước đảng viên, đảng viên gương mẫu trước quần chúng."
+      ],
+      [
+        "d",
+        "Không ngừng học tập, tu dưỡng, rèn luyện, nâng cao phẩm chất, đạo đức, trình độ, năng lực công tác."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "7",
+    "question": "Một trong những yêu cầu đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về thực hiện chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong quân đội hiện nay là gì ?",
+    "options": [
+      [
+        "a",
+        "Quán triệt sâu sắc quan điểm của Đảng, của Quân ủy Trung ương về công tác xây dựng, chỉnh đốn Đảng, phát huy phẩm chất “Bộ đội Cụ Hồ”, kiên quyết đấu tranh chống chủ nghĩa cá nhân trong tình hình mới."
+      ],
+      [
+        "b",
+        "Tăng cường quán triệt sâu sắc quan điểm của Chủ tịch Hồ Chí Minh, đường lối, chủ trương, quan điểm của Đảng, pháp luật Nhà nước làm cho cán bộ, đảng viên."
+      ],
+      [
+        "c",
+        "Làm cho cán bộ, đảng viên nhận thức sâu sắc vị trí, vai trò, tầm quan trọng của đạo đức cách mạng đối với công tác giáo dục rèn luyện cán bộ, đảng viên đối với công tác xây dựng, chỉnh đốn Đảng."
+      ],
+      [
+        "d",
+        "Làm cho cán bộ, đảng viên nhận thức sâu sắc vị trí, vai trò, tầm quan trọng của đạo đức cách mạng đối với việc xây dựng quân đội cách mạng, chính quy, tinh nhuệ, hiện đại."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "8",
+    "question": "Một trong những yêu cầu đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về thực hiện chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong quân đội hiện nay là gì ?",
+    "options": [
+      [
+        "a",
+        "Thực hiện nghiêm túc và duy trì có nền nếp, chế độ tự phê bình và phê bình, “tự soi, tự sửa” theo nghị quyết, chỉ thị, kết luận, quy định của Đảng."
+      ],
+      [
+        "b",
+        "Phát huy tinh thần tích cực, tự giác tu dưỡng, rèn luyện của đội ngũ cán bộ, đảng viên về thực hiện chuẩn mực đạo đức cách mạng đáp ứng yêu cầu nhiệm vụ trong tình hình mới."
+      ],
+      [
+        "c",
+        "Thực hiện nghiêm túc quy định những điều đảng viên không được làm, quy định chuẩn mực đạo đức cách mạng của cán bộ, đảng viên."
+      ],
+      [
+        "d",
+        "Luôn đặt ra yêu cầu cao cho mình, xây dựng, bồi đắp ý chí, quyết tâm, động cơ phấn đấu vươn lên, vượt qua mọi khó khăn, thử thách, cám dỗ về vật chất, tiền tài, địa vị, danh vọng, có sức đề kháng với tệ nạn xã hội."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "9",
+    "question": "Một trong những yêu cầu đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về thực hiện chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong quân đội hiện nay là gì ?",
+    "options": [
+      [
+        "a",
+        "Đề cao trách nhiệm của chính ủy, chính trị viên, người chỉ huy các cấp trong lãnh đạo, chỉ đạo, triển khai và tổ chức thực hiện chuẩn mực đạo đức cách mạng của cán bộ, đảng viên."
+      ],
+      [
+        "b",
+        "Cơ quan chính trị, cán bộ chính trị, nắm vững tình hình tư tưởng, kỷ luật của cán bộ, đảng viên, tăng cường tham mưu lãnh đạo, chỉ đạo, hướng dẫn triển khai thực hiện quy định đạo đức cách mạng."
+      ],
+      [
+        "c",
+        "Phát huy sức mạnh tổng hợp của các tổ chức, lực lượng trong cơ quan, đơn vị vào thực hiện chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong quân đội hiện nay."
+      ],
+      [
+        "d",
+        "Phát huy hiệu quả hoạt động của Hội đồng quân nhân và các tổ chức quần chúng trong cơ quan, đơn vị tích cực tham gia góp ý phê bình cấp ủy, tổ chức đảng, cán bộ, đảng viên."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "1",
+    "question": "Một trong những đặc điểm các dân tộc Việt Nam ?",
+    "options": [
+      [
+        "a",
+        "Đồng bào các dân tộc luôn đoàn kết, nỗ lực phấn đấu xây dựng một nước Việt Nam độc lập, thống nhất, dân giàu, nước mạnh, xã hội dân chủ, công bằng, văn minh."
+      ],
+      [
+        "b",
+        "Đồng bào các dân tộc Việt Nam không có lãnh thổ riêng của tộc người rõ rệt mà được phân bố ở hầu hết các tỉnh, thành phố trong phạm vi cả nước."
+      ],
+      [
+        "c",
+        "Điều kiện sinh hoạt của đồng bào các DTTS còn nhiều khó khăn và có sự chênh lệch về mức sống giữa các dân tộc."
+      ],
+      [
+        "d",
+        "Quá trình hình thành và phát triển các dân tộc gắn liền với lịch sử dựng nước và giữ nước."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "2",
+    "question": "Một trong những đặc điểm các dân tộc Việt Nam ?",
+    "options": [
+      [
+        "a",
+        "Đồng bào các dân tộc luôn đoàn kết, nỗ lực phấn đấu xây dựng một nước Việt Nam độc lập, thống nhất, dân giàu, nước mạnh, xã hội dân chủ, công bằng, văn minh."
+      ],
+      [
+        "b",
+        "Điều kiện sinh hoạt của đồng bào các DTTS còn nhiều khó khăn và có sự chênh lệch về mức sống giữa các dân tộc."
+      ],
+      [
+        "c",
+        "Bản chất của đồng bào các DTTS là thật thà, chất phác, trọng tình nghĩa, có ý thức tộc người, đặc biệt là ý thức dòng họ rất sâu sắc, làm đậm thêm ý thức về quốc gia - dân tộc."
+      ],
+      [
+        "d",
+        "Quá trình hình thành và phát triển các dân tộc gắn liền với lịch sử dựng nước và giữ nước."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "3",
+    "question": "Một trong những đặc điểm các dân tộc Việt Nam ?",
+    "options": [
+      [
+        "a",
+        "Đồng bào các dân tộc luôn đoàn kết, nỗ lực phấn đấu xây dựng một nước Việt Nam độc lập, thống nhất, dân giàu, nước mạnh, xã hội dân chủ, công bằng, văn minh."
+      ],
+      [
+        "b",
+        "Điều kiện sinh hoạt của đồng bào các DTTS còn nhiều khó khăn và có sự chênh lệch về mức sống giữa các dân tộc."
+      ],
+      [
+        "c",
+        "Quá trình hình thành và phát triển các dân tộc gắn liền với lịch sử dựng nước và giữ nước."
+      ],
+      [
+        "d",
+        "Mỗi DTTS đều có những nét văn hoá đặc trưng riêng, góp phần tạo nên nền văn hoá Việt Nam phong phú, đa dạng, thống nhất, đậm đà bản sắc dân tộc."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "4",
+    "question": "Một trong những đặc điểm các dân tộc Việt Nam ?",
+    "options": [
+      [
+        "a",
+        "Đồng bào các dân tộc luôn đoàn kết, nỗ lực phấn đấu xây dựng một nước Việt Nam độc lập, thống nhất, dân giàu, nước mạnh, xã hội dân chủ, công bằng, văn minh."
+      ],
+      [
+        "b",
+        "Tình trạng phân hóa giàu nghèo, phân tầng xã hội trong đồng bào các dân tộc ngày càng lớn."
+      ],
+      [
+        "c",
+        "Điều kiện sinh hoạt của đồng bào các DTTS còn nhiều khó khăn và có sự chênh lệch về mức sống giữa các dân tộc."
+      ],
+      [
+        "d",
+        "Quá trình hình thành và phát triển các dân tộc gắn liền với lịch sử dựng nước và giữ nước."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "5",
+    "question": "Một trong những quan điểm, chính sách của Đảng, Nhà nước Việt Nam về dân tộc ?",
+    "options": [
+      [
+        "a",
+        "Vấn đề dân tộc và đoàn kết dân tộc là vấn đề chiến lược cơ bản, lâu dài, đồng thời cũng là vấn đề cấp bách hiện nay của cách mạng Việt Nam."
+      ],
+      [
+        "b",
+        "Vấn đề dân tộc là nhiệm vụ có tính chiến lược nhằm phát huy sức mạnh tổng hợp khối đại đoàn kết toàn dân tộc."
+      ],
+      [
+        "c",
+        "Chú trọng tính đặc thù của từng vùng đồng bào DTTS trong hoạch định và thực hiện các chính sách về dân tộc."
+      ],
+      [
+        "d",
+        "Tổ chức thực hiện các chính sách về dân tộc, tạo điều kiện cho đồng bào các dân tộc được tiếp cận bình đẳng nguồn lực, cơ hội phát triển và hưởng thụ công bằng các dịch vụ xã hội cơ bản."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "1",
+    "question": "Theo Điều 12, Thông tư số 122/2024/TT-BQP, ngày 31/12/2024 của Bộ Quốc phòng Quy định về thực hiện dân chủ ở cơ sở trong QĐND Việt Nam, trường hợp cơ quan, đơn vị đã có trang thông tin điện tử nội bộ hoặc hệ thống thông tin điện tử nội bộ, việc đăng tải các thông tin được quy định như thế nào ?",
+    "options": [
+      [
+        "a",
+        "Ít nhất là 15 ngày liên tục kể từ ngày bắt đầu đăng tin, trừ trường hợp pháp luật có quy định khác."
+      ],
+      [
+        "b",
+        "Ít nhất là 20 ngày liên tục kể từ ngày bắt đầu đăng tin, trừ trường hợp pháp luật có quy định khác."
+      ],
+      [
+        "c",
+        "Ít nhất là 10 ngày liên tục kể từ ngày bắt đầu đăng tin, trừ trường hợp pháp luật có quy định khác."
+      ],
+      [
+        "d",
+        "Cho đến khi thông tin hết hiệu lực."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "2",
+    "question": "Theo Điều 12, Thông tư số 122/2024/TT-BQP, ngày 31/12/2024 của Bộ Quốc phòng Quy định về thực hiện dân chủ ở cơ sở trong QĐND Việt Nam, trường hợp cơ quan, đơn vị chưa có trang thông tin điện tử nội bộ hoặc hệ thống thông tin điện tử nội bộ, việc niêm yết các thông tin được quy định như thế nào ?",
+    "options": [
+      [
+        "a",
+        "Ít nhất là 15 ngày liên tục tính từ ngày niêm yết, trừ trường hợp đã thông báo bằng văn bản đến toàn thể quân nhân, công nhân, viên chức quốc phòng, người lao động thuộc quyền."
+      ],
+      [
+        "a",
+        "Ít nhất là 15 ngày liên tục tính từ ngày niêm yết."
+      ],
+      [
+        "c",
+        "Ít nhất là 20 ngày liên tục tính từ ngày niêm yết."
+      ],
+      [
+        "d",
+        "Ít nhất là 20 ngày liên tục tính từ ngày niêm yết, trừ trường hợp đã thông báo bằng văn bản đến toàn thể quân nhân, công nhân, viên chức quốc phòng, người lao động thuộc quyền."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "3",
+    "question": "Theo Điều 15, Thông tư số 122/2024/TT-BQP, ngày 31/12/2024 của Bộ Quốc phòng Quy định về thực hiện dân chủ ở cơ sở trong QĐND Việt Nam, Hội nghị tập thể quân nhân được tổ chức hợp lệ khi nào ?",
+    "options": [
+      [
+        "a",
+        "Có ít nhất một phần hai tổng số quân nhân, công nhân, viên chức quốc phòng, người lao động hoặc ít nhất hai phần ba tổng số đại biểu được triệu tập có mặt."
+      ],
+      [
+        "b",
+        "Có ít nhất hai phần ba tổng số quân nhân, công nhân, viên chức quốc phòng, người lao động hoặc ít nhất hai phần ba tổng số đại biểu được triệu tập có mặt."
+      ],
+      [
+        "c",
+        "Có 100% quân nhân, công nhân, viên chức quốc phòng, người lao động hoặc ít nhất hai phần ba tổng số đại biểu được triệu tập có mặt."
+      ],
+      [
+        "d",
+        "Có ít nhất một phần hai tổng số quân nhân, công nhân, viên chức quốc phòng, người lao động hoặc 100% đại biểu được triệu tập có mặt."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "4",
+    "question": "Theo Điều 15, Thông tư số 122/2024/TT-BQP, ngày 31/12/2024 của Bộ Quốc phòng Quy định về thực hiện dân chủ ở cơ sở trong QĐND Việt Nam, Quyết định của hội nghị được thông qua khi nào ?",
+    "options": [
+      [
+        "a",
+        "Có trên 75% tổng số thành viên dự hội nghị tán thành và nội dung không trái với quy định của pháp luật, Bộ Quốc phòng và cơ quan, đơn vị."
+      ],
+      [
+        "b",
+        "Có trên 75% tổng số thành viên dự hội nghị tán thành."
+      ],
+      [
+        "c",
+        "Có trên 50% tổng số thành viên dự hội nghị tán thành và nội dung không trái với quy định của pháp luật, Bộ Quốc phòng và cơ quan, đơn vị."
+      ],
+      [
+        "d",
+        "Có trên 50% tổng số thành viên dự hội nghị tán thành."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "5",
+    "question": "Theo Điều 24, Thông tư số 122/2024/TT-BQP, ngày 31/12/2024 của Bộ Quốc phòng Quy định về thực hiện dân chủ ở cơ sở trong QĐND Việt Nam, thời gian cấp cơ sở tổ chức sinh hoạt đối thoại dân chủ được quy định như thế nào ?",
+    "options": [
+      [
+        "a",
+        "Mỗi tháng 1 lần."
+      ],
+      [
+        "b",
+        "Tuỳ theo tình hình đơn vị."
+      ],
+      [
+        "c",
+        "Do người chỉ huy quy định."
+      ],
+      [
+        "d",
+        "Mỗi quý 1 lần."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "1",
+    "question": "Cấu trúc của đạo đức bao gồm:",
+    "options": [
+      [
+        "a",
+        "Ý thức đạo đức, hành vi đạo đức và quan hệ đạo đức."
+      ],
+      [
+        "b",
+        "Ý thức đạo đức và hành vi đạo đức."
+      ],
+      [
+        "c",
+        "Khái niệm đạo đức, ý thức đạo đức và hành vi đạo đức."
+      ],
+      [
+        "a",
+        "Nhận thức đạo đức, hành vi đạo đức và quan hệ đạo đức."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "2",
+    "question": "Đặc điểm của đạo đức bao gồm:",
+    "options": [
+      [
+        "a",
+        "Tính chuẩn mực, tính tự nguyện và tính thống nhất."
+      ],
+      [
+        "a",
+        "Tính chuẩn mực, tính tự nguyện và tính bền vững."
+      ],
+      [
+        "c",
+        "Tính chuẩn mực, tính tự nguyện và tính phổ quát."
+      ],
+      [
+        "a",
+        "Tính chuẩn mực, tính tự nguyện và tính nhân văn."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "3",
+    "question": "Vai trò của đạo đức bao là:",
+    "options": [
+      [
+        "a",
+        "Hướng dẫn hành vi, đánh giá hành vi và bồi đắp đạo đức."
+      ],
+      [
+        "b",
+        "Hướng dẫn hành vi, đánh giá hành vi và xây dựng lòng tin."
+      ],
+      [
+        "c",
+        "Hướng dẫn hành vi, đánh giá hành vi và bồi đắp lý tưởng."
+      ],
+      [
+        "d",
+        "Hướng dẫn hành vi, đánh giá hành vi và kết luận hành vi."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "4",
+    "question": "Theo quan điểm của Hồ Chí Minh về đạo đức cách mạng, những biểu hiện cụ thể về chuẩn mực đạo đức cách mạng của cán bộ, đảng viên là gì ?",
+    "options": [
+      [
+        "a",
+        "Tận trung với Đảng, tận hiếu với dân."
+      ],
+      [
+        "b",
+        "Yêu thương con người."
+      ],
+      [
+        "c",
+        "Cần, kiệm, liêm, chính, chí công vô tư."
+      ],
+      [
+        "d",
+        "Tinh thần quốc tế trong sáng, hội nhập quốc tế."
+      ]
+    ],
+    "answer_letter": null
+  },
+  {
+    "number": "5",
+    "question": "Nghị quyết số 847-NQ/QUTW ngày 28/12/2021 của Quân ủy Trung ương là về vấn đề gì ?",
+    "options": [
+      [
+        "a",
+        "Về phát huy phẩm chất “Bộ đội Cụ Hồ”, kiên quyết chống chủ nghĩa cá nhân trong tình hình mới."
+      ],
+      [
+        "b",
+        "Tiếp tục giữ vững phẩm chất cao đẹp, danh hiệu cao quý \"Bộ đội Cụ Hồ\", kiên quyết đấu tranh ngăn chặn, đẩy lùi những biểu hiện chủ nghĩa cá nhân."
+      ],
+      [
+        "c",
+        "Xây dựng đội ngũ cán bộ các cấp mẫu mực, trách nhiệm, làm việc hiệu quả."
+      ],
+      [
+        "d",
+        "Tập trung xây dựng đội ngũ cán bộ các cấp, nhất là cán bộ cấp chiến lược đủ phẩm chất, năng lực và uy tín, ngang tầm nhiệm vụ"
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "6",
+    "question": "Một trong những giải pháp nâng cao trách nhiệm trong công tác của cán bộ chủ trì và đội ngũ cán bộ các cấp theo tư tưởng Hồ Chí Minh ở các cơ quan, đơn vị Bộ Tham mưu trong thời gian tới là ?",
+    "options": [
+      [
+        "a",
+        "Quan tâm, chăm lo xây dựng đội ngũ cán bộ vững mạnh, hoàn thành tốt chức trách, nhiệm vụ, góp phần thực hiện thắng lợi nhiệm vụ chính trị trung tâm của đơn vị."
+      ],
+      [
+        "b",
+        "Nâng cao vai trò của cấp ủy, chỉ huy đơn vị trong công tác giáo dục, rèn luyện đạo đức và xác định trách nhiệm của đội ngũ cán bộ trong thực hiện nhiệm vụ theo tư tưởng Hồ Chí Minh."
+      ],
+      [
+        "c",
+        "Thường xuyên kiểm tra, đôn đốc, chấn chỉnh nhắc nhỡ cán bộ kịp thời, đúng lúc, đúng việc, không dồn khuyết điểm, không thiên vị cá nhân."
+      ],
+      [
+        "d",
+        "Quán triệt sâu sắc tư tưởng Hồ Chí Minh trong công tác quản lý, giáo dục, rèn luyện và sử dụng cán bộ."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "7",
+    "question": "Một trong những giải pháp nâng cao trách nhiệm trong công tác của cán bộ chủ trì và đội ngũ cán bộ các cấp theo tư tưởng Hồ Chí Minh ở các cơ quan, đơn vị Bộ Tham mưu trong thời gian tới là ?",
+    "options": [
+      [
+        "a",
+        "Đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh xây dựng đạo đức, nâng cao trách nhiệm vụ trong công tác cho đội ngũ cán bộ các cấp."
+      ],
+      [
+        "b",
+        "Luôn thực hành đạo đức, lối sống và chuẩn mực cả về ý thức, hành vi và quan hệ đạo đức, đảm bảo giữ vững được cốt cách của một cán bộ luôn gương mẫu."
+      ],
+      [
+        "c",
+        "Tuân thủ nghiêm ngặt nguyên tắc tập trung dân chủ, tập thể lãnh đạo, cá nhân phụ trách, biết lắng nghe ý kiến của mọi người, đưa ra quyết định phù hợp với nguyện vọng và nhiệm vụ của cơ quan, đơn vị."
+      ],
+      [
+        "d",
+        "Thường xuyên rèn luyện tác phong, cách ứng xử phải khiêm tốn, nhã nhặn, lịch thiệp, luôn hòa nhã với tập thể, không tự cao, tự đại, dựa vào chức quyền, cương vị."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "8",
+    "question": "Một trong những giải pháp nâng cao trách nhiệm trong công tác của cán bộ chủ trì và đội ngũ cán bộ các cấp theo tư tưởng Hồ Chí Minh ở các cơ quan, đơn vị Bộ Tham mưu trong thời gian tới là ?",
+    "options": [
+      [
+        "a",
+        "Trang bị kiến thức toàn diện và nâng cao giác ngộ lý luận Chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh và quan điểm, đường lối, chủ trương của Đảng, chính sách pháp luật của Nhà nước cho đội ngũ cán bộ các cấp"
+      ],
+      [
+        "b",
+        "Làm tốt công tác tuyên truyền để mọi người nhận thức đầy đủ ý nghĩa, tầm quan trọng về mục tiêu lý tưởng của Đảng, nhiệm vụ của Quân đội, đơn vị."
+      ],
+      [
+        "c",
+        "Thường xuyên bồi dưỡng nâng cao trình độ lý luận, nhận thức cho cán bộ các cấp chống suy thoái tư tưởng chính trị, đạo đức, lối sống, nhất là các biểu hiện \"tự diễn biến\", \"tự chuyển hóa\" trong nội bộ"
+      ],
+      [
+        "d",
+        "Giáo dục cho cán bộ nhận thức đúng đắn và có niềm tin tuyệt đối vào sự lãnh đạo của Đảng và sự nghiệp đổi mới đất nước ta hiện nay."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "9",
+    "question": "Một trong những giải pháp nâng cao trách nhiệm trong công tác của cán bộ chủ trì và đội ngũ cán bộ các cấp theo tư tưởng Hồ Chí Minh ở các cơ quan, đơn vị Bộ Tham mưu trong thời gian tới là ?",
+    "options": [
+      [
+        "a",
+        "Phát tinh thần tự học tập, tu dưỡng, rèn luyện phẩm chất đạo đức  của cán bộ có chí tiến thủ, khiêm tốn, nâng cao trách nhiệm hoàn thành tốt nhiệm vụ được giao."
+      ],
+      [
+        "b",
+        "Xây dựng cho đội ngũ cán bộ các cấp có lập trường tư tưởng, chính trị vững vàng, yên tâm công tác, tin tưởng tuyệt đối vào sự lãnh đạo của Đảng, sự thắng lợi của công cuộc đổi mới đất nước, kỷ nguyên vươn mình của dân tộc."
+      ],
+      [
+        "c",
+        "Luôn phát huy và giữ vững truyền thống, đạo đức cách mạng, phẩm chất \"Bộ đội Cụ Hồ\"; có lối sống trong sạch, giản dị, lành mạnh; có ý thức tổ chức, kỷ luật, tác phong dân chủ."
+      ],
+      [
+        "d",
+        "Nhận thức đầy đủ và sâu sắc về ý nghĩa, mục đích việc thực hiện chức trách, nhiệm vụ được phân công; hiểu rõ vai trò, trách nhiệm, quyền hạn của bản thân và các mối quan hệ công tác."
+      ]
+    ],
+    "answer_letter": "a"
+  },
+  {
+    "number": "10",
+    "question": "Một trong những giải pháp nâng cao trách nhiệm trong công tác của cán bộ chủ trì và đội ngũ cán bộ các cấp theo tư tưởng Hồ Chí Minh ở các cơ quan, đơn vị Bộ Tham mưu trong thời gian tới là ?",
+    "options": [
+      [
+        "a",
+        "Nhận xét, đánh giá đúng về cán bộ, để cán bộ có niềm tin và hướng phấn đấu, dám nghĩ, dám làm và dám chịu trách nhiệm trước công việc, có khát vọng vươn lên."
+      ],
+      [
+        "b",
+        "Khen thưởng cán bộ phải bảm đảm đúng người, đúng việc, dân chủ, khách quan, công khai, công bằng, không áp đặt ý kiến chủ quan."
+      ],
+      [
+        "c",
+        "Thường xuyên kiểm tra, giám sát việc \"tự soi, tự sửa\", tự học, tự rèn của cán bộ để có biện pháp chấn chỉnh kịp thời, giúp cho cán bộ luôn có ý thức tu dưỡng, rèn luyện."
+      ],
+      [
+        "d",
+        "Đổi mới phương pháp nhận xét, đánh giá, khen thưởng và tăng cường công tác kiểm tra, giám sát việc \"tự soi, tự sửa\", tự học, tự rèn đối với cán bộ."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "1",
+    "question": "Theo Chủ tịch Hồ Chí Minh, lý do quan trọng nhất phải “biết sử ta” là gì?",
+    "options": [
+      [
+        "a",
+        "Để so sánh với lịch sử các nước khác."
+      ],
+      [
+        "b",
+        "Để lưu giữ những di sản vật chất quý báu."
+      ],
+      [
+        "c",
+        "Vì lịch sử, truyền thống chính là sức mạnh tiềm ẩn, là “hồn thiêng sông núi”."
+      ],
+      [
+        "d",
+        "Vì lịch sử giúp nâng cao trình độ học vấn."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "2",
+    "question": "Khái niệm truyền thống theo Từ điển Tiếng Việt nhấn mạnh yếu tố nào?",
+    "options": [
+      [
+        "a",
+        "Niềm tin và hành động có giá trị."
+      ],
+      [
+        "b",
+        "Đức tính, tập quán, tư tưởng, lối sống được truyền từ thế hệ này sang thế hệ khác."
+      ],
+      [
+        "c",
+        "Những sự kiện lịch sử đã diễn ra trong quá khứ."
+      ],
+      [
+        "d",
+        "Các giá trị vật chất được lưu giữ."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "3",
+    "question": "Điểm khác biệt cơ bản giữa “lịch sử” và “truyền thống” là gì?",
+    "options": [
+      [
+        "b",
+        "Truyền thống chỉ là những yếu tố được lưu truyền, chi phối hành vi, chứ không phải tất cả sự kiện lịch sử."
+      ],
+      [
+        "c",
+        "Lịch sử thay đổi, còn truyền thống thì bất biến."
+      ],
+      [
+        "d",
+        "Truyền thống thiên về vật chất, lịch sử thiên về tinh thần"
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "4",
+    "question": "Giáo dục truyền thống trong quân đội được hiểu là gì?",
+    "options": [
+      [
+        "a",
+        "Hoạt động của các tổ chức quần chúng nhằm bồi dưỡng văn hóa đọc."
+      ],
+      [
+        "b",
+        "Quá trình tác động có mục đích, hệ thống, liên tục nhằm trang bị giá trị lịch sử - truyền thống, hình thành niềm tin, lý tưởng cách mạng."
+      ],
+      [
+        "c",
+        "Quá trình tự học tập, tự nghiên cứu của cán bộ, chiến sĩ."
+      ],
+      [
+        "d",
+        "Việc tổ chức tham quan bảo tàng, di tích lịch sử."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "5",
+    "question": "Nội dung trọng tâm của giáo dục truyền thống lịch sử trong quân đội là gì?",
+    "options": [
+      [
+        "a",
+        "Tuyên truyền về các phong tục địa phương."
+      ],
+      [
+        "b",
+        "Tập trung vào chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh, đường lối của Đảng và lịch sử đấu tranh dựng nước, giữ nước."
+      ],
+      [
+        "c",
+        "Nâng cao kỹ năng quân sự hiện đại."
+      ],
+      [
+        "d",
+        "Tổ chức hội diễn văn nghệ quần chúng."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "1",
+    "question": "Theo Tư tưởng Hồ Chí Minh mục đích của tự phê bình và phê bình là gì?",
+    "options": [
+      [
+        "a",
+        "Mục đích của tự phê bình và phê bình là giúp con người và tổ chức vươn tới sự hoàn thiện, hoàn mỹ chứ không phải để nói xấu nhau."
+      ],
+      [
+        "b",
+        "Mục đích của tự phê bình và phê bình là xây dựng, là giúp con người và tổ chức vươn tới sự hoàn thiện, hoàn mỹ chứ không phải để nói xấu nhau."
+      ],
+      [
+        "c",
+        "Mục đích của tự phê bình và phê bình là chỉ ra khuyết điểm của mình và chỉ trích khuyết điểm của người khác."
+      ],
+      [
+        "d",
+        "Mục đích của tự phê bình và phê bình là hạ thấp bản thân mình và trùi dập người khác."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "2",
+    "question": "Một trong những phương pháp tự phê bình và phê bình thể hiện không chỉ đúng mà còn khéo theo Tư tưởng Hồ Chí Minh",
+    "options": [
+      [
+        "a",
+        "Tự phê bình mình trước rồi mới phê bình người khác."
+      ],
+      [
+        "b",
+        "Gặp gỡ riêng để phê bình."
+      ],
+      [
+        "c",
+        "Phê bình việc, chứ không phê bình người."
+      ],
+      [
+        "d",
+        "Tổ chức hội nghị toàn thể cơ quan, đơn vị để phê bình."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "3",
+    "question": "Một trong những yêu cầu đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về thực hành dân chủ và kỷ luật trong Quân đội nhân dân Việt Nam hiện nay?",
+    "options": [
+      [
+        "a",
+        "Tăng cường nghiên cứu, học tập, quán triệt sâu sắc, nắm vững quan điểm của Đảng, tư tưởng Hồ Chí Minh về tự phê bình và phê bình."
+      ],
+      [
+        "b",
+        "Thường xuyên đổi mới nội dung, hình thức, phương pháp tự phê bình và phê bình trong Quân đội nhân dân Việt Nam hiện nay."
+      ],
+      [
+        "c",
+        "Tiến hành thường xuyên, liên tục, thiết thực, hiệu quả việc đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về tự phê bình và phê bình trong Quân đội nhân dân Việt Nam hiện nay."
+      ],
+      [
+        "d",
+        "Cả 3 đáp án đều đúng ."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "4",
+    "question": "Một trong những yêu cầu đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về thực hành dân chủ và kỷ luật trong Quân đội nhân dân Việt Nam hiện nay?",
+    "options": [
+      [
+        "a",
+        "Lấy “xây” là chính trong đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về tự phê bình và phê bình trong Quân đội nhân dân Việt Nam hiện nay."
+      ],
+      [
+        "b",
+        "Lấy “chống” là chủ yếu trong đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về tự phê bình và phê bình trong Quân đội nhân dân Việt Nam hiện nay."
+      ],
+      [
+        "c",
+        "Kết hợp chặt chẽ giữa “xây” và “chống”, lấy “xây” là chính trong đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về tự phê bình và phê bình trong Quân đội nhân dân Việt Nam hiện nay."
+      ],
+      [
+        "d",
+        "Kết hợp chặt chẽ giữa “xây” và “chống”, lấy “xây” là chính, lấy “chống” làm mục tiêu."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "5",
+    "question": "Giải pháp đẩy mạnh học tập và làm theo tư tưởng Hồ Chí Minh về tự phê bình và phê bình trong Quân đội nhân dân Việt Nam hiện nay?",
+    "options": [
+      [
+        "a",
+        "Tăng cường sự lãnh đạo, chỉ đạo của cấp ủy, tổ chức đảng, chính ủy, chính trị viên, người chỉ huy và cơ quan chính trị các cấp."
+      ],
+      [
+        "b",
+        "Thường xuyên tuyên truyền, giáo dục nâng cao nhận thức, trách nhiệm cho cán bộ, chiến sĩ."
+      ],
+      [
+        "c",
+        "Phát huy vai trò trách nhiệm của các tổ chức, các lực lượng."
+      ],
+      [
+        "d",
+        "Cả 3 đáp án đều đúng."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "1",
+    "question": "Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII nói về vấn đề gì ?",
+    "options": [
+      [
+        "a",
+        "Tiêu chuẩn kết nạp Đảng."
+      ],
+      [
+        "b",
+        "Thời gian kết nạp Đảng"
+      ],
+      [
+        "c",
+        "Quy định độ tuổi kết nạp Đảng."
+      ],
+      [
+        "d",
+        "Thi hành Điều lệ Đảng."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "2",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Đối với hồ sơ đảng viên, điều gì không được phép thực hiện ?",
+    "options": [
+      [
+        "a",
+        "Sao chép để lưu trữ."
+      ],
+      [
+        "b",
+        "Bổ sung thông tin khi có thay đổi."
+      ],
+      [
+        "c",
+        "Tẩy xóa, tự ý sửa chữa."
+      ],
+      [
+        "d",
+        "Tham khảo, khi cần thiết."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "3",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Đảng viên sử dụng thẻ đảng viên để làm gì trong sinh hoạt đảng và đại hội Đảng các cấp?",
+    "options": [
+      [
+        "a",
+        "Để xác định danh tính."
+      ],
+      [
+        "b",
+        "Để biểu quyết (trừ các trường hợp biểu quyết bằng phiếu kín)."
+      ],
+      [
+        "c",
+        "Để đăng ký tham gia các khóa học chính trị."
+      ],
+      [
+        "d",
+        "Tất cả a, b,c đều đúng."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "4",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Đối với đảng viên ra nước ngoài công tác, lao động, học tập từ 12 tháng trở lên, cấp ủy nào có trách nhiệm hướng dẫn bổ sung lý lịch khi đảng viên về nước?",
+    "options": [
+      [
+        "a",
+        "Cấp ủy nơi đảng viên đến công tác, học tập ở nước ngoài."
+      ],
+      [
+        "b",
+        "Ban Tổ chức Trung ương."
+      ],
+      [
+        "c",
+        "Cấp ủy quản lý hồ sơ đảng viên."
+      ],
+      [
+        "d",
+        "Đảng ủy Bộ ngoại giao."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "5",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Đối với đảng viên bỏ sinh hoạt đảng thì bị xử lý như thế nào?",
+    "options": [
+      [
+        "a",
+        "Được xét nối lại sinh hoạt đảng sau khi kiểm điểm."
+      ],
+      [
+        "b",
+        "Không nối lại sinh hoạt đảng và thông báo xóa tên trong danh sách đảng viên."
+      ],
+      [
+        "c",
+        "Được chuyển sinh hoạt đảng sang chi bộ khác."
+      ],
+      [
+        "d",
+        "Xóa tên đảng viên."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "6",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Thẻ đảng viên được phát cho đối tượng nào?",
+    "options": [
+      [
+        "a",
+        "Đảng viên dự bị."
+      ],
+      [
+        "b",
+        "Cảm tình đảng."
+      ],
+      [
+        "c",
+        "Đảng viên chính thức."
+      ],
+      [
+        "d",
+        "Người hoạt động cách mạng lâu năm."
+      ]
+    ],
+    "answer_letter": "c"
+  },
+  {
+    "number": "7",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Hồ sơ đảng viên được coi là tài liệu nào của Đảng?",
+    "options": [
+      [
+        "a",
+        "Tài liệu tuyệt mật."
+      ],
+      [
+        "b",
+        "Tài liệu nội bộ."
+      ],
+      [
+        "c",
+        "Tài liệu lưu trữ."
+      ],
+      [
+        "d",
+        "Tài liệu mật."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "8",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Nếu cấp ủy cơ sở không có điều kiện quản lý và bảo quản hồ sơ đảng viên, ai, cơ quan nào sẽ đảm nhiệm việc này?",
+    "options": [
+      [
+        "a",
+        "Ban Tổ chức cùng cấp."
+      ],
+      [
+        "b",
+        "Chính quyền địa phương."
+      ],
+      [
+        "c",
+        "Đảng viên tự bảo quản hồ sơ của mình."
+      ],
+      [
+        "d",
+        "Cấp ủy cấp trên trực tiếp."
+      ]
+    ],
+    "answer_letter": "d"
+  },
+  {
+    "number": "9",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Cấp ủy nào quản lý phiếu đảng viên và danh sách đảng viên của đảng bộ, chi bộ cơ sở trực thuộc?",
+    "options": [
+      [
+        "a",
+        "Chi bộ cơ sở."
+      ],
+      [
+        "b",
+        "Cấp ủy cấp trên trực tiếp của tổ chức cơ sở đảng."
+      ],
+      [
+        "c",
+        "Ban Tổ chức cấp ủy cấp trên."
+      ],
+      [
+        "d",
+        "Đảng ủy cơ sở."
+      ]
+    ],
+    "answer_letter": "b"
+  },
+  {
+    "number": "10",
+    "question": "Theo Quy định số 294-QĐ/TW ngày 26/5/2025 của Ban Chấp hành Trung ương khóa XIII: Hằng năm, các cấp ủy có trách nhiệm gì đối với việc bổ sung lý lịch đảng viên và quản lý hồ sơ đảng viên?",
+    "options": [
+      [
+        "a",
+        "Thu thập hồ sơ đảng viên mới."
+      ],
+      [
+        "b",
+        "Chỉ đạo hướng dẫn đảng viên tự bổ sung lý lịch."
+      ],
+      [
+        "c",
+        "Thông kế số lượng đảng viên."
+      ],
+      [
+        "d",
+        "Chỉ đạo, kiểm tra việc bổ sung lý lịch đảng viên và quản lý hồ sơ đảng viên."
+      ]
+    ],
+    "answer_letter": "d"
+  }
+];
+</script>
+<script>
+    // JavaScript for search functionality and autocompletion
+    // 'questions' constant is loaded from questions.js
+
+    /**
+     * Search through the questions array and return matching entries.
+     * Matching is case-insensitive and checks both question text and option text.
+     * @param {string} query 
+     * @returns {Array}
+     */
+    function searchQuestions(query) {
+      const results = [];
+      const lower = query.toLowerCase();
+      if (!lower) return results;
+      for (const q of questions) {
+        if (q.question && q.question.toLowerCase().includes(lower)) {
+          results.push(q);
+        } else if (Array.isArray(q.options)) {
+          // search within options
+          let matched = false;
+          for (const option of q.options) {
+            if (option[1].toLowerCase().includes(lower)) {
+              matched = true;
+              break;
+            }
+          }
+          if (matched) results.push(q);
+        }
+      }
+      return results;
+    }
+
+    /**
+     * Display result entries inside the results container
+     * @param {Array} results
+     */
+    function showResults(results) {
+      const container = document.getElementById('results');
+      container.innerHTML = '';
+      if (!results.length) {
+        const empty = document.createElement('div');
+        empty.textContent = 'Không tìm thấy câu hỏi phù hợp.';
+        container.appendChild(empty);
+        return;
+      }
+      results.forEach(q => {
+        const block = document.createElement('div');
+        block.className = 'question-block';
+        const title = document.createElement('h3');
+        title.textContent = q.question;
+        block.appendChild(title);
+        const list = document.createElement('ul');
+        if (Array.isArray(q.options)) {
+          q.options.forEach(opt => {
+            const li = document.createElement('li');
+            const letter = opt[0];
+            const text = opt[1];
+            if (letter === q.answer_letter) {
+              li.innerHTML = '<span class="correct">' + letter + ') ' + text + '</span>';
+            } else {
+              li.textContent = letter + ') ' + text;
+            }
+            list.appendChild(li);
+          });
+        }
+        block.appendChild(list);
+        container.appendChild(block);
+      });
+    }
+
+    /**
+     * Update autocomplete suggestion based on current input value
+     * Suggests the first question that starts with the query.
+     */
+    function updateSuggestion() {
+      const input = document.getElementById('searchInput');
+      const suggestionDiv = document.getElementById('suggestion');
+      const value = input.value.trim();
+      if (!value) {
+        suggestionDiv.textContent = '';
+        return;
+      }
+      let suggestion = '';
+      const lower = value.toLowerCase();
+      for (const q of questions) {
+        if (q.question && q.question.toLowerCase().startsWith(lower)) {
+          suggestion = q.question;
+          break;
+        }
+      }
+      // Show suggestion if it extends the current input
+      if (suggestion && suggestion.toLowerCase() !== lower) {
+        suggestionDiv.textContent = suggestion;
+      } else {
+        suggestionDiv.textContent = '';
+      }
+    }
+
+    // Event listeners
+    document.getElementById('searchButton').addEventListener('click', function() {
+      const query = document.getElementById('searchInput').value.trim();
+      const results = searchQuestions(query);
+      showResults(results);
+    });
+
+    document.getElementById('searchInput').addEventListener('input', function() {
+      updateSuggestion();
+    });
+    // Trigger search on Enter key
+    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById('searchButton').click();
+      }
+    });
+  </script>
+</body>
+</html>
