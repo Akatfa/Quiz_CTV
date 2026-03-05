@@ -1,0 +1,2474 @@
+[
+  {
+    "question": "Phương châm Đại hội Đảng bộ Quân đội lần thứ XII là gì?",
+    "options": {
+      "A": "Đoàn kết - Đổi mới - Phát triển - Bền vững",
+      "B": "Dân chủ - Kỷ cương - Trách nhiệm - Hiệu quả",
+      "C": "Đoàn kết - Dân chủ - Kỷ cương - Kiên định - Đột phá - Phát triển",
+      "D": "Kiên định - Đổi mới - Hội nhập - Phát triển"
+    },
+    "answer_key": "C",
+    "answer": "Đoàn kết - Dân chủ - Kỷ cương - Kiên định - Đột phá - Phát triển"
+  },
+  {
+    "question": "Cuộc Cách mạng công nghiệp lần thứ tư tác động mạnh nhất đến lĩnh vực nào của hoạt động quân sự?",
+    "options": {
+      "A": "Tổ chức biên chế",
+      "B": "Nghệ thuật quân sự và phương thức tác chiến",
+      "C": "Vũ khí trang bị",
+      "D": "Khoa học công nghệ quân sự"
+    },
+    "answer_key": "B",
+    "answer": "Nghệ thuật quân sự và phương thức tác chiến"
+  },
+  {
+    "question": "Quân đội giữ vai trò gì trong xây dựng nền quốc phòng toàn dân?",
+    "options": {
+      "A": "Vai trò đặc biệt quan trọng",
+      "B": "Vai trò nòng cốt",
+      "C": "Vai trò chủ chốt",
+      "D": "Vai trò trọng yếu"
+    },
+    "answer_key": "B",
+    "answer": "Vai trò nòng cốt"
+  },
+  {
+    "question": "Thế trận nào được nhấn mạnh trong xây dựng quốc phòng?",
+    "options": {
+      "A": "Thế trận phòng thủ",
+      "B": "Thế trận quốc phòng công nghệ cao",
+      "C": "Thế trận lòng dân",
+      "D": "Thế trận tác chiến"
+    },
+    "answer_key": "C",
+    "answer": "Thế trận lòng dân"
+  },
+  {
+    "question": "Lực lượng dân quân tự vệ được xây dựng theo phương châm nào?",
+    "options": {
+      "A": "Tinh, gọn, chuyên nghiệp",
+      "B": "Vững mạnh, rộng khắp",
+      "C": "Chuyên sâu, tinh nhuệ",
+      "D": "Tập trung, cơ động"
+    },
+    "answer_key": "B",
+    "answer": "Vững mạnh, rộng khắp"
+  },
+  {
+    "question": "Công tác giáo dục chính trị trong Quân đội nhằm mục tiêu gì?",
+    "options": {
+      "A": "Nâng cao trình độ văn hóa",
+      "B": "Giữ vững trận địa tư tưởng của Đảng",
+      "C": "Nâng cao trình độ nhận thức",
+      "D": "Nâng cao lý luận chính trị"
+    },
+    "answer_key": "B",
+    "answer": "Giữ vững trận địa tư tưởng của Đảng"
+  },
+  {
+    "question": "Nghị quyết Đại hội Đảng bộ Quân đội lần thứ XII xác định công tác huấn luyện được xác định theo hướng nào?",
+    "options": {
+      "A": "Giảm lý thuyết, tăng thực hành",
+      "B": "Sát thực tiễn, làm chủ vũ khí hiện đại",
+      "C": "Tăng cường độ huấn luyện",
+      "D": "Tập trung huấn luyện cơ bản"
+    },
+    "answer_key": "B",
+    "answer": "Sát thực tiễn, làm chủ vũ khí hiện đại"
+  },
+  {
+    "question": "Nghị quyết Đại hội Đảng bộ Quân đội lần thứ XII xác định công nghiệp quốc phòng được xây dựng theo hướng nào?",
+    "options": {
+      "A": "Tăng cường nhập khẩu vũ khí hiện đại",
+      "B": "Tự chủ, tự lực, tự cường, lưỡng dụng",
+      "C": "Làm chủ công nghệ lõi trong sản xuất vũ khí",
+      "D": "Đi trước, đón đầu công nghệ"
+    },
+    "answer_key": "B",
+    "answer": "Tự chủ, tự lực, tự cường, lưỡng dụng"
+  },
+  {
+    "question": "Trong nhiệm kỳ 2020-2025, lực lượng dân quân tự vệ đạt tỷ lệ bao nhiêu so với dân số?",
+    "options": {
+      "A": "1,0%.",
+      "B": "1,41%.",
+      "C": "1,8%.",
+      "D": "2,0%."
+    },
+    "answer_key": "B",
+    "answer": "1,41%."
+  },
+  {
+    "question": "Một trong những nhiệm vụ trọng tâm của nhiệm kỳ 2020-2025 là hoàn thành điều chỉnh tổ chức Quân đội theo hướng nào?",
+    "options": {
+      "A": "Tinh, gọn, mạnh.",
+      "B": "Hiện đại, tinh nhuệ.",
+      "C": "Quy mô lớn, đa dạng.",
+      "D": "Tập trung, thống nhất."
+    },
+    "answer_key": "A",
+    "answer": "Tinh, gọn, mạnh."
+  },
+  {
+    "question": "Trong 5 năm qua, số vụ việc vi phạm kỷ luật trong Quân đội đã giảm bao nhiêu phần trăm so với nhiệm kỳ trước?",
+    "options": {
+      "A": "Giảm 20%.",
+      "B": "Giảm 23,97%.",
+      "C": "Giảm 30,29%.",
+      "D": "Giảm 25,5%."
+    },
+    "answer_key": "B",
+    "answer": "Giảm 23,97%."
+  },
+  {
+    "question": "Trong nhiệm kỳ vừa qua, Quân đội đã tham gia bao nhiêu cuộc hội thao quân sự quốc tế và khu vực?",
+    "options": {
+      "A": "05 cuộc.",
+      "B": "08 cuộc.",
+      "C": "10 cuộc.",
+      "D": "12 cuộc."
+    },
+    "answer_key": "B",
+    "answer": "08 cuộc."
+  },
+  {
+    "question": "Nghị quyết Đại hội Đảng bộ Quân đội lần thứ XII đã rút ra bao nhiêu bài học kinh nghiệm từ nhiệm kỳ 2020-2025?",
+    "options": {
+      "A": "3 bài học.",
+      "B": "4 bài học.",
+      "C": "5 bài học.",
+      "D": "6 bài học."
+    },
+    "answer_key": "C",
+    "answer": "5 bài học."
+  },
+  {
+    "question": "Một trong những bài học kinh nghiệm được Nghị quyết Đại hội Đảng bộ Quân đội lần thứ XII nêu ra là:",
+    "options": {
+      "A": "Tập trung phát triển kinh tế quốc phòng.",
+      "B": "Giữ vững và tăng cường sự lãnh đạo tuyệt đối, trực tiếp về mọi mặt của Đảng.",
+      "C": "Ưu tiên hiện đại hóa vũ khí, trang bị.",
+      "D": "Mở rộng hợp tác quốc tế toàn diện."
+    },
+    "answer_key": "B",
+    "answer": "Giữ vững và tăng cường sự lãnh đạo tuyệt đối, trực tiếp về mọi mặt của Đảng."
+  },
+  {
+    "question": "Một trong những hạn chế, khuyết điểm được nêu ra trong Nghị quyết Đại hội Đảng bộ Quân đội lần thứ XII là:",
+    "options": {
+      "A": "Chất lượng huấn luyện có thời điểm chưa đạt yêu cầu.",
+      "B": "Công tác thanh tra, kiểm tra, giám sát có nội dung còn hạn chế, có vụ việc phát hiện chậm.",
+      "C": "Hợp tác quốc tế chưa thật sự sâu rộng.",
+      "D": "Công tác tuyển quân một số địa phương chưa đạt chỉ tiêu."
+    },
+    "answer_key": "B",
+    "answer": "Công tác thanh tra, kiểm tra, giám sát có nội dung còn hạn chế, có vụ việc phát hiện chậm."
+  },
+  {
+    "question": "Trong nhiệm kỳ 2020-2025, Quân đội đã vận động được bao nhiêu hộ gia đình không di cư tự do?",
+    "options": {
+      "A": "5.000 hộ.",
+      "B": "11.445 hộ.",
+      "C": "15.200 hộ.",
+      "D": "20.000 hộ."
+    },
+    "answer_key": "B",
+    "answer": "11.445 hộ."
+  },
+  {
+    "question": "Tỷ lệ sản phẩm vũ khí, trang bị kỹ thuật do công nghiệp quốc phòng trong nước sản xuất và trang bị cho Quân đội là bao nhiêu?",
+    "options": {
+      "A": "Trên 60%.",
+      "B": "Trên 70%.",
+      "C": "Trên 80%.",
+      "D": "Trên 90%."
+    },
+    "answer_key": "C",
+    "answer": "Trên 80%."
+  },
+  {
+    "question": "Nghị quyết Đại hội Đảng bộ Quân đội lần thứ XII xác định công tác gì được đặc biệt chú trọng và đạt nhiều kết quả tích cực trong xây dựng Đảng bộ?",
+    "options": {
+      "A": "Công tác tài chính.",
+      "B": "Công tác cán bộ.",
+      "C": "Công tác hậu cần.",
+      "D": "Công tác văn hóa."
+    },
+    "answer_key": "B",
+    "answer": "Công tác cán bộ."
+  },
+  {
+    "question": "Mục tiêu tổng quát của Đại hội XII đề ra là xây dựng Quân đội như thế nào?",
+    "options": {
+      "A": "Quân đội nhân dân, cách mạng, chính quy, tinh nhuệ, từng bước hiện đại.",
+      "B": "Quân đội cách mạng, chính quy, tinh nhuệ, hiện đại.",
+      "C": "Quân đội hùng mạnh, hiện đại hàng đầu khu vực.",
+      "D": "Quân đội chính quy, hiện đại, đa nhiệm vụ"
+    },
+    "answer_key": "B",
+    "answer": "Quân đội cách mạng, chính quy, tinh nhuệ, hiện đại."
+  },
+  {
+    "question": "Trong nhiệm kỳ vừa qua Quân đội đã tham gia thi đấu bao nhiêu giải thể thao trong nước và quốc tế, giành được bao nhiêu huy chương?",
+    "options": {
+      "A": "673 giải thể thao trong nước và quốc tế dành 9.394 huy chương",
+      "B": "675 giải thể thao trong nước và quốc tế dành 9.402 huy chương",
+      "C": "678 giải thể thao trong nước và quốc tế dành 9.396 huy chương",
+      "D": "682 giải thể thao trong nước và quốc tế dành 9.404 huy chương"
+    },
+    "answer_key": "A",
+    "answer": "673 giải thể thao trong nước và quốc tế dành 9.394 huy chương"
+  },
+  {
+    "question": "Nội dung cơ bản của công tác kỹ thuật trong tác chiến gồm bao nhiêu nội dung?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "answer_key": "A",
+    "answer": "4"
+  },
+  {
+    "question": "Quản lý nhân viên kỹ thuật gồm những nội dung nào?",
+    "options": {
+      "A": "Tình hình số lượng, chất lượng, cơ cấu đội ngũ, đào tạo, bồi dưỡng, sử dụng nhân viên kỹ thuật.",
+      "B": "Tình hình số lượng, chất lượng, bồi dưỡng, sử dụng nhân viên kỹ thuật.",
+      "C": "Tình hình số lượng, chất lượng, cơ cấu đội ngũ, bồi dưỡng, sử dụng nhân viên kỹ thuật.",
+      "D": "Tình hình số lượng, chất lượng, sử dụng nhân viên kỹ thuật."
+    },
+    "answer_key": "A",
+    "answer": "Tình hình số lượng, chất lượng, cơ cấu đội ngũ, đào tạo, bồi dưỡng, sử dụng nhân viên kỹ thuật."
+  },
+  {
+    "question": "Quản lý trang bị kỹ thuật gồm?",
+    "options": {
+      "A": "Quản lý số lượng, chất lượng, chủng loại và đồng bộ.",
+      "B": "Quản lý số lượng, chất lượng và đồng bộ.",
+      "C": "Quản lý số lượng, chất lượng, tình trạng kỹ thuật, chủng loại và đồng bộ.",
+      "D": "Quản lý số lượng, chất lượng, tình trạng kỹ thuật và đồng bộ."
+    },
+    "answer_key": "A",
+    "answer": "Quản lý số lượng, chất lượng, chủng loại và đồng bộ."
+  },
+  {
+    "question": "Quy định sắp xếp hòm đạn trong tủ súng?",
+    "options": {
+      "A": "Hòm đạn được sắp xếp (từ 1 đến 2 chồng) tại ngăn dưới tủ súng theo thứ tự từ trái qua phải, từ dưới lên trên: Đạn 12,7mm, đạn K53, đạn K56.",
+      "B": "Hòm đạn được sắp xếp (từ 1 đến 2 chồng) tại ngăn dưới tủ súng theo thứ tự từ trái qua phải, từ dưới lên trên: đạn K56, đạn K53, Đạn 12,7mm.",
+      "C": "Hòm đạn được sắp xếp (từ 1 đến 2 chồng) tại ngăn dưới tủ súng theo thứ tự từ trái qua phải, từ dưới lên trên: đạn 12,7mm, đạn K56, đạn K53,",
+      "D": "Hòm đạn được sắp xếp (từ 1 đến 2 chồng) tại ngăn dưới tủ súng theo thứ tự từ trái qua phải, từ dưới lên trên: đạn K53, đạn K56, đạn 12,7mm."
+    },
+    "answer_key": "B",
+    "answer": "Hòm đạn được sắp xếp (từ 1 đến 2 chồng) tại ngăn dưới tủ súng theo thứ tự từ trái qua phải, từ dưới lên trên: đạn K56, đạn K53, Đạn 12,7mm."
+  },
+  {
+    "question": "Nguyên tắc quản lý trang bị kỹ thuật?",
+    "options": {
+      "A": "Kịp thời, chính xác, thường xuyên và đầy đủ.",
+      "B": "Chính xác, kịp thời, thường xuyên và thống nhất.",
+      "C": "Toàn diện, chính xác, thường xuyên và thống nhất.",
+      "D": "Toàn diện, chính xác, thường xuyên và đầy đủ."
+    },
+    "answer_key": "C",
+    "answer": "Toàn diện, chính xác, thường xuyên và thống nhất."
+  },
+  {
+    "question": "Thời gian bảo quản hàng tuần vũ khí bộ binh",
+    "options": {
+      "A": "Hàng tuần: vũ khí bộ binh bảo quản 45 phút; trang bị kỹ thuật khác, khí tài phức tạp bảo quản từ 2-4 giờ; thời gian bảo quản vào ngày Thứ 6.",
+      "B": "Hàng tuần: vũ khí bộ binh bảo quản 35 phút; trang bị kỹ thuật khác, khí tài phức tạp bảo quản từ 3-5 giờ; thời gian bảo quản vào ngày thứ 7.",
+      "C": "Hàng tuần: vũ khí bộ binh bảo quản 40 phút; trang bị kỹ thuật khác, khí tài phức tạp bảo quản từ 2-4 giờ; thời gian bảo quản vào ngày làm việc cuối tuần.",
+      "D": "Hàng tuần: vũ khí bộ binh bảo quản 40 phút; trang bị kỹ thuật khác, khí tài phức tạp bảo quản từ 3-5 giờ; thời gian bảo quản vào ngày làm việc cuối tuần."
+    },
+    "answer_key": "D",
+    "answer": "Hàng tuần: vũ khí bộ binh bảo quản 40 phút; trang bị kỹ thuật khác, khí tài phức tạp bảo quản từ 3-5 giờ; thời gian bảo quản vào ngày làm việc cuối tuần."
+  },
+  {
+    "question": "Theo Nghị định 76/2016/NĐ-CP ngày 01/7/2016 quy định tiêu chuẩn diện tích ở đối với cấp úy và tương đương là bao nhiêu?",
+    "options": {
+      "A": "5 m2/người",
+      "B": "7 m2/người",
+      "C": "9 m2/người",
+      "D": "11 m2/người"
+    },
+    "answer_key": "B",
+    "answer": "7 m2/người"
+  },
+  {
+    "question": "Đồng chí cho biết yêu cầu thực hiện tiêu chuẩn vật chất hậu cần?",
+    "options": {
+      "A": "Bảo đảm kịp thời, đầy đủ, chính xác, đúng đối tượng theo quy định",
+      "B": "Bảo đảm đi đôi với quản lý nâng cao chất lượng, hiệu quả tiêu chuẩn vật chất hậu cần",
+      "C": "Chế độ quản lý vật chất hậu cần phải được duy trì thành nền nếp",
+      "D": "Tất cả đáp án trên"
+    },
+    "answer_key": "D",
+    "answer": "Tất cả đáp án trên"
+  },
+  {
+    "question": "Đồng chí cho biết công tác hậu cần, kỹ thuật có mấy tính chất, gồm những tính chất nào?",
+    "options": {
+      "A": "3 tính chất: Tính cách mạng; tính quân sự; tính khoa học",
+      "B": "4 tính chất: Tính cách mạng; tính quân sự; tính kinh tế; tính khoa học",
+      "C": "3 tính chất: Tính quân sự; tính khoa học; tính kinh tế",
+      "D": "4 tính chất: Tính cách mạng; tính quân sự; tính tập thể; tính khoa học"
+    },
+    "answer_key": "B",
+    "answer": "4 tính chất: Tính cách mạng; tính quân sự; tính kinh tế; tính khoa học"
+  },
+  {
+    "question": "Quản lý sức khỏe quân nhân gồm những cấp nào?",
+    "options": {
+      "A": "Quân y cấp trung đoàn và tương đương.",
+      "B": "Quân y cấp sư đoàn và tương đương.",
+      "C": "Quân y cấp đơn vị trực thuộc Bộ Quốc phòng.",
+      "D": "Tất cả các ý trên."
+    },
+    "answer_key": "D",
+    "answer": "Tất cả các ý trên."
+  },
+  {
+    "question": "Phân loại sức khỏe hạ sĩ quan, chiến sĩ được chia làm mấy loại?",
+    "options": {
+      "A": "3 loại.",
+      "B": "4 loại.",
+      "C": "5 loại.",
+      "D": "6 loại."
+    },
+    "answer_key": "A",
+    "answer": "3 loại."
+  },
+  {
+    "question": "Sức khỏe của SQ, QNCN được phân thành mấy loại?",
+    "options": {
+      "A": "3 loại.",
+      "B": "4 loại.",
+      "C": "5 loại.",
+      "D": "6 loại."
+    },
+    "answer_key": "B",
+    "answer": "4 loại."
+  },
+  {
+    "question": "Đối tượng nào được khám cán bộ cao cấp?",
+    "options": {
+      "A": "Sỹ quan, QNCN từ cấp thiếu úy hoặc tương đương đến cấp trung tá.",
+      "B": "Sỹ quan, QNCN từ cấp thượng tá hoặc tương đương đến cấp đại tá.",
+      "C": "Sỹ quan, QNCN từ cấp thượng tá hoặc tương đương trở lên.",
+      "D": "Sỹ quan từ cấp Thiếu tá trở lên."
+    },
+    "answer_key": "C",
+    "answer": "Sỹ quan, QNCN từ cấp thượng tá hoặc tương đương trở lên."
+  },
+  {
+    "question": "Kiểm tra sức khỏe khi cần thiết được thực hiện khi nào?",
+    "options": {
+      "A": "Quân nhân đi phép, đi công tác dài ngày trở về đơn vị.",
+      "B": "Quân nhân tham dự các cuộc luyện tập đặc biệt, thi đấu thể dục thể thao.",
+      "C": "Quân nhân làm việc, tiếp xúc với các yếu tố độc hại.",
+      "D": "Tất cả các ý trên."
+    },
+    "answer_key": "D",
+    "answer": "Tất cả các ý trên."
+  },
+  {
+    "question": "Hằng năm tổ chức lần khám sức khỏe định kỳ cho các đối tượng thuộc diện quản lý, có thể tổ chức tại đơn vị, bệnh xá hoặc bệnh viện tuyến trên bao nhiêu lần?",
+    "options": {
+      "A": "Thực hiện tối thiểu 01 lần/năm.",
+      "B": "Thực hiện tối thiểu 02 lần/năm.",
+      "C": "Thực hiện tối thiểu 03 lần/năm.",
+      "D": "Thực hiện tối thiểu 04 lần/năm."
+    },
+    "answer_key": "A",
+    "answer": "Thực hiện tối thiểu 01 lần/năm."
+  },
+  {
+    "question": "Đối tượng nào cần được theo dõi sức khỏe có hệ thống?",
+    "options": {
+      "A": "Không có bệnh gì hoặc có bệnh nhẹ, không ảnh hưởng đến sức làm việc và không cần phải có biện pháp săn sóc đặc biệt gì. Sức khỏe loại 1",
+      "B": "Có bệnh mạn tính đã ổn định tốt hoặc mới ổn định, nhưng sức khỏe tương đối tốt, không ảnh hưởng đến sức làm việc hoặc chỉ cần có những điều kiện nghỉ ngơi thường kỳ hoặc điều trị ngoại trú vẫn làm việc được, Sức khỏe loại 2",
+      "C": "Bệnh mạn tính chưa ổn định hoặc có nhiều thay đổi về sức khỏe do nhiều tuổi, sức làm việc giảm sút, cần có ngay chế độ điều trị dự phòng kịp thời. Sức khỏe loại 3",
+      "D": "Bệnh mạn tính khó ổn định, đã được điều trị nhiều năm nhưng vẫn hay tái phát, thường đã sang giai đoạn có biến chứng. Sức khỏe loại 4"
+    },
+    "answer_key": "C",
+    "answer": "Bệnh mạn tính chưa ổn định hoặc có nhiều thay đổi về sức khỏe do nhiều tuổi, sức làm việc giảm sút, cần có ngay chế độ điều trị dự phòng kịp thời. Sức khỏe loại 3"
+  },
+  {
+    "question": "Đối tượng nào cần được theo dõi sức khỏe đặc biệt và cần phải điều trị?",
+    "options": {
+      "A": "Không có bệnh gì hoặc có bệnh nhẹ, không ảnh hưởng đến sức làm việc và không cần phải có biện pháp săn sóc đặc biệt gì. Sức khỏe loại 1",
+      "B": "Có bệnh mạn tính đã ổn định tốt hoặc mới ổn định, nhưng sức khỏe tương đối tốt, không ảnh hưởng đến sức làm việc hoặc chỉ cần có những điều kiện nghỉ ngơi thường kỳ hoặc điều trị ngoại trú vẫn làm việc được, Sức khỏe loại 2",
+      "C": "Bệnh mạn tính chưa ổn định hoặc có nhiều thay đổi về sức khỏe do nhiều tuổi, sức làm việc giảm sút, cần có ngay chế độ điều trị dự phòng kịp thời. Sức khỏe loại 3",
+      "D": "Bệnh mạn tính khó ổn định, đã được điều trị nhiều năm nhưng vẫn hay tái phát, thường đã sang giai đoạn có biến chứng. Sức khỏe loại 4"
+    },
+    "answer_key": "D",
+    "answer": "Bệnh mạn tính khó ổn định, đã được điều trị nhiều năm nhưng vẫn hay tái phát, thường đã sang giai đoạn có biến chứng. Sức khỏe loại 4"
+  },
+  {
+    "question": "Đồng chí cho biết công tác hậu cần gồm có mấy nội dung?",
+    "options": {
+      "A": "2 nội dung: Công tác hậu cần SSCĐ; Công tác hậu cần thường xuyên;",
+      "B": "3 nội dung: Công tác hậu cần SSCĐ; Công tác hậu cần thường xuyên; Công tác quản lý hậu cần;",
+      "C": "4 nội dung: Công tác hậu cần SSCĐ; Công tác hậu cần thường xuyên; Công tác quản lý hậu cần; Công tác xây dựng ngành Hậu cần;",
+      "D": "5 nội dung: Công tác hậu cần SSCĐ; Công tác hậu cần thường xuyên; Công tác quản lý hậu cần; Công tác xây dựng ngành Hậu cần; công tác hậu cần quân sự, địa phương."
+    },
+    "answer_key": "C",
+    "answer": "4 nội dung: Công tác hậu cần SSCĐ; Công tác hậu cần thường xuyên; Công tác quản lý hậu cần; Công tác xây dựng ngành Hậu cần;"
+  },
+  {
+    "question": "Đồng chí cho biết yêu cầu thực hiện tiêu chuẩn vật chất hậu cần?",
+    "options": {
+      "A": "Bảo đảm kịp thời, đầy đủ, chính xác, đúng đối tượng theo quy định",
+      "B": "Bảo đảm đi đôi với quản lý nâng cao chất lượng, hiệu quả tiêu chuẩn vật chất hậu cần",
+      "C": "Chế độ quản lý vật chất hậu cần phải được duy trì thành nền nếp",
+      "D": "Tất cả đáp án trên"
+    },
+    "answer_key": "D",
+    "answer": "Tất cả đáp án trên"
+  },
+  {
+    "question": "Nội dung công tác BĐKT cho trang bị gồm?",
+    "options": {
+      "A": "Chuẩn bị sử dụng, bảo dưỡng, niêm cất, mở niêm, bảo dưỡng, tăng hạn sử dụng.",
+      "B": "Chuẩn bị sử dụng, bảo quản, niêm cất, mở niêm, sửa chữa, tăng hạn sử dụng.",
+      "C": "Chuẩn bị sử dụng, bảo quản, bảo dưỡng, niêm cất, sửa chữa, tăng hạn sử dụng.",
+      "D": "Chuẩn bị sử dụng, bảo quản, bảo dưỡng, niêm cất, mở niêm, sửa chữa, tăng hạn sử dụng."
+    },
+    "answer_key": "C",
+    "answer": "Chuẩn bị sử dụng, bảo quản, bảo dưỡng, niêm cất, sửa chữa, tăng hạn sử dụng."
+  },
+  {
+    "question": "Phân cấp kiểm tra, quản lý VKTB đối với Tiểu đoàn trưởng?",
+    "options": {
+      "A": "Tiểu đoàn trưởng và tương đương mỗi tháng phải kiểm tra ít nhất một Đại đội và một Trung đội trực thuộc",
+      "B": "Tiểu đoàn trưởng và tương đương mỗi tháng phải kiểm tra ít nhất một Đại đội và hai Trung đội trực thuộc",
+      "C": "Tiểu đoàn trưởng và tương đương mỗi tháng phải kiểm tra ít nhất hai Đại đội và hai Trung đội trực thuộc",
+      "D": "Tiểu đoàn trưởng và tương đương mỗi tuần phải kiểm tra ít nhất một Đại đội và một Trung đội trực thuộc"
+    },
+    "answer_key": "A",
+    "answer": "Tiểu đoàn trưởng và tương đương mỗi tháng phải kiểm tra ít nhất một Đại đội và một Trung đội trực thuộc"
+  },
+  {
+    "question": "Trách nhiệm của người chỉ huy đơn vị trong thực hiện CVĐ50?",
+    "options": {
+      "A": "Căn cứ vào nghị quyết lãnh đạo ban hành chỉ thị, kế hoạch công tác để chỉ đạo.",
+      "B": "Theo dõi, chỉ đạo, kiểm tra, đánh giá và chịu trách nhiệm về kết quả thực hiện Cuộc vận động 50 của đơn vị.",
+      "C": "Gương mẫu trong thực hiện các nội dung, mục tiêu của Cuộc vận động 50.",
+      "D": "Cả 03 ý trên."
+    },
+    "answer_key": "D",
+    "answer": "Cả 03 ý trên."
+  },
+  {
+    "question": "Nội dung phương pháp tiến hành thực hiện CVĐ 50?",
+    "options": {
+      "A": "Xây dựng nghị quyết lãnh đạo; Thành lập Ban chỉ đạo 50; Lập kế hoạch; Tổ chức các hoạt động; Xây dựng đơn vị điểm; Xây dựng điển hình tiên tiến; Tổ chức “Ngày kỹ thuật”.",
+      "B": "Thành lập Ban chỉ đạo 50; Xây dựng nghị quyết lãnh đạo; Lập kế hoạch; Tổ chức các hoạt động; Xây dựng đơn vị điểm; Xây dựng điển hình tiên tiến.",
+      "C": "Xây dựng nghị quyết lãnh đạo; Thành lập Ban chỉ đạo 50; Lập kế hoạch; Tổ chức các hoạt động; Tổ chức “Ngày kỹ thuật”; Xây dựng đơn vị điểm.",
+      "D": "Xây dựng nghị quyết lãnh đạo; Thành lập Ban chỉ đạo 50; Lập kế hoạch; Xây dựng đơn vị điểm; Xây dựng điển hình tiên tiến."
+    },
+    "answer_key": "A",
+    "answer": "Xây dựng nghị quyết lãnh đạo; Thành lập Ban chỉ đạo 50; Lập kế hoạch; Tổ chức các hoạt động; Xây dựng đơn vị điểm; Xây dựng điển hình tiên tiến; Tổ chức “Ngày kỹ thuật”."
+  },
+  {
+    "question": "Quy định về bảo đảm an toàn đạn dược, vật liệu nổ sau khi bắn đạn thật nghiêm cấm nội dung nào?",
+    "options": {
+      "A": "Những người không có trách nhiệm vào khu vực xử lý.",
+      "B": "Để ống nổ trong túi áo, túi quần",
+      "C": "Tiếp xúc, động chạm, dịch chuyển đạn dược, vật liệu nổ đã bắn nhưng chưa nổ chờ xử lý.",
+      "D": "Tất cả phương án trên."
+    },
+    "answer_key": "D",
+    "answer": "Tất cả phương án trên."
+  },
+  {
+    "question": "Điều lệ Công tác Kỹ thuật QĐNDVN quy định hình thức niêm cất trang bị kỹ thuật tại đơn vị như thế nào ?",
+    "options": {
+      "A": "Niêm cất ngắn hạn và niêm cất dài hạn.",
+      "B": "Niêm cất ngắn hạn, trung hạn và dài hạn.",
+      "C": "Niêm cất định kỳ, niêm cất thường xuyên.",
+      "D": "Niêm cất theo quy định của chuyên ngành Kỹ thuật tại đơn vị."
+    },
+    "answer_key": "A",
+    "answer": "Niêm cất ngắn hạn và niêm cất dài hạn."
+  },
+  {
+    "question": "Theo Nghị định 76/2016/NĐ-CP ngày 01/7/2016 quy định tiêu chuẩn thuốc, bông băng dùng tại đơn vị đối với sỹ quan trung cấp là bao nhiêu?",
+    "options": {
+      "A": "300.000 đồng/người/năm",
+      "B": "100.000 đồng/người/năm",
+      "C": "400.000 đồng/người/năm",
+      "D": "500.000 đồng/người/năm"
+    },
+    "answer_key": "C",
+    "answer": "400.000 đồng/người/năm"
+  },
+  {
+    "question": "Các dạng sửa chữa?",
+    "options": {
+      "A": "Sửa chữa vừa, sửa chửa nhỏ, sửa chữa lớn.",
+      "B": "Sửa chữa độc lập, sửa chữa thay thế, sửa chữa hỗn hợp.",
+      "C": "Sữa chữa cấp chiến thuật, chiến lược, chiến dịch.",
+      "D": "Cả a,b và c)"
+    },
+    "answer_key": "A",
+    "answer": "Sửa chữa vừa, sửa chửa nhỏ, sửa chữa lớn."
+  },
+  {
+    "question": "Súng bộ binh được phân thành mấy nhóm?",
+    "options": {
+      "A": "1 nhóm",
+      "B": "2 nhóm",
+      "C": "3 nhóm",
+      "D": "4 nhóm"
+    },
+    "answer_key": "B",
+    "answer": "2 nhóm"
+  },
+  {
+    "question": "Khi trú quân, đạn dược và vật liệu nổ được quản lý như thế nào?",
+    "options": {
+      "A": "Phải có bãi, hầm để cất giữ, quản lý ở cấp Đại đội trở lên.",
+      "B": "Phải có bãi, hầm để cất giữ, quản lý ở cấp Trung đội trở lên.",
+      "C": "Phải có bãi, hầm để cất giữ, quản lý ở cấp Tiểu đoàn trở lên.",
+      "D": "Có thể xếp trong nhà nghỉ của bộ đội để thuận tiện canh giữ, quản lý."
+    },
+    "answer_key": "A",
+    "answer": "Phải có bãi, hầm để cất giữ, quản lý ở cấp Đại đội trở lên."
+  },
+  {
+    "question": "Quy định về bảo đảm an toàn SPKT khi huấn luyện vận chuyển bằng phương tiện thô sơ gồm nội dung nào?",
+    "options": {
+      "A": "Phương tiện thô sơ phải bảo đảm chắc chắn, người điều khiển phải sử dụng thành thạo các phương tiện, súc vật kéo thồ phải được thuần hóa.",
+      "B": "Không xếp quá 2/3 trọng tải của phương tiện.",
+      "C": "Khi nghỉ đỗ dọc đường phải cách chỗ đông người, phải chèn bánh, tháo súc vật ra khoải xe, bỏ thồ hàng khỏi súc vật.",
+      "D": "Tất cả nội dung trên."
+    },
+    "answer_key": "D",
+    "answer": "Tất cả nội dung trên."
+  },
+  {
+    "question": "Đồng chí hãy cho biết công tác chuẩn bị tập huấn theo Điều lệ Công tác tham mưu huấn luyện chiến đấu năm 2011 có bao nhiêu nội dung?",
+    "options": {
+      "A": "4 nội dung",
+      "B": "5 nội dung",
+      "C": "6 nội dung",
+      "D": "7 nội dung"
+    },
+    "answer_key": "C",
+    "answer": "6 nội dung"
+  },
+  {
+    "question": "Đồng chí hãy cho biết nội dung huấn luyện công tác quân sự theo Điều lệ Công tác tham mưu huấn luyện chiến đấu năm 2011 bao gồm?",
+    "options": {
+      "A": "Huấn luyện kỹ thuật; huấn luyện chiến thuật; huấn luyện điều lệnh; huấn luyện thể lực; huấn luyện cứu hộ cứu nạn.",
+      "B": "Huấn luyện kỹ thuật; huấn luyện chiến thuật; huấn luyện điều lệnh; huấn luyện thể lực.",
+      "C": "Huấn luyện kỹ thuật; huấn luyện chiến thuật; huấn luyện điều lệnh; huấn luyện thể lực; huấn luyện cứu hộ cứu nạn, huấn luyện PCCN.",
+      "D": "Huấn luyện kỹ thuật; huấn luyện chiến thuật; huấn luyện điều lệnh; huấn luyện thể lực; huấn luyện chuyên ngành; huấn luyện cứu hộ cứu nạn."
+    },
+    "answer_key": "A",
+    "answer": "Huấn luyện kỹ thuật; huấn luyện chiến thuật; huấn luyện điều lệnh; huấn luyện thể lực; huấn luyện cứu hộ cứu nạn."
+  },
+  {
+    "question": "Đồng chí hãy cho biết phân cấp lập kế hoạch, quyền hạn và thời gian lập kế hoạch huấn luyện của cấp Đại đội theo Điều lệ Công tác tham mưu huấn luyện chiến đấu năm 2011?",
+    "options": {
+      "A": "Cấp đại đội và tương đương lập kế hoạch huấn luyện, báo cáo cấp trên phê duyệt, trước khi huấn luyện 3 ÷ 5 ngày.",
+      "B": "Cấp đại đội và tương đương lập tiến trình biểu, báo cáo cấp trên phê duyệt, trước khi huấn luyện 3 ÷ 5 ngày.",
+      "C": "Cấp đại đội và tương đương lập tiến trình biểu, báo cáo cấp trên phê duyệt, trước khi huấn luyện 5 ÷ 7 ngày.",
+      "D": "Cấp đại đội và tương đương lập kế hoạch huấn luyện, báo cáo cấp trên phê duyệt, trước khi huấn luyện 5 ÷ 7 ngày."
+    },
+    "answer_key": "B",
+    "answer": "Cấp đại đội và tương đương lập tiến trình biểu, báo cáo cấp trên phê duyệt, trước khi huấn luyện 3 ÷ 5 ngày."
+  },
+  {
+    "question": "Đồng chí hãy cho biết nhiệm vụ A2 là gì?",
+    "options": {
+      "A": "Là nhiệm vụ bảo vệ an ninh chính trị - bảo vệ chế độ XHCN.",
+      "B": "Là nhiệm vụ bảo vệ Tổ quốc Việt Nam XHCN.",
+      "C": "Là nhiệm vụ bảo vệ biên giới, vùng biển, vùng trời trong sự nghiệp xây dựng và bảo vệ tổ quốc Việt Nam XHCN.",
+      "D": "Là nhiệm vụ đánh địch tiến công hỏa lực, bảo vệ Tổ quốc Việt Nam XHCN."
+    },
+    "answer_key": "A",
+    "answer": "Là nhiệm vụ bảo vệ an ninh chính trị - bảo vệ chế độ XHCN."
+  },
+  {
+    "question": "Đồng chí hãy cho biết thứ tự bố trí kiểm tra các nội dung thể lực theo Quy tắc kiểm tra huấn luyện thể lực trong Quân đội năm 2009?",
+    "options": {
+      "A": "Sức mạnh, sức nhanh, ứng dụng quân sự, bơi, sức bền.",
+      "B": "Sức nhanh, sức mạnh, sức bền, ứng dụng quân sự, bơi.",
+      "C": "Sức mạnh, sức bền, ứng dụng quân sự, sức nhanh, bơi.",
+      "D": "Sức nhanh, sức mạnh, ứng dụng quân sự, bơi, sức bền."
+    },
+    "answer_key": "D",
+    "answer": "Sức nhanh, sức mạnh, ứng dụng quân sự, bơi, sức bền."
+  },
+  {
+    "question": "Đồng chí cho biết quan điểm 1 trong “3 quan điểm; 8 nguyên tắc, 6 mối quan hệ” trong huấn luyện?",
+    "options": {
+      "A": "Phát huy dân chủ quân sự, động viên tính tự giác, tích cực chủ động, sáng tạo của người học, chống áp đặt, rập khuôn, máy móc.",
+      "B": "Phát huy dân chủ quân sự, động viên tính tự giác, tích cực chủ động, sáng tạo của người học, chống áp đặt, máy móc, dập khuôn.",
+      "C": "Phát huy dân chủ quân sự, động viên tính tích cực, tự giác, chủ động, sáng tạo của người học, chống áp đặt, rập khuôn, máy móc.",
+      "D": "Phát huy dân chủ quân sự, động viên tính tích cực chủ động, sáng tạo của người học, chống áp đặt, dập khuôn, máy móc."
+    },
+    "answer_key": "C",
+    "answer": "Phát huy dân chủ quân sự, động viên tính tích cực, tự giác, chủ động, sáng tạo của người học, chống áp đặt, rập khuôn, máy móc."
+  },
+  {
+    "question": "Đồng chí cho biết báo cáo huấn luyện ở cấp trung đội, đại đội được thực hiện?",
+    "options": {
+      "A": "Hàng ngày",
+      "B": "Thứ năm hàng tuần",
+      "C": "Hàng tuần",
+      "D": "Hàng tháng"
+    },
+    "answer_key": "A",
+    "answer": "Hàng ngày"
+  },
+  {
+    "question": "Đồng chí cho biết theo Nghị quyết số 1659-NQ/TW ngày 20/12/2022 của QUTW, mục tiêu cụ thể giai đoạn 2023-2030 của huấn luyện chiến đấu đơn vị bộ binh?",
+    "options": {
+      "A": "Có 65% trở lên cơ quan, đơn vị thuộc quyền huấn luyện giỏi các nội dung.",
+      "B": "Có 70% trở lên cơ quan, đơn vị thuộc quyền huấn luyện giỏi các nội dung.",
+      "C": "Có 75% trở lên cơ quan, đơn vị thuộc quyền huấn luyện giỏi các nội dung.",
+      "D": "Có 80% trở lên cơ quan, đơn vị thuộc quyền huấn luyện giỏi các nội dung."
+    },
+    "answer_key": "B",
+    "answer": "Có 70% trở lên cơ quan, đơn vị thuộc quyền huấn luyện giỏi các nội dung."
+  },
+  {
+    "question": "Đồng chí cho biết theo Nghị quyết số 1659-NQ/TW ngày 20/12/2022 của QUTW, mục tiêu cụ thể giai đoạn 2030 và những năm tiếp theo?",
+    "options": {
+      "A": "Phấn đấu 100% nội dung huấn luyện đạt yêu cầu, trong đó có 75% khá, giỏi.",
+      "B": "Phấn đấu 100% nội dung huấn luyện đạt yêu cầu, trong đó có 75% khá, giỏi trở lên.",
+      "C": "Phấn đấu 100% nội dung huấn luyện đạt yêu cầu, trong đó có 80% khá, giỏi.",
+      "D": "Phấn đấu 100% nội dung huấn luyện đạt yêu cầu, trong đó có 80% khá, giỏi trở lên."
+    },
+    "answer_key": "D",
+    "answer": "Phấn đấu 100% nội dung huấn luyện đạt yêu cầu, trong đó có 80% khá, giỏi trở lên."
+  },
+  {
+    "question": "Đồng chí cho biết theo Nghị quyết số 1659-NQ/TW ngày 20/12/2022 của QUTW, có bao nhiêu nhiệm vụ và giải pháp chủ yếu?",
+    "options": {
+      "A": "7.",
+      "B": "8.",
+      "C": "9.",
+      "D": "10."
+    },
+    "answer_key": "D",
+    "answer": "10."
+  },
+  {
+    "question": "Đồng chí cho biết điều 15 chống mệnh lệnh theo TT 143/2023/TT-BQP ngày 27/12/2023 của BQP quy định: Không chấp hành mệnh lệnh hoặc không thực hiện nhiệm vụ khi người chỉ huy trực tiếp hoặc cấp có thẩm quyền giao thì bị xử lý kỷ luật?",
+    "options": {
+      "A": "Khiển trách",
+      "B": "Cảnh cáo",
+      "C": "Giáng cấp bậc quân hàm",
+      "D": "7 Giáng chức"
+    },
+    "answer_key": "B",
+    "answer": "Cảnh cáo"
+  },
+  {
+    "question": "Đồng chí cho biết điều 12, Thông tư số 143/2023/TT-BQP ngày 27/12/2023 của Bộ Quốc phòng quy định khi được người chỉ huy trực tiếp hoặc cấp trên có thẩm quyền ra lệnh hoặc giao nhiệm vụ nhưng chấp hành không đầy đủ, lơ là, tùy tiện, chậm trễ gây trở ngại cho việc chỉ huy, ảnh hưởng đến việc hoàn thành nhiệm vụ của đơn vị thì bị kỷ luật?",
+    "options": {
+      "A": "Khiển trách hoặc cảnh cáo",
+      "B": "Khiển trách, cảnh cáo đến hạ bậc lương",
+      "C": "Khiển trách, cảnh cáo  đến hạ bậc lương, giáng cấp bậc quân hàm",
+      "D": "Cảnh cáo hoặc hạ bậc lương, giáng cấp bậc quân hàm"
+    },
+    "answer_key": "A",
+    "answer": "Khiển trách hoặc cảnh cáo"
+  },
+  {
+    "question": "Phương châm “4 tránh” khi giải quyết các vấn đề trên biển Đông?",
+    "options": {
+      "A": "Tránh xung đột về quân sự; tránh bị cô lập về kinh tế; tránh bị xung đột về ngoại giao; tránh bị lệ thuộc về chính trị.",
+      "B": "Tránh xung đột về quân sự; tránh bị lệ thuộc về kinh tế; tránh bị cô lập về ngoại giao; tránh bị lệ thuộc về chính trị.",
+      "C": "Tránh xung đột về quân sự; tránh bị lệ thuộc về kinh tế; tránh bị cô lập về ngoại giao; tránh bị cô lập về chính trị.",
+      "D": "Tránh xung đột về quân sự; tránh bị cô lập về kinh tế; tránh bị cô lập về ngoại giao; tránh bị lệ thuộc về chính trị."
+    },
+    "answer_key": "D",
+    "answer": "Tránh xung đột về quân sự; tránh bị cô lập về kinh tế; tránh bị cô lập về ngoại giao; tránh bị lệ thuộc về chính trị."
+  },
+  {
+    "question": "Đồng chí cho biết điều 32, Thông tư số 143/2023/TT-BQP ngày 27/22/2023 của Bộ Quốc phòng quy định khi tiếp xúc với nhân dân mà có hành vi đòi hỏi, yêu sách, quấy nhiễu, gây phiền hà, khó khăn, cản trở sinh hoạt bình thường của Nhân dân hoặc xâm phạm đến sức khỏe, nhân phẩm, danh dự, tài sản của Nhân dân thì bị kỷ luật?",
+    "options": {
+      "A": "Khiển trách hoặc cảnh cáo.",
+      "B": "Khiển trách, cảnh cáo đến hạ bậc lương.",
+      "C": "Khiển trách, cảnh cáo đến hạ bậc lương, giáng cấp bậc quân hàm.",
+      "D": "Khiển trách, cảnh cáo, hạ bậc lương đến giáng chức, cách chức."
+    },
+    "answer_key": "D",
+    "answer": "Khiển trách, cảnh cáo, hạ bậc lương đến giáng chức, cách chức."
+  },
+  {
+    "question": "Đồng chí cho biết có mấy hình thức kỷ luật đối với QNCN theo TT 143/2023/TT-BQP ngày 27/12/2023 của BQP?",
+    "options": {
+      "A": "4 hình thức.",
+      "B": "5 hình thức.",
+      "C": "6 hình thức.",
+      "D": "7 hình thức."
+    },
+    "answer_key": "D",
+    "answer": "7 hình thức."
+  },
+  {
+    "question": "Đồng chí cho biết điều vắng mặt trái phép theo điều 3 Thông Tư 143/2023/TT-BQP ngày 27/12/2023 của BQP?",
+    "options": {
+      "A": "Là hành vi vắng mặt ở đơn vị dưới 24 (hai bốn) giờ từ 02 lần hoặc từ 24 (hai bốn) giờ đến 72 giờ (ba ngày) đối với sĩ quan, quân nhân chuyên nghiệp, công chức, công nhân và viên chức quốc phòng, người làm việc trong tổ chức cơ yếu; dưới 24 (hai bốn) giờ từ 02 lần hoặc từ 24 (hai bốn) giờ đến 168 giờ (07 ngày) đối với hạ sĩ quan, binh sĩ mà không được phép của người chỉ huy có thẩm quyền.",
+      "B": "Là hành vi vắng mặt ở đơn vị dưới 01 ngày từ 02 lần trở lên hoặc từ 01 ngày đến ba ngày đối với sĩ quan, quân nhân chuyên nghiệp, công chức, công nhân và viên chức quốc phòng, người làm việc trong tổ chức cơ yếu; dưới 01 ngày từ 02 lần trở lên hoặc từ 01 ngày đến 07 ngày đối với hạ sĩ quan, binh sĩ mà không được phép của người chỉ huy có thẩm quyền.",
+      "C": "Là hành vi vắng mặt ở đơn vị dưới 24 (hai bốn) giờ từ 02 lần trở lên hoặc từ 24 (hai bốn) giờ đến 72 giờ (ba ngày) đối với sĩ quan, quân nhân chuyên nghiệp, công chức, công nhân và viên chức quốc phòng, người làm việc trong tổ chức cơ yếu; dưới 24 (hai bốn) giờ từ 02 lần trở lên hoặc từ 24 (hai bốn) giờ đến 120 giờ (05 ngày) đối với hạ sĩ quan, binh sĩ mà không được phép của người chỉ huy có thẩm quyền.",
+      "D": "Là hành vi vắng mặt ở đơn vị dưới 24 (hai bốn) giờ từ 02 lần trở lên hoặc từ 24 (hai bốn) giờ đến 72 giờ (ba ngày) đối với sĩ quan, quân nhân chuyên nghiệp, công chức, công nhân và viên chức quốc phòng, người làm việc trong tổ chức cơ yếu; dưới 24 (hai bốn) giờ từ 02 lần trở lên hoặc từ 24 (hai bốn) giờ đến 168 giờ (07 ngày) đối với hạ sĩ quan, binh sĩ mà không được phép của người chỉ huy có thẩm quyền."
+    },
+    "answer_key": "D",
+    "answer": "Là hành vi vắng mặt ở đơn vị dưới 24 (hai bốn) giờ từ 02 lần trở lên hoặc từ 24 (hai bốn) giờ đến 72 giờ (ba ngày) đối với sĩ quan, quân nhân chuyên nghiệp, công chức, công nhân và viên chức quốc phòng, người làm việc trong tổ chức cơ yếu; dưới 24 (hai bốn) giờ từ 02 lần trở lên hoặc từ 24 (hai bốn) giờ đến 168 giờ (07 ngày) đối với hạ sĩ quan, binh sĩ mà không được phép của người chỉ huy có thẩm quyền."
+  },
+  {
+    "question": "Đồng chí cho biết thời hiệu xử lý kỷ luật cảnh cáo, hạ bậc lương, giáng chức, cách chức, giáng cấp bậc quân hàm theo Điều 7 Thông tư 143/2023/TT-BQP ngày 27/12/2023 của BQP là bao nhiêu năm?",
+    "options": {
+      "A": "1 năm.",
+      "B": "3 năm.",
+      "C": "5 năm.",
+      "D": "10 năm."
+    },
+    "answer_key": "D",
+    "answer": "10 năm."
+  },
+  {
+    "question": "Đồng chí cho biết nội dung xây dựng chính quy, quản lý kỷ luật theo Chỉ thị 79/CT-BQP ngày 22/7/2022 của BQP?",
+    "options": {
+      "A": "Quản lý con người, VKTBKT chặt chẽ; không có vụ việc kỷ luật nghiêm trọng phải xử lý; các vụ việc vi phạm kỷ luật phải xử lý không quá 0,2%, không có đào ngũ cắt quân số. Không sử dụng bộ đội làm kinh tế sai quy định.",
+      "B": "Quản lý con người, VKTBKT chặt chẽ; không có vụ việc kỷ luật nghiêm trọng; các vụ việc vi phạm kỷ luật phải xử lý không quá 0,2% quân số, không có đào ngũ cắt quân số. Không sử dụng bộ đội làm kinh tế sai quy định.",
+      "C": "Quản lý con người, VKTBKT chặt chẽ; không có vụ việc kỷ luật nghiêm trọng phải xử lý; các vụ việc vi phạm kỷ luật phải xử lý không quá 0,2% quân số, không có đào ngũ cắt quân số. Không sử dụng bộ đội làm kinh tế sai quy định.",
+      "D": "Quản lý con người, VKTBKT chặt chẽ; không có vụ việc kỷ luật nghiêm trọng; các vụ việc vi phạm kỷ luật phải xử lý không quá 0,2%, không có đào ngũ cắt quân số. Không sử dụng bộ đội làm kinh tế sai quy định."
+    },
+    "answer_key": "D",
+    "answer": "Quản lý con người, VKTBKT chặt chẽ; không có vụ việc kỷ luật nghiêm trọng; các vụ việc vi phạm kỷ luật phải xử lý không quá 0,2%, không có đào ngũ cắt quân số. Không sử dụng bộ đội làm kinh tế sai quy định."
+  },
+  {
+    "question": "Đồng chí cho biết nội dung Tiêu chuẩn 2 theo Chỉ thị 79/CT-BQP ngày 22/7/2022 của BQP?",
+    "options": {
+      "A": "Tổ chức biên chế đúng quy định, duy trì nghiêm các chế độ sẵn sàng chiến đấu, huấn luyện giỏi.",
+      "B": "Tổ chức biên chế đúng quy định, duy trì nghiêm sẵn sàng chiến đấu cao, huấn luyện giỏi.",
+      "C": "Thực hiện nghiêm túc công tác tổ chức lực lượng; huấn luyện và đào tạo giỏi ; duy trì nghiêm nền nếp chế độ sẵn sàng chiến đấu.",
+      "D": "Thực hiện nghiêm túc công tác xây dựng lực lượng; huấn luyện và đào tạo giỏi; duy trì nghiêm nền nếp chế độ sẵn sàng chiến đấu."
+    },
+    "answer_key": "C",
+    "answer": "Thực hiện nghiêm túc công tác tổ chức lực lượng; huấn luyện và đào tạo giỏi ; duy trì nghiêm nền nếp chế độ sẵn sàng chiến đấu."
+  },
+  {
+    "question": "Đồng chí cho biết quy định thời gian treo Quốc kỳ và thời gian hạ Quốc kỳ của các cấp thực hiện thời gian nào?",
+    "options": {
+      "A": "Treo Quốc kỳ lúc 06 giờ, hạ Quốc kỳ lúc 18 giờ hàng ngày.",
+      "B": "Treo Quốc kỳ lúc 06 giờ, hạ Quốc kỳ lúc 18 giờ 30 ngày Thứ 6 hàng tuần.",
+      "C": "Treo Quốc kỳ lúc 06 giờ ngày Thứ 2, hạ Quốc kỳ lúc 18 giờ ngày Thứ 6 hàng tuần."
+    },
+    "answer_key": "A",
+    "answer": "Treo Quốc kỳ lúc 06 giờ, hạ Quốc kỳ lúc 18 giờ hàng ngày."
+  },
+  {
+    "question": "Đồng chí cho biết điều lệnh Quản lý Bộ đội QĐNDVN năm 2015 có bao nhiêu chương, điều, phụ lục?",
+    "options": {
+      "A": "Có 10 Chương, 224 điều và 5 phụ lục.",
+      "B": "Có  9 Chương, 234 điều và 5 phụ lục.",
+      "C": "Có 10 Chương, 223 điều và 4 phụ lục.",
+      "D": "Có 9 Chương, 223 điều và 4 phụ lục."
+    },
+    "answer_key": "Đáp án đúng: a)",
+    "answer": "Có 10 Chương, 224 điều và 5 phụ lục."
+  },
+  {
+    "question": "Đồng chí cho biết quân nhân phải chào khi gặp nhau?",
+    "options": {
+      "A": "Cấp dưới phải chào cấp trên trước, người được chào không phải chào đáp lễ.",
+      "B": "Cấp dưới phải chào cấp trên trước, người được chào phải chào đáp lễ.",
+      "C": "Cấp trên chào cấp dưới trước, người được chào phải chào đáp lễ."
+    },
+    "answer_key": "B",
+    "answer": "Cấp dưới phải chào cấp trên trước, người được chào phải chào đáp lễ."
+  },
+  {
+    "question": "Đồng chí cho biết thời gian làm việc của từng mùa?",
+    "options": {
+      "A": "Mùa nóng từ ngày 01 tháng 4 đến 31 tháng 10; mùa lạnh từ ngày 01 tháng 11 đến 31 tháng 3 năm sau.",
+      "B": "Mùa nóng từ ngày 16 tháng 4 đến 15 tháng 11; mùa lạnh từ ngày 16 tháng 11 đến 15 tháng 4 năm sau.",
+      "C": "Mùa nóng từ ngày 16 tháng 4 đến 31 tháng 10; mùa lạnh từ ngày 01 tháng 11 đến 15 tháng 4 năm sau."
+    },
+    "answer_key": "A",
+    "answer": "Mùa nóng từ ngày 01 tháng 4 đến 31 tháng 10; mùa lạnh từ ngày 01 tháng 11 đến 31 tháng 3 năm sau."
+  },
+  {
+    "question": "Đồng chí cho biết phân cấp xây dựng kế hoạch hoạt động 2 ngày nghỉ (theo Hướng dẫn số 40/HD-TM ngày 22/3/2020)?",
+    "options": {
+      "A": "Cấp đại đội và tương đương: Xây dựng kế hoạch theo tuần, phân chia đến thời gian cụ thể.",
+      "B": "Cấp đại đội và tương đương: Xây dựng kế hoạch theo tuần, phân chia ra ngày, giờ cụ thể.",
+      "C": "Cấp đại đội và tương đương: Xây dựng kế hoạch theo tháng, phân chia ra ngày, giờ cụ thể.",
+      "D": "Cấp đại đội và tương đương: Xây dựng kế hoạch theo tháng, phân chia ra thời gian cụ thể."
+    },
+    "answer_key": "B",
+    "answer": "Cấp đại đội và tương đương: Xây dựng kế hoạch theo tuần, phân chia ra ngày, giờ cụ thể."
+  },
+  {
+    "question": "Đồng chí cho biết thời gian hoạt động 2 ngày nghỉ cuối tuần buổi sáng và buổi chiều như thế nào (theo Hướng dẫn số 40/HD-TM ngày 22/3/2016)?",
+    "options": {
+      "A": "Buổi sáng từ 06.30-10.30;buổi chiều từ 13.30-16.30.",
+      "B": "Buổi sáng từ 06.30-10.30;buổi chiều từ 13.30-17.30.",
+      "C": "Buổi sáng từ 06.30-10.30;buổi chiều từ 13.30-17.00.",
+      "D": "Buổi sáng từ 06.30-10.30;buổi chiều từ 13.30-16.00."
+    },
+    "answer_key": "B",
+    "answer": "Buổi sáng từ 06.30-10.30;buổi chiều từ 13.30-17.30."
+  },
+  {
+    "question": "Đồng chí cho biết thời gian điểm danh, điểm quân số (theo Công văn số1242/BTM-QH ngày21/3/2020)?",
+    "options": {
+      "A": "10 phút.",
+      "B": "14 phút.",
+      "C": "13 phút.",
+      "D": "15 phút."
+    },
+    "answer_key": "D",
+    "answer": "15 phút."
+  },
+  {
+    "question": "Đồng chí cho biết thời gian sinh hoạt, học tập buổi tối bao nhiêu phút (theo Công văn 1242/BTM-QH)?",
+    "options": {
+      "A": "35 phút.",
+      "B": "40 phút.",
+      "C": "30 phút.",
+      "D": "45 phút."
+    },
+    "answer_key": "D",
+    "answer": "45 phút."
+  },
+  {
+    "question": "Đồng chí cho biết khối lượng của súng tiểu liên STV380 khi không lắp hộp tiếp đạn?",
+    "options": {
+      "A": "3,8kg.",
+      "B": "2,6kg.",
+      "C": "3,2kg.",
+      "D": "3,6kg."
+    },
+    "answer_key": "D",
+    "answer": "3,6kg."
+  },
+  {
+    "question": "Đồng chí cho biết khối lượng của súng tiểu liên STV380 khi lắp hộp tiếp đạn (có đủ 30 viên đạn)?",
+    "options": {
+      "A": "4,4kg.",
+      "B": "3,6kg.",
+      "C": "3,8kg.",
+      "D": "4,2kg."
+    },
+    "answer_key": "A",
+    "answer": "4,4kg."
+  },
+  {
+    "question": "Đồng chí cho biết con số 380 trong tên súng tiểu liên “STV380” có ý nghĩa?",
+    "options": {
+      "A": "Là chiều dài nòng súng.",
+      "B": "Là năm sản xuất.",
+      "C": "Là số bộ phận của súng.",
+      "D": "Trọng lượng súng."
+    },
+    "answer_key": "A",
+    "answer": "Là chiều dài nòng súng."
+  },
+  {
+    "question": "Câu 1. Đâu là hạn chế còn tồn tại về lĩnh vực văn hóa trong nhiệm kỳ XIII được Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng đánh giá?",
+    "options": {
+      "A": "Văn hóa chưa trở thành nguồn lực, sức mạnh nội sinh và động lực mạnh mẽ của sự phát triển.",
+      "B": "Văn hóa còn tiềm ẩn nhiều nguy cơ ảnh hưởng đến giáo dục định hướng sự phát triển toàn diện của con người.",
+      "C": "Văn hóa còn tiềm ẩn nhiều nguy cơ ảnh hưởng đến sự phát triển chung của đất nước.",
+      "D": "Văn hóa chưa thực sự trở thành nguồn lực, sức mạnh nội sinh và động lực mạnh mẽ của sự phát triển."
+    },
+    "answer_key": "D",
+    "answer": "Văn hóa chưa thực sự trở thành nguồn lực, sức mạnh nội sinh và động lực mạnh mẽ của sự phát triển."
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng đánh giá về 40 năm đổi mới khẳng định đường lối đổi mới của đảng ta như thế nào?",
+    "options": {
+      "A": "Khẳng định đường lối đổi mới của Đảng ta là đúng đắn, sáng tạo, phù hợp với thực tiễn Việt Nam.",
+      "B": "Khẳng định đường lối đổi mới của Đảng ta là đúng đắn, sáng tạo, phù hợp với thực tiễn Việt Nam và bối cảnh Quốc tế.",
+      "C": "Khẳng định đường lối đổi mới của Đảng ta là đúng đắn, sáng tạo, phù hợp với thực tiễn Việt Nam và xu thế thời đại.",
+      "D": "Khẳng định đường lối đổi mới của Đảng ta là đúng đắn, sáng tạo"
+    },
+    "answer_key": "C",
+    "answer": "Khẳng định đường lối đổi mới của Đảng ta là đúng đắn, sáng tạo, phù hợp với thực tiễn Việt Nam và xu thế thời đại."
+  },
+  {
+    "question": "Theo Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng: Nhân tố hàng đầu quyết định mọi thắng lợi cách mạng Việt Nam là?",
+    "options": {
+      "A": "Sự lãnh đạo của Đảng, sức mạnh to lớn của Nhân dân và khối đại đoàn kết toàn dân tộc.",
+      "B": "Tinh thần đoàn kết của toàn dân tộc và sự ủng hộ của bạn bè Quốc tế.",
+      "C": "Đường lối lãnh đạo đúng đắn của Đảng.",
+      "D": "Đường lối lãnh đạo đúng đắn của Đảng, tinh thần đoàn kết của toàn dân tộc và sự ủng hộ của bạn bè Quốc tế."
+    },
+    "answer_key": "A",
+    "answer": "Sự lãnh đạo của Đảng, sức mạnh to lớn của Nhân dân và khối đại đoàn kết toàn dân tộc."
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định những thành tựu to lớn, có ý nghĩa lịch sử trong 40 năm là kết quả của?",
+    "options": {
+      "A": "Quá trình nỗ lực phấn đấu bền bỉ, liên tục, là kết tinh trí tuệ của toàn Đảng, toàn dân và toàn quân ta.",
+      "B": "Đường lối lãnh đạo đúng đắn, tầm nhìn chiến lược và đường lối ngoại giao mềm dẻo.",
+      "C": "Đường lối lãnh đạo đúng đắn, nền kinh tế thị trường theo định hướng xã hội chủ nghĩa.",
+      "D": "Phát huy tốt những giá trị truyền thống tốt đẹp kết hợp với tiếp thu những tinh hoa thời đại."
+    },
+    "answer_key": "A",
+    "answer": "Quá trình nỗ lực phấn đấu bền bỉ, liên tục, là kết tinh trí tuệ của toàn Đảng, toàn dân và toàn quân ta."
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định mục tiêu đến năm 2030, Việt Nam phấn đấu trở thành nước như thế nào?",
+    "options": {
+      "A": "Trở thành nước phát triển, thu nhập trung bình cao",
+      "B": "Trở thành nước phát triển, thu nhập cao",
+      "C": "Trở thành nước đang phát triển, thu nhập cao",
+      "D": "Trở thành nước phát triển, có công nghiệp theo hướng hiện đại, thu nhập cao"
+    },
+    "answer_key": "B",
+    "answer": "Trở thành nước phát triển, thu nhập cao"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định có mấy quan điểm chỉ đạo lớn?",
+    "options": {
+      "A": "3 Quan điểm",
+      "B": "4 Quan điểm",
+      "C": "5 Quan điểm",
+      "D": "6 Quan điểm"
+    },
+    "answer_key": "C",
+    "answer": "5 Quan điểm"
+  },
+  {
+    "question": "Đâu là quan điểm chỉ đạo được xác định trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": {
+      "A": "Vận dụng và phát triển sáng tạo chủ nghĩa Mác – LêNin, tư tưởng Hồ Chí Minh phù hợp với điều kiện thực tiễn Việt Nam.",
+      "B": "Kiên định, vận dụng và phát triển sáng tạo chủ nghĩa Mác – LêNin, tư tưởng Hồ Chí Minh, lý luận về đường lối đổi mới.",
+      "C": "Vận dụng và phát triển sáng tạo chủ nghĩa Mác – LêNin, tư tưởng Hồ Chí Minh.",
+      "D": "Kiên định, vận dụng và phát triển sáng tạo chủ nghĩa Mác – LêNin, tư tưởng Hồ Chí Minh."
+    },
+    "answer_key": "B",
+    "answer": "Kiên định, vận dụng và phát triển sáng tạo chủ nghĩa Mác – LêNin, tư tưởng Hồ Chí Minh, lý luận về đường lối đổi mới."
+  },
+  {
+    "question": "Đâu là quan điểm chỉ đạo được xác định trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": {
+      "A": "Nhận diện sớm tận dụng mọi thuận lợi, thời cơ, vượt qua mọi khó khăn, thách thức tiếp tục phát triển nhanh và bền vững đất nước.",
+      "B": "Đẩy mạnh đột phá về khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số và chủ động hội nhập quốc tế, kết hợp chặt chẽ và phát triển đồng bộ, hiệu quả các nhiệm vụ trọng tâm trong đó: Phát triển kinh tế, xã hội, bảo vệ môi trường là trung tâm; xây dựng Đảng là then chốt; phát triển văn hóa con người là nền tảng; tăng cường quốc phòng an ninh và đẩy mạnh đối ngoại, hội nhập quốc tế là trọng yếu thường xuyên.",
+      "C": "Cả a và b đều đúng",
+      "D": "Cả a và b đều sai"
+    },
+    "answer_key": "C",
+    "answer": "Cả a và b đều đúng"
+  },
+  {
+    "question": "Quan điểm chỉ đạo trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định?",
+    "options": {
+      "A": "Phát triển kinh tế, xã hội, bảo vệ môi trường là trung tâm; xây dựng Đảng là then chốt; phát triển văn hóa con người là nền tảng; tăng cường quốc phòng an ninh và đẩy mạnh đối ngoại, hội nhập quốc tế là trọng yếu thường xuyên.",
+      "B": "Phát triển kinh tế, xã hội, bảo vệ môi trường là then chốt; xây dựng Đảng là trung tâm; phát triển văn hóa con người là nền tảng; tăng cường quốc phòng an ninh và đẩy mạnh đối ngoại, hội nhập quốc tế là trọng yếu thường xuyên.",
+      "C": "Phát triển kinh tế là trung tâm; xây dựng Đảng là then chốt; phát triển văn hóa con người là nền tảng; tăng cường quốc phòng an ninh là trọng yếu thường xuyên.",
+      "D": "Phát triển kinh tế là trung tâm; xây dựng Đảng là then chốt; phát triển văn hóa con người là nền tảng"
+    },
+    "answer_key": "A",
+    "answer": "Phát triển kinh tế, xã hội, bảo vệ môi trường là trung tâm; xây dựng Đảng là then chốt; phát triển văn hóa con người là nền tảng; tăng cường quốc phòng an ninh và đẩy mạnh đối ngoại, hội nhập quốc tế là trọng yếu thường xuyên."
+  },
+  {
+    "question": "Quan điểm chỉ đạo trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định?",
+    "options": {
+      "A": "Thực hiện các mô hình tăng trưởng mới, đẩy mạnh công nghiệp hóa, hiện đại hóa, lấy khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia là động lực chính.",
+      "B": "Xác lập mô hình tăng trưởng mới, đẩy mạnh công nghiệp hóa, hiện đại hóa, lấy khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia là động lực chính.",
+      "C": "Thực hiện các mô hình tăng trưởng mới, đẩy mạnh công nghiệp hóa, hiện đại hóa, khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia là động lực chính.",
+      "D": "Cả a, b và c đều sai"
+    },
+    "answer_key": "B",
+    "answer": "Xác lập mô hình tăng trưởng mới, đẩy mạnh công nghiệp hóa, hiện đại hóa, lấy khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số quốc gia là động lực chính."
+  },
+  {
+    "question": "Quan điểm bảo vệ Tổ quốc được xác định trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": {
+      "A": "Bảo vệ toàn vẹn lãnh thổ.",
+      "B": "Bảo vệ vững chắc, toàn vẹn lãnh thổ.",
+      "C": "Bảo vệ vững chắc độc lập, chủ quyền, thống nhất toàn vẹn lãnh thổ.",
+      "D": "Bảo vệ Tổ quốc từ sớm, từ xa."
+    },
+    "answer_key": "D",
+    "answer": "Bảo vệ Tổ quốc từ sớm, từ xa."
+  },
+  {
+    "question": "Quan điểm xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": {
+      "A": "Tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện.",
+      "B": "Tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện, hiệu lực, hiệu quả.",
+      "C": "Tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện, hiệu lực, hiệu quả đáp ứng yêu cầu nhiệm vụ.",
+      "D": "Xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện."
+    },
+    "answer_key": "A",
+    "answer": "Tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện."
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định mục tiêu về tỉ lệ xử lý và tái sử dụng nước thải ra môi trường lưu vực các sông đến năm 2030 là bao nhiêu?",
+    "options": {
+      "A": "a) 50-55%",
+      "B": "b) 55-60%",
+      "C": "c) 60-65%",
+      "D": "d) 65-70%"
+    },
+    "answer_key": "D",
+    "answer": "d) 65-70%"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định nguyên tắc bảo đảm và bảo vệ cao nhất lợi ích quốc gia - dân tộc dựa trên cơ sở nào?",
+    "options": {
+      "A": "Sức mạnh quân sự quốc phòng",
+      "B": "Các nguyên tắc cơ bản của luật pháp quốc tế và Hiến chương Liên hợp quốc",
+      "C": "Tiềm lực kinh tế quốc gia",
+      "D": "Bảo đảm đa dạng hóa các mối quan hệ quốc tế"
+    },
+    "answer_key": "B",
+    "answer": "Các nguyên tắc cơ bản của luật pháp quốc tế và Hiến chương Liên hợp quốc"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định mục tiêu đến năm 2030, Việt Nam phấn đấu trở thành nước như thế nào?",
+    "options": {
+      "A": "Nước phát triển, thu nhập cao",
+      "B": "Nước đang phát triển có công nghiệp hiện đại, thu nhập trung bình cao",
+      "C": "Nước công nghiệp phát triển",
+      "D": "Trung tâm tài chính khu vực"
+    },
+    "answer_key": "B",
+    "answer": "Nước đang phát triển có công nghiệp hiện đại, thu nhập trung bình cao"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định mô hình chủ nghĩa xã hội Việt Nam dựa trên bao nhiêu trụ cột nền tảng?",
+    "options": {
+      "A": "2 trụ cột",
+      "B": "3 trụ cột",
+      "C": "4 trụ cột",
+      "D": "5 trụ cột"
+    },
+    "answer_key": "B",
+    "answer": "3 trụ cột"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định tốc độ tăng trưởng GDP bình quân giai đoạn 2026-2030 phấn đấu đạt mức nào?",
+    "options": {
+      "A": "a) 6-7%/năm",
+      "B": "b) 7-8%/năm",
+      "C": "c) 8-9%/năm",
+      "D": "d) Từ 10%/năm trở lên"
+    },
+    "answer_key": "D",
+    "answer": "d) Từ 10%/năm trở lên"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định GDP bình quân đầu người đến năm 2030 khoảng bao nhiêu?",
+    "options": {
+      "A": "6.500 USD",
+      "B": "7.500 USD",
+      "C": "8.500 USD",
+      "D": "10.000 USD"
+    },
+    "answer_key": "C",
+    "answer": "8.500 USD"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định tỉ trọng kinh tế số trong GDP đến năm 2030 khoảng bao nhiêu?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "30%",
+      "D": "35 %"
+    },
+    "answer_key": "C",
+    "answer": "30%"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định tỉ lệ đô thị hoá đến năm 2030 phấn đấu đạt mức nào?",
+    "options": {
+      "A": "a) Đạt trên 45%",
+      "B": "b) Đạt trên 50%",
+      "C": "c) Đạt trên 55%",
+      "D": "d) Đạt trên 60%"
+    },
+    "answer_key": "D",
+    "answer": "d) Đạt trên 60%"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định chỉ số phát triển con người (HDI) giai đoạn 2026 - 2030 phấn đấu đạt khoảng bao nhiêu?",
+    "options": {
+      "A": "0,72",
+      "B": "0,75",
+      "C": "0,8",
+      "D": "0,82"
+    },
+    "answer_key": "C",
+    "answer": "0,8"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định tỉ lệ che phủ rừng giai đoạn 2026 - 2030 được duy trì ở mức nào?",
+    "options": {
+      "A": "38%",
+      "B": "40%",
+      "C": "42%",
+      "D": "45%"
+    },
+    "answer_key": "c",
+    "answer": "42%"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định thể chế nào được xác định là then chốt trong hệ thống thể chế phát triển?",
+    "options": {
+      "A": "Thể chế văn hoá",
+      "B": "Thể chế chính trị",
+      "C": "Thể chế xã hội",
+      "D": "Thể chế môi trường"
+    },
+    "answer_key": "B",
+    "answer": "Thể chế chính trị"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định thể chế nào được xác định là trọng tâm trong hệ thống thể chế phát triển?",
+    "options": {
+      "A": "Thể chế kinh tế",
+      "B": "Thể chế giáo dục",
+      "C": "Thể chế khoa học",
+      "D": "Thể chế quốc phòng"
+    },
+    "answer_key": "A",
+    "answer": "Thể chế kinh tế"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định mô hình tăng trưởng mới lấy trọng tâm là gì?",
+    "options": {
+      "A": "Khai thác tài nguyên",
+      "B": "Lao động tay nghề cao",
+      "C": "Kinh tế dữ liệu, kinh tế số, kinh tế xanh, kinh tế tuần hoàn",
+      "D": "Sản xuất công nghiệp"
+    },
+    "answer_key": "C",
+    "answer": "Kinh tế dữ liệu, kinh tế số, kinh tế xanh, kinh tế tuần hoàn"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định định hướng phát triển đất nước giai đoạn 2026 – 2030 về lĩnh vực văn hóa như thế nào?",
+    "options": {
+      "A": "Xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc",
+      "B": "Xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc, đồng bộ nền tảng hệ giá trị quốc gia, hệ giá trị văn hóa, hệ giá trị gia đình và chuẩn mực con người Việt Nam",
+      "C": "Xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc, hệ giá trị văn hóa, hệ giá trị gia đình và chuẩn mực con người Việt Nam",
+      "D": "Xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc, lấy hệ giá trị văn hóa, hệ giá trị gia đình và chuẩn mực con người Việt Nam làm cơ sở"
+    },
+    "answer_key": "B",
+    "answer": "Xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc, đồng bộ nền tảng hệ giá trị quốc gia, hệ giá trị văn hóa, hệ giá trị gia đình và chuẩn mực con người Việt Nam"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng khẳng định thực hiện nhất quán quan điểm giáo dục và đào tạo được xác định là gì?",
+    "options": {
+      "A": "Động lực cho phát triển",
+      "B": "Nhiệm vụ thường xuyên",
+      "C": "Quốc sách hàng đầu",
+      "D": "Lĩnh vực trọng tâm cần đầu tư phát triển"
+    },
+    "answer_key": "C",
+    "answer": "Quốc sách hàng đầu"
+  },
+  {
+    "question": ". Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định xây dựng nền giáo dục quốc dân hiện đại, công bằng theo hướng?",
+    "options": {
+      "A": "Xã hội hóa và hội nhập quốc tế",
+      "B": "Tập trung đầu tư có trọng điểm các vùng khó khăn",
+      "C": "Chuẩn hóa, hiện đại hóa, dân chủ hóa, xã hội hóa và hội nhập quốc tế",
+      "D": "Lấy khu vực đô thị là trung tâm, từng bước phát triển đồng bộ trong cả nước"
+    },
+    "answer_key": "C",
+    "answer": "Chuẩn hóa, hiện đại hóa, dân chủ hóa, xã hội hóa và hội nhập quốc tế"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định chuyển đổi số quốc gia gắn với yêu cầu nào sau đây?",
+    "options": {
+      "A": "Bảo đảm an ninh, an toàn",
+      "B": "Chuyển đổi số trong tất cả các lĩnh vực",
+      "C": "Chuyển đổi số không giới hạn",
+      "D": "Chuyển đổi số toàn diện"
+    },
+    "answer_key": "A",
+    "answer": "Bảo đảm an ninh, an toàn"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng khẳng định phát huy mạnh mẽ vai trò chủ thể của Nhân dân cần quán triệt sâu sắc quan điểm nào?",
+    "options": {
+      "A": "“Dân là nền tảng”, Nhân dân là chủ thể, là trung tâm của công cuộc đổi mới, xây dựng và bảo vệ Tổ quốc",
+      "B": "“Dân là gốc”, Nhân dân là chủ thể, là trung tâm của công cuộc đổi mới, xây dựng và bảo vệ Tổ quốc",
+      "C": "“Dân là điểm tựa”, Nhân dân là chủ thể, là trung tâm của công cuộc đổi mới, xây dựng và bảo vệ Tổ quốc",
+      "D": "“Dân là gốc”, là chủ thể, là trung tâm của công cuộc đổi mới, xây dựng và bảo vệ Tổ quốc"
+    },
+    "answer_key": "B",
+    "answer": "“Dân là gốc”, Nhân dân là chủ thể, là trung tâm của công cuộc đổi mới, xây dựng và bảo vệ Tổ quốc"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định mấy nhiệm vụ trọng tâm?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "answer_key": "C",
+    "answer": "6"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định ngành công nghiệp nào được ưu tiên?",
+    "options": {
+      "A": "Công nghiệp nặng",
+      "B": "Chip bán dẫn, trí tuệ nhân tạo",
+      "C": "Khai khoáng",
+      "D": "Công nghiệp khai khoáng"
+    },
+    "answer_key": "B",
+    "answer": "Chip bán dẫn, trí tuệ nhân tạo"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định phát triển nguồn nhân lực con người, phát triển văn hóa thực sự trở thành?",
+    "options": {
+      "A": "Nền tảng tinh thần, sức mạnh nội sinh cho sự phát triển nhanh, bền vững của đất nước",
+      "B": "Động lực to lớn cho sự phát triển nhanh, bền vững của đất nước",
+      "C": "Nền tảng tinh thần, sức mạnh nội sinh, động lực to lớn cho sự phát triển nhanh, bền vững của đất nước",
+      "D": "Cả a, b và c đều đúng"
+    },
+    "answer_key": "C",
+    "answer": "Nền tảng tinh thần, sức mạnh nội sinh, động lực to lớn cho sự phát triển nhanh, bền vững của đất nước"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định tăng cường xây dựng, chỉnh đốn, tự đổi mới để Đảng ta?",
+    "options": {
+      "A": "Thực sự là nhân văn",
+      "B": "Thực sự là đạo đức",
+      "C": "Thực sự là văn minh",
+      "D": "Thực sự là đạo đức, là văn minh"
+    },
+    "answer_key": "D",
+    "answer": "Thực sự là đạo đức, là văn minh"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định nhiệm vụ trọng tâm ưu tiên xây dựng đồng bộ thể chế phát triển, trong đó trọng tâm là gì?",
+    "options": {
+      "A": "Ban hành các luật, cơ chế, chính sách cho nhà đầu tư",
+      "B": "Tạo cơ chế thông thoáng cho đầu tư phát triển hạ tầng",
+      "C": "Hệ thống pháp luật, cơ chế, chính sách nhằm tháo gỡ kịp thời, dứt điểm các nút thắt, điểm nghẽn, thúc đẩy đổi mới sáng tạo, bảo đảm sự đồng bộ, hài hòa giữa tăng trưởng và phát triển",
+      "D": "Thúc đẩy đổi mới sáng tạo, bảo đảm sự đồng bộ, hài hòa giữa tăng trưởng và phát triển"
+    },
+    "answer_key": "C",
+    "answer": "Hệ thống pháp luật, cơ chế, chính sách nhằm tháo gỡ kịp thời, dứt điểm các nút thắt, điểm nghẽn, thúc đẩy đổi mới sáng tạo, bảo đảm sự đồng bộ, hài hòa giữa tăng trưởng và phát triển"
+  },
+  {
+    "question": "Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định nhiệm vụ trọng tâm tiếp tục đổi mới mạnh mẽ công tác cán bộ bảo đảm?",
+    "options": {
+      "A": "Thực chất, hiệu quả",
+      "B": "Đáp ứng yêu cầu, nhiệm vụ",
+      "C": "Đủ số lượng, cơ cấu hợp lý",
+      "D": "Cả a, b và c đều đúng"
+    },
+    "answer_key": "A",
+    "answer": "Thực chất, hiệu quả"
+  },
+  {
+    "question": "Đâu là nội dung trong khâu đột phá thứ nhất Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": {
+      "A": "Đột phá mạnh mẽ về thể chế phát triển, nâng cao năng lực hoạch định và tổ chức thực hiện chủ trương, đường lối của Đảng, chính sách, pháp luật của Nhà nước để khơi thông, giải phóng và phát huy hiệu quả mọi nguồn lực",
+      "B": "Đẩy mạnh phân cấp phân quyền trong quản lý, quản trị phát triển giữa Trung ương và địa phương, phát huy vai trò tự chủ, tự chịu trách  nhiệm của địa phương",
+      "C": "Thúc đẩy đột phá về phát triển khoa học, công nghê, đổi mới sáng tạo và chuyển đổi số phục vụ, kiến tạo phát triển",
+      "D": "Cả a, b và c đều đúng"
+    },
+    "answer_key": "D",
+    "answer": "Cả a, b và c đều đúng"
+  },
+  {
+    "question": "Đâu là nội dung trong khâu đột phá thứ hai Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": {
+      "A": "Tập trung chuyển đổi cơ cấu và nâng cao chất lượng nguồn nhân lực, phát triển nguồn nhân lực chất lượng cao, trình độ cao",
+      "B": "Tiếp tục hoàn thiện đồng bộ và đột phá mạnh mẽ trong xây dựng kết cấu hạ tầng kinh tế - xã hội",
+      "C": "Phát triển lực lượng sản xuất mới, các mô hình, phương thức sản xuất kinh doanh",
+      "D": "Cả a, b và c đều đúng"
+    },
+    "answer_key": "A",
+    "answer": "Tập trung chuyển đổi cơ cấu và nâng cao chất lượng nguồn nhân lực, phát triển nguồn nhân lực chất lượng cao, trình độ cao"
+  },
+  {
+    "question": "Nội dung khâu đột phá thứ ba trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng?",
+    "options": {
+      "A": "Hoàn thiện đồng bộ và đột phá mạnh mẽ trong xây dựng kết cấu hạ tầng kinh tế - xã hội; nhất là kết cấu hạ tầng giao thông đa phương thức, hạ tầng công nghệ phục vụ cho quá trình quản lý, quản trị và kiến tạo phát triển, hạ tầng chuyển đổi số, chuyển đổi xanh, chuyển đổi năng lượng, thích ứng với biến đổi khí hậu, hạ tầng văn hóa, giáo dục, thể thao",
+      "B": "Hoàn thiện đồng bộ và đột phá mạnh mẽ trong xây dựng kết cấu hạ tầng kinh tế - xã hội; nhất là kết cấu hạ tầng giao thông đa phương thức, hạ tầng công nghệ phục vụ cho quá trình quản lý, quản trị và kiến tạo phát triển, hạ tầng chuyển đổi số thích ứng với biến đổi khí hậu, hạ tầng văn hóa, giáo dục, thể thao",
+      "C": "Tiếp tục hoàn thiện đồng bộ và đột phá mạnh mẽ trong xây dựng kết cấu hạ tầng kinh tế - xã hội",
+      "D": "Tiếp tục hoàn thiện đồng bộ và đột phá mạnh mẽ trong xây dựng kết cấu hạ tầng kinh tế - xã hội; nhất là kết cấu hạ tầng giao thông đa phương thức, hạ tầng công nghệ phục vụ cho quá trình quản lý, quản trị và kiến tạo phát triển, hạ tầng chuyển đổi số, chuyển đổi xanh, chuyển đổi năng lượng, thích ứng với biến đổi khí hậu, hạ tầng văn hóa, giáo dục, thể thao"
+    },
+    "answer_key": "D",
+    "answer": "Tiếp tục hoàn thiện đồng bộ và đột phá mạnh mẽ trong xây dựng kết cấu hạ tầng kinh tế - xã hội; nhất là kết cấu hạ tầng giao thông đa phương thức, hạ tầng công nghệ phục vụ cho quá trình quản lý, quản trị và kiến tạo phát triển, hạ tầng chuyển đổi số, chuyển đổi xanh, chuyển đổi năng lượng, thích ứng với biến đổi khí hậu, hạ tầng văn hóa, giáo dục, thể thao"
+  },
+  {
+    "question": "Đâu là nội dung trong khâu đột phá thứ nhất trong Nghị quyết Đại hội đại biểu toàn quốc lần thứ XIV của Đảng xác định?",
+    "options": {
+      "A": "Đẩy mạnh thu hút và trọng dụng nhân tài",
+      "B": "Phát triển kinh tế nhà nước thật sự đóng vai trò chủ đạo, thúc đẩy phát triển kinh tế tư nhân",
+      "C": "Đổi mới mạnh mẽ công tác cán bộ bảo đảm khách quan, dân chủ, thực chất, hiệu quả",
+      "D": "Cả a, b và c đều đúng"
+    },
+    "answer_key": "B",
+    "answer": "Phát triển kinh tế nhà nước thật sự đóng vai trò chủ đạo, thúc đẩy phát triển kinh tế tư nhân"
+  },
+  {
+    "question": "Theo Hướng dẫn số 1031/HD-CT ngày 20/6/2016 của Tổng cục Chính trị, có mấy loại nghị quyết cơ bản?",
+    "options": {
+      "A": "01 loại",
+      "B": "02 loại",
+      "C": "03 loại",
+      "D": "04 loại"
+    },
+    "answer_key": "B",
+    "answer": "02 loại"
+  },
+  {
+    "question": "Hướng dẫn số 5119/HD-CT ngày 25/12/2025 của Tổng cục Chính trị nói về vấn đề gì?",
+    "options": {
+      "A": "Công tác kiểm tra giám sát và thi hành kỷ luật đảng",
+      "B": "Một số vấn đề về tiếp tục đổi mới và nâng cao chất lượng sinh hoạt chi bộ trong Đảng bộ Quân đội trong giai đoạn mới",
+      "C": "Nội dung các bước tiến hành hội nghị đảng ủy, sinh hoạt chi bộ",
+      "D": "Cả a, b đều đúng"
+    },
+    "answer_key": "B",
+    "answer": "Một số vấn đề về tiếp tục đổi mới và nâng cao chất lượng sinh hoạt chi bộ trong Đảng bộ Quân đội trong giai đoạn mới"
+  },
+  {
+    "question": "Theo Hướng dẫn số 5119/HD-CT ngày 25/12/2025 của Tổng cục Chính trị, sinh hoạt chi bộ thường kỳ vào thời gian nào?",
+    "options": {
+      "A": "Thứ 2 tuần đầu tháng",
+      "B": "Thứ 3 tuần đầu tháng",
+      "C": "Thứ 4 tuần đầu tháng",
+      "D": "Thứ 5 tuần đầu tháng"
+    },
+    "answer_key": "D",
+    "answer": "Thứ 5 tuần đầu tháng"
+  },
+  {
+    "question": "Theo Hướng dẫn số 5119/HD-CT ngày 25/12/2025 của Tổng cục Chính trị, có mấy tiêu chí đánh giá chất lượng sinh hoạt chi bộ?",
+    "options": {
+      "A": "7 tiêu chí",
+      "B": "6 tiêu chí",
+      "C": "5 tiêu chí",
+      "D": "4 tiêu chí"
+    },
+    "answer_key": "A",
+    "answer": "7 tiêu chí"
+  },
+  {
+    "question": "Theo Hướng dẫn số 5119/HD-CT ngày 25/12/2025 của Tổng cục Chính trị, thời gian một buổi sinh hoạt thường kỳ hằng tháng đối với chi bộ có chi ủy tối thiểu bao nhiêu phút?",
+    "options": {
+      "A": "60 phút",
+      "B": "70 phút",
+      "C": "80 phút",
+      "D": "90 phút"
+    },
+    "answer_key": "D",
+    "answer": "90 phút"
+  },
+  {
+    "question": "Theo Hướng dẫn số 5119/HD-CT ngày 25/12/2025của Tổng cục Chính trị, khi nào thì đánh giá chất lượng một buổi sinh hoạt chi bộ thường kỳ hằng tháng đạt Loại khá?",
+    "options": {
+      "A": "Đạt từ 60 điểm đến dưới 80 điểm",
+      "B": "Đạt từ 60 điểm đến dưới 90 điểm",
+      "C": "Đạt từ 70 điểm đến dưới 80 điểm",
+      "D": "Đạt từ 70 điểm đến dưới 90 điểm"
+    },
+    "answer_key": "D",
+    "answer": "Đạt từ 70 điểm đến dưới 90 điểm"
+  },
+  {
+    "question": "Theo Quy định số 296-QĐ/TW ngày 30/5/2025 của BCHTW, khi phát hiện tổ chức đảng có dấu hiệu vi phạm nhưng chưa gây hậu quả nghiêm trọng, yêu cầu đặt ra đối với công tác kiểm tra, giám sát là gì?",
+    "options": {
+      "A": "Tạm dừng xem xét, chờ kết luận của cơ quan nhà nước có thẩm quyền",
+      "B": "Chỉ tiến hành giám sát, không cần kiểm tra",
+      "C": "Chủ động kiểm tra, kịp thời ngăn ngừa, không để vi phạm phát triển thành sai phạm nghiêm trọng",
+      "D": "Chuyển toàn bộ hồ sơ cho cơ quan điều tra"
+    },
+    "answer_key": "C",
+    "answer": "Chủ động kiểm tra, kịp thời ngăn ngừa, không để vi phạm phát triển thành sai phạm nghiêm trọng"
+  },
+  {
+    "question": "Điểm mới thể hiện rõ tinh thần phòng ngừa trong Quy định số 296-QĐ/TW ngày 30/5/2025 của BCHTW là nội dung nào sau đây?",
+    "options": {
+      "A": "Chỉ tập trung xử lý kỷ luật khi đã có vi phạm rõ ràng",
+      "B": "Đề cao kiểm tra đột xuất thay cho kiểm tra thường xuyên",
+      "C": "Kết hợp chặt chẽ giữa kiểm tra, giám sát với tự kiểm tra của tổ chức đảng và đảng viên",
+      "D": "Tăng nặng hình thức kỷ luật đối với mọi vi phạm"
+    },
+    "answer_key": "C",
+    "answer": "Kết hợp chặt chẽ giữa kiểm tra, giám sát với tự kiểm tra của tổ chức đảng và đảng viên"
+  },
+  {
+    "question": "Trong quá trình thực hiện Quy định số 296-QĐ/TW ngày 30/5/2025 của BCHTW, vai trò của Hướng dẫn số 08-HD/TW của Ban Bí thư được hiểu đúng nhất là gì?",
+    "options": {
+      "A": "Là văn bản có giá trị pháp lý cao hơn Quy định số 296-QĐ/TW",
+      "B": "Là văn bản thay thế các quy định trước đây về kiểm tra, giám sát",
+      "C": "Là căn cứ duy nhất để xem xét kỷ luật tổ chức đảng, đảng viên",
+      "D": "Là văn bản hướng dẫn, làm rõ cách hiểu và cách thực hiện thống nhất Quy định số 296-QĐ/TW"
+    },
+    "answer_key": "D",
+    "answer": "Là văn bản hướng dẫn, làm rõ cách hiểu và cách thực hiện thống nhất Quy định số 296-QĐ/TW"
+  },
+  {
+    "question": "Theo tinh thần của Quy định số 296-QĐ/TW ngày 30/5/2025 của BCHTW, việc xem xét kỷ luật đối với đảng viên đã nghỉ hưu hoặc chuyển công tác được thực hiện như thế nào?",
+    "options": {
+      "A": "Không xem xét kỷ luật vì không còn đương chức",
+      "B": "Chỉ xem xét trách nhiệm hành chính, không kỷ luật Đảng",
+      "C": "Vẫn xem xét, xử lý kỷ luật theo quy định nếu có vi phạm trong thời gian công tác",
+      "D": "Chỉ xem xét khi có yêu cầu của cơ quan pháp luật"
+    },
+    "answer_key": "C",
+    "answer": "Vẫn xem xét, xử lý kỷ luật theo quy định nếu có vi phạm trong thời gian công tác"
+  },
+  {
+    "question": "Đồng chí hãy cho biết Khái niệm công tác cán bộ?",
+    "options": {
+      "A": "Công tác cán bộ trong QĐND Việt Nam là một mặt công tác của cấp ủy, chính ủy, chính trị viên (bí thư), người chỉ huy, cơ quan chính trị các cấp và sự tham gia của các ngành trong Quân đội, nhằm xây dựng đội ngũ cán bộ đáp ứng yêu cầu nhiệm vụ của Quân đội trong từng giai đoạn cách mạng.",
+      "B": "Công tác cán bộ là một trong những nội dung chủ yếu của công tác đảng, công tác chính trị trong Quân đội nhân dân Việt Nam; có ý nghĩa quyết định đối với việc xây dựng đội ngũ cán bộ và xây dựng hệ thống chỉ huy, quản lý của Quân đội.",
+      "C": "Công tác cán bộ là một trong những nội dung chủ yếu của công tác đảng, công tác chính trị trong Quân đội nhân dân Việt Nam.",
+      "D": "Cả 3 phương án trên đều sai."
+    },
+    "answer_key": "A",
+    "answer": "Công tác cán bộ trong QĐND Việt Nam là một mặt công tác của cấp ủy, chính ủy, chính trị viên (bí thư), người chỉ huy, cơ quan chính trị các cấp và sự tham gia của các ngành trong Quân đội, nhằm xây dựng đội ngũ cán bộ đáp ứng yêu cầu nhiệm vụ của Quân đội trong từng giai đoạn cách mạng."
+  },
+  {
+    "question": "Đồng chĩ hãy cho biết bổ nhiệm giữ các chức vụ chỉ huy, quản lý trong Quân đội theo Quy chế số 2036-QC/QUTW ngày 16/6/2023 của Quân uỷ Trung ương thời hạn là bao nhiêu năm?",
+    "options": {
+      "A": "4 năm.",
+      "B": "5 năm.",
+      "C": "6 năm.",
+      "D": "7 năm."
+    },
+    "answer_key": "B",
+    "answer": "5 năm."
+  },
+  {
+    "question": "Quy trình bổ nhiệm đối với nguồn nhân sự tại chỗ đối với cấp uỷ có thường vụ được quy định trong quy chế công tác cán bộ trong Quân đội nhân dân Việt Nam ban hành kèm theo Quy chế số 2036-QC/QUTW ngày 16/6/2023 của Quân uỷ Trung ương) gồm bao nhiêu bước?",
+    "options": {
+      "A": "3 bước.",
+      "B": "4 bước.",
+      "C": "5 bước.",
+      "D": "6 bước."
+    },
+    "answer_key": "C",
+    "answer": "5 bước."
+  },
+  {
+    "question": "Đồng chí hãy cho biết Hướng dẫn số 22/HD-CT ngày 05/01/2023 của Tổng Cục Chính trị quy định về nội dung gì?",
+    "options": {
+      "A": "Thăng quân hàm sĩ quan các cấp và nâng lương cán bộ trong Quân đội nhân dân Việt Nam.",
+      "B": "Lấy phiếu tín nhiệm đối với cấp uỷ viên, cán bộ chỉ huy, quản lý trong Quân đội nhân dân Việt Nam.",
+      "C": "Quy hoạch cán bộ quản lý trong Quân đội nhân dân Việt Nam.",
+      "D": "Quy định về đối tượng, tiêu chuẩn đào tạo cán bộ Quân đội nhân dân Việt Nam."
+    },
+    "answer_key": "A",
+    "answer": "Thăng quân hàm sĩ quan các cấp và nâng lương cán bộ trong Quân đội nhân dân Việt Nam."
+  },
+  {
+    "question": "CĐồng chí hãy cho biết Thông tư số 06/2025/TT-BQP ngày 26/01/2025 của Bộ Quốc phòng quy định về nội dung gì?",
+    "options": {
+      "A": "Thăng quân hàm sĩ quan các cấp và nâng lương cán bộ trong Quân đội nhân dân Việt Nam.",
+      "B": "Lấy phiếu tín nhiệm đối với cấp uỷ viên, cán bộ chỉ huy, quản lý trong Quân đội nhân dân Việt Nam.",
+      "C": "Quy hoạch cán bộ quản lý trong Quân đội nhân dân Việt Nam.",
+      "D": "Quy định về đối tượng, tiêu chuẩn đào tạo cán bộ Quân đội nhân dân Việt Nam."
+    },
+    "answer_key": "D",
+    "answer": "Quy định về đối tượng, tiêu chuẩn đào tạo cán bộ Quân đội nhân dân Việt Nam."
+  },
+  {
+    "question": "Theo Thông tư 05/2019/TT-BQP ngày 16/01/2019 của Bộ Quốc phòng Quy định tiêu chuẩn chính trị của sĩ quan, quân nhân chuyên nghiệp, công chức, công nhân và viên chức quốc phòng trong Quân đội nhân dân Việt Nam thì trường hợp nào không tuyển vào đội ngũ sĩ quan, QNCN, công chức, công nhân và viên chức quốc phòng?",
+    "options": {
+      "A": "Tàng trữ, mua bán, sử dụng trái phép chất ma túy; tham gia các tệ nạn xã hội; có hành vi xâm phạm thuần phong mỹ tục, truyền thống văn hóa tốt đẹp của dân tộc, chuẩn mực đạo đức gia đình và xã hội; trên cơ thể có hình xăm, chữ xăm ½ lưng, ngực, bụng và vị trí lộ diện mặt, đầu, cổ, tay.",
+      "B": "Tàng trữ, mua bán, sử dụng trái phép chất ma túy; tham gia các tệ nạn xã hội; có hành vi xâm phạm thuần phong mỹ tục, truyền thống văn hóa tốt đẹp của dân tộc, chuẩn mực đạo đức gia đình và xã hội; trên cơ thể có hình xăm, chữ xăm quá ½ lưng, ngực, bụng.",
+      "C": "Tàng trữ, mua bán, sử dụng trái phép chất ma túy; tham gia các tệ nạn xã hội; có hành vi xâm phạm thuần phong mỹ tục, truyền thống văn hóa tốt đẹp của dân tộc, chuẩn mực đạo đức gia đình và xã hội; trên cơ thể có hình xăm, chữ xăm ở vị trí lộ diện mặt, đầu, cổ, tay.",
+      "D": "Tàng trữ, mua bán, sử dụng trái phép chất ma túy; tham gia các tệ nạn xã hội; có hành vi xâm phạm thuần phong mỹ tục, truyền thống văn hóa tốt đẹp của dân tộc, chuẩn mực đạo đức gia đình và xã hội; trên cơ thể có hình xăm, chữ xăm."
+    },
+    "answer_key": "D",
+    "answer": "Tàng trữ, mua bán, sử dụng trái phép chất ma túy; tham gia các tệ nạn xã hội; có hành vi xâm phạm thuần phong mỹ tục, truyền thống văn hóa tốt đẹp của dân tộc, chuẩn mực đạo đức gia đình và xã hội; trên cơ thể có hình xăm, chữ xăm."
+  },
+  {
+    "question": "Theo hướng dẫn 185/HD-CT ngày 04/6/2019 của Cục Chính trị, Quân khu 5, thì CSBV bố trí ở cấp nào, số lượng bao nhiêu?",
+    "options": {
+      "A": "CSBV ở cấp tiểu đội và tương đương, số lượng 01 đồng chí.",
+      "B": "CSBV ở cấp tiểu đội và tương đương, số lượng 02 đồng chí.",
+      "C": "CSBV ở cấp trung đội và tương đương, số lượng 01 đồng chí.",
+      "D": "CSBV ở cấp trung đội và tương đương, số lượng 02 đồng chí."
+    },
+    "answer_key": "A",
+    "answer": "CSBV ở cấp tiểu đội và tương đương, số lượng 01 đồng chí."
+  },
+  {
+    "question": "Theo hướng dẫn 185/HD-CT ngày 04/6/2019 của Cục Chính trị, Quân khu 5 ai được phân công quản lý, phụ trách chiến sĩ bảo vệ?",
+    "options": {
+      "A": "Chiến sĩ bảo vệ chịu sự quản lý của cấp ủy, người chỉ huy, cán bộ chính trị mà trực tiếp là đồng chí bí thư hoặc phó bí thư cấp ủy, chi bộ.",
+      "B": "Chiến sĩ bảo vệ chịu sự quản lý của cấp ủy, người chỉ huy, cán bộ chính trị mà trực tiếp là đồng chí bí thư cấp ủy, chi bộ.",
+      "C": "Chiến sĩ bảo vệ chịu sự quản lý của cấp ủy, chính ủy, chính trị viên, người chỉ huy, mà trực tiếp là đồng chí bí thư cấp ủy, chi bộ.",
+      "D": "Chiến sĩ bảo vệ chịu sự quản lý của cấp ủy, người chỉ huy, cán bộ chính trị mà trực tiếp là đồng chí chính trị viên phụ trách."
+    },
+    "answer_key": "C",
+    "answer": "Chiến sĩ bảo vệ chịu sự quản lý của cấp ủy, chính ủy, chính trị viên, người chỉ huy, mà trực tiếp là đồng chí bí thư cấp ủy, chi bộ."
+  },
+  {
+    "question": "Theo Thông tư số 122/2024/TT-BQP ngày 31/12/2024 của Bộ Quốc phòng quy định về thực hiện dân chủ cơ sở trong Quân đội nhân dân Việt Nam thì đại hội quân nhân được tổ chức:",
+    "options": {
+      "A": "a) 5 năm/01 lần.",
+      "B": "b) 5 năm/02 lần.",
+      "C": "c) 5 năm/03 lần.",
+      "D": "d) 5 năm/04 lần."
+    },
+    "answer_key": "B",
+    "answer": "b) 5 năm/02 lần."
+  },
+  {
+    "question": "Theo Điểm a, khoản 3, Điều 28, Thông tư số 122/2024/TT-BQP ngày 31/12/2024 của Bộ Quốc phòng quy định về thực hiện dân chủ cơ sở trong Quân đội nhân dân Việt Nam thì số lượng Ủy viên Hội đồng quân nhân được quy định:",
+    "options": {
+      "A": "Cơ quan, đơn vị có quân số đến 40 người, bầu từ 03-07 ủy viên; trên 40 người bầu không quá 07 ủy viên.",
+      "B": "Cơ quan, đơn vị có quân số đến 50 người, bầu từ 03-05 ủy viên; trên 50 người bầu không quá 09 ủy viên.",
+      "C": "Cơ quan, đơn vị có quân số đến 60 người, bầu từ 03-05 ủy viên; trên 60 người bầu không quá 09 ủy viên.",
+      "D": "Cơ quan, đơn vị có quân số đến 70 người, bầu từ 03-05 ủy viên; trên 70 người bầu không quá 09 ủy viên."
+    },
+    "answer_key": "C",
+    "answer": "Cơ quan, đơn vị có quân số đến 60 người, bầu từ 03-05 ủy viên; trên 60 người bầu không quá 09 ủy viên."
+  },
+  {
+    "question": "Theo Hướng dẫn số 417/HD-CT ngày 05 tháng 8 năm 2021 của Phòng Chính trị Sư đoàn, trong thực hiện chủ trương “Hũ gạo vì người nghèo” mức tiết kiệm mỗi đồng chí/ngày là:",
+    "options": {
+      "A": "20 gam gạo/ngày.",
+      "B": "30 gam gạo/ngày.",
+      "C": "40 gam gạo/ngày.",
+      "D": "50 gam gạo/ngày."
+    },
+    "answer_key": "A",
+    "answer": "20 gam gạo/ngày."
+  },
+  {
+    "question": "Theo Thông tư số 157/2011/TT-BQP của Bộ Quốc phòng ngày 15/5/2011 số lượng Tổ công tác dân vận gồm bao nhiêu đồng chí?",
+    "options": {
+      "A": "Từ 3-5 đồng chí.",
+      "B": "Từ 4-6 đồng chí.",
+      "C": "Từ 3-7 đồng chí.",
+      "D": "Từ 5-7 đồng chí."
+    },
+    "answer_key": "D",
+    "answer": "Từ 5-7 đồng chí."
+  },
+  {
+    "question": "Tiêu đề của Chỉ thị số 154/ĐUQSTW ngày 09/4/2008?",
+    "options": {
+      "A": "Về tiếp tục đổi mới, tăng cường công tác tôn giáo trong thời kỳ mới.",
+      "B": "Về tiếp tục đổi mới, tăng cường công tác tuyên truyền đặc biệt trong thời kỳ mới.",
+      "C": "Về tiếp tục đổi mới, tăng cường công tác dân tộc trong thời kỳ mới.",
+      "D": "Về tiếp tục đổi mới, tăng cường công tác vận động quần chúng trong tình hình mới."
+    },
+    "answer_key": "B",
+    "answer": "Về tiếp tục đổi mới, tăng cường công tác tuyên truyền đặc biệt trong thời kỳ mới."
+  },
+  {
+    "question": "Giám sát thường xuyên bao gồm các hình thức nào?",
+    "options": {
+      "A": "Giám sát trực tiếp và giám sát đột xuất.",
+      "B": "Giám sát trực tiếp và giám sát gián tiếp.",
+      "C": "Giám sát chuyên đề và giám sát đột xuất.",
+      "D": "Giám sát qua báo cáo và giám sát qua kiểm tra"
+    },
+    "answer_key": "B",
+    "answer": "Giám sát trực tiếp và giám sát gián tiếp."
+  },
+  {
+    "question": "Thời hiệu xử lý kỷ luật được tính từ thời điểm nào?",
+    "options": {
+      "A": "Từ thời điểm tổ chức đảng, đảng viên bị phát hiện vi phạm.",
+      "B": "Từ thời điểm tổ chức đảng, đảng viên có hành vi vi phạm đến khi tổ chức đảng có thẩm quyền kết luận vi phạm đến mức phải xử lý kỷ luật.",
+      "C": "Từ ngày công bố quyết định xử lý kỷ luật.",
+      "D": "Từ khi ban hành thông báo vi phạm."
+    },
+    "answer_key": "B",
+    "answer": "Từ thời điểm tổ chức đảng, đảng viên có hành vi vi phạm đến khi tổ chức đảng có thẩm quyền kết luận vi phạm đến mức phải xử lý kỷ luật."
+  },
+  {
+    "question": "Đối với hành vi vi phạm không xác định được thời điểm chấm dứt thì thời điểm có hành vi vi phạm được tính từ khi nào?",
+    "options": {
+      "A": "Từ thời điểm phát hiện.",
+      "B": "Từ thời điểm có kết luận của cấp có thẩm quyền.",
+      "C": "Từ thời điểm bắt đầu hành vi vi phạm.",
+      "D": "Từ ngày vi phạm bị đưa ra ánh sáng."
+    },
+    "answer_key": "B",
+    "answer": "Từ thời điểm có kết luận của cấp có thẩm quyền."
+  },
+  {
+    "question": "Chi bộ chủ yếu giám sát thường xuyên đối với đảng viên ở đâu?",
+    "options": {
+      "A": "Nơi công tác, sinh hoạt.",
+      "B": "Nơi cư trú.",
+      "C": "Nơi cư trú và nơi công tác",
+      "D": "Nơi công tác, sinh hoạt và nơi cư trú."
+    },
+    "answer_key": "D",
+    "answer": "Nơi công tác, sinh hoạt và nơi cư trú."
+  },
+  {
+    "question": "Chi bộ có chi ủy, chi bộ có trên 30 đảng viên và đảng viên hoạt động phân tán hoặc có nhiều tổ đảng trực thuộc thì thực hiện giám sát theo hình thức nào?",
+    "options": {
+      "A": "Giám sát trực tiếp.",
+      "B": "Giám sát gián tiếp.",
+      "C": "Giám sát theo chuyên đề.",
+      "D": "Tự kiểm tra"
+    },
+    "answer_key": "C",
+    "answer": "Giám sát theo chuyên đề."
+  },
+  {
+    "question": "Khi đã có báo cáo đề nghị xử lý kỷ luật tổ chức đảng, đảng viên có vi phạm nhưng phát hiện có thêm các tình tiết liên quan hoặc hành vi vi phạm khác thì tổ chức đảng có thẩm quyền sẽ làm gì?",
+    "options": {
+      "A": "Chuyển hồ sơ cho cấp trên xử lý.",
+      "B": "Tiếp tục xem xét, quyết định hoặc giao đoàn (tổ) kiểm tra, thẩm tra, xác minh bổ sung nội dung vi phạm để đề nghị xem xét lại hình thức kỷ luật.",
+      "C": "Đình chỉ việc xử lý.",
+      "D": "Bỏ qua các tình tiết mới."
+    },
+    "answer_key": "B",
+    "answer": "Tiếp tục xem xét, quyết định hoặc giao đoàn (tổ) kiểm tra, thẩm tra, xác minh bổ sung nội dung vi phạm để đề nghị xem xét lại hình thức kỷ luật."
+  },
+  {
+    "question": "Việc giải quyết khiếu nại kỷ luật Đảng thông thường được tiến hành như thế nào?",
+    "options": {
+      "A": "Từ trên xuống dưới.",
+      "B": "Tuần tự từ dưới lên.",
+      "C": "Trực tiếp từ Ủy ban Kiểm tra Trung ương.",
+      "D": "Theo đề nghị của cấp ủy."
+    },
+    "answer_key": "B",
+    "answer": "Tuần tự từ dưới lên."
+  },
+  {
+    "question": "Theo Hướng dẫn số 39/HD-CT ngày 17/01/2024 của Cục Chính trị Quân khu về Kiểm điểm, đánh giá, xếp loại chất lượng hằng năm đối với tổ chức đoàn, cán bộ đoàn, đoàn viên, thanh niên trong LLVT Quân khu (giai đoạn 2023 - 2027), nội dung kiểm điểm tự phê bình và phê bình đối với Ban chấp hành chi đoàn, ban chấp hành liên chi đoàn, ban chấp hành đoàn cơ sở bao gồm:",
+    "options": {
+      "A": "Kiểm điểm việc quán triệt, thực hiện các chủ trương, đường lối của Đảng, chính sách, pháp luật của Nhà nước, nghị quyết, quyết định, chỉ thị, kết luận của Trung ương đoàn, Tổng cục Chính trị, Quân khu, cấp ủy, chỉ huy các cấp. Việc khắc phục những hạn chế, khuyết điểm được chỉ ra ở kỳ kiểm điểm trước. Những vấn đề được gợi ý kiểm điểm (nếu có).",
+      "B": "Kiểm điểm việc quán triệt, thực hiện các chủ trương, đường lối của Đảng, chính sách, pháp luật của Nhà nước, nghị quyết, quyết định, chỉ thị, kết luận của Trung ương đoàn, Tổng cục Chính trị, Quân khu, cấp ủy, chỉ huy các cấp. Kết quả thực hiện nội dung CTĐ và PTTN hằng năm. Việc khắc phục những hạn chế, khuyết điểm được chỉ ra ở kỳ kiểm điểm trước.",
+      "C": "Kiểm điểm việc quán triệt, thực hiện các chủ trương, đường lối của Đảng, chính sách, pháp luật của Nhà nước, nghị quyết, quyết định, chỉ thị, kết luận của Trung ương đoàn, Tổng cục Chính trị, Quân khu, cấp ủy, chỉ huy các cấp. Kết quả thực hiện nội dung CTĐ và PTTN hằng năm. Những vấn đề được gợi ý kiểm điểm (nếu có).",
+      "D": "Kiểm điểm việc quán triệt, thực hiện các chủ trương, đường lối của Đảng, chính sách, pháp luật của Nhà nước, nghị quyết, quyết định, chỉ thị, kết luận của Trung ương đoàn, Tổng cục Chính trị, Quân khu, cấp ủy, chỉ huy các cấp. Kết quả thực hiện nội dung CTĐ và PTTN hằng năm."
+    },
+    "answer_key": "C",
+    "answer": "Kiểm điểm việc quán triệt, thực hiện các chủ trương, đường lối của Đảng, chính sách, pháp luật của Nhà nước, nghị quyết, quyết định, chỉ thị, kết luận của Trung ương đoàn, Tổng cục Chính trị, Quân khu, cấp ủy, chỉ huy các cấp. Kết quả thực hiện nội dung CTĐ và PTTN hằng năm. Những vấn đề được gợi ý kiểm điểm (nếu có)."
+  },
+  {
+    "question": "Theo Hướng dẫn số 39/HD-CT ngày 17/01/2024 của Cục Chính trị Quân khu về Kiểm điểm, đánh giá, xếp loại chất lượng hằng năm đối với tổ chức đoàn, cán bộ đoàn, đoàn viên, thanh niên trong LLVT Quân khu (giai đoạn 2023 - 2027), việc xếp loại chất lượng hoàn thành xuất sắc nhiệm vụ đối với đoàn viên nếu đạt được tiêu chí nào sau đây?",
+    "options": {
+      "A": "Là những đoàn viên thực hiện tốt các nội dung đánh giá; hoàn thành xuất sắc chương trình rèn luyện đoàn viên (riêng thực hiện chức trách nhiệm vụ được giao phải hoàn thành từ mức tốt trở lên).",
+      "B": "Là những đoàn viên thực hiện khá các nội dung đánh giá; hoàn thành tốt chương trình rèn luyện đoàn viên.",
+      "C": "Hoàn thành xuất sắc chương trình rèn luyện đoàn viên (riêng thực hiện chức trách nhiệm vụ được giao phải hoàn thành từ mức tốt trở lên).",
+      "D": "Không có phương án nào đúng."
+    },
+    "answer_key": "A",
+    "answer": "Là những đoàn viên thực hiện tốt các nội dung đánh giá; hoàn thành xuất sắc chương trình rèn luyện đoàn viên (riêng thực hiện chức trách nhiệm vụ được giao phải hoàn thành từ mức tốt trở lên)."
+  },
+  {
+    "question": "Nghị quyết 847-NQ/QUTW ngày 28/12/2021 của Quân ủy Trung ương đã chỉ ra bao nhiêu đặc trưng cơ bản phẩm chất “Bộ đội Cụ Hồ”?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "8"
+    },
+    "answer_key": "B",
+    "answer": "5"
+  },
+  {
+    "question": "Đâu là nội dung đặc trưng cơ bản phẩm chất “Bộ đội Cụ Hồ” theo Nghị quyết 847-NQ/QUTW ngày 28/12/2021 của Quân ủy Trung ương?",
+    "options": {
+      "A": "Bản lĩnh chính trị vững vàng, động cơ trong sáng, trách nhiệm cao.",
+      "B": "Có đạo đức cách mạng trong sáng, lối sống trung thực, khiêm tốn, giản dị, chân thành, lạc quan; nói đi đôi với làm, luôn đặt lợi ích của tập thể lên trên lợi ích của cá nhân; không thỏa mãn với thành tích, không chùn bước trước khó khăn, hiểm nguy.",
+      "C": "Có văn hóa, tri thức khoa học, trình độ quân sự, năng lực, phương pháp, tác phong công tác và sức khỏe tốt đáp ứng yêu cầu nhiệm vụ.",
+      "D": "Cả 3 phương án trên."
+    },
+    "answer_key": "B",
+    "answer": "Có đạo đức cách mạng trong sáng, lối sống trung thực, khiêm tốn, giản dị, chân thành, lạc quan; nói đi đôi với làm, luôn đặt lợi ích của tập thể lên trên lợi ích của cá nhân; không thỏa mãn với thành tích, không chùn bước trước khó khăn, hiểm nguy."
+  },
+  {
+    "question": "Theo Nghị quyết 847-NQ/QUTW ngày 28/12/2021 của Quân ủy Trung ương, có bao nhiêu biểu hiện chủ nghĩa cá nhân?",
+    "options": {
+      "A": "9",
+      "B": "10",
+      "C": "12",
+      "D": "15"
+    },
+    "answer_key": "B",
+    "answer": "10"
+  },
+  {
+    "question": "“Không quan tâm đến lợi ích chung, làm việc gì cũng chỉ mưu cầu cho lợi ích cá nhân; sống ích kỷ, thực dụng, cơ hội, vụ lợi; ganh ghét, đố kị, so bì, tị nạnh không muốn người khác hơn mình” là nội dung thuộc nhóm biểu hiện nào của Nghị quyết 847-NQ/QUTW ngày 28/12/2021 của Quân ủy Trung ương?",
+    "options": {
+      "A": "Biểu hiện suy thoái về tư tưởng chính trị.",
+      "B": "Biểu hiện về suy thoái đạo đức, lối sống.",
+      "C": "Biểu hiện “tự diễn biến”, “tự chuyển hóa” trong nội bộ.",
+      "D": "Biểu hiện của chủ nghĩa cá nhân."
+    },
+    "answer_key": "D",
+    "answer": "Biểu hiện của chủ nghĩa cá nhân."
+  },
+  {
+    "question": "Theo Chỉ thị số 855 CT/QUTW ngày 12/8/2019 của Thường vụ Quân ủy Trung ương, một trong những chuẩn mực “Bộ đội Cụ Hồ” đó là?",
+    "options": {
+      "A": "Tích cực tăng gia sản xuất, thực hành tiết kiệm, chống lãng phí, tham nhũng.",
+      "B": "Đời tư trong sáng, cuộc sống riêng giản dị.",
+      "C": "Có văn hóa, tri thức khoa học, trình độ quân sự, năng lực, phương pháp, tác phong công tác và sức khỏe tốt đáp ứng yêu cầu nhiệm vụ.",
+      "D": "Khiêm tốn, gần gũi, tôn trọng cấp dưới, tận tụy với Nhân dân, thương yêu chiến sĩ."
+    },
+    "answer_key": "C",
+    "answer": "Có văn hóa, tri thức khoa học, trình độ quân sự, năng lực, phương pháp, tác phong công tác và sức khỏe tốt đáp ứng yêu cầu nhiệm vụ."
+  },
+  {
+    "question": "Theo Chỉ thị số 855 CT/QUTW ngày 12/8/2019 của Thường vụ Quân ủy Trung ương, một trong những chuẩn mực “Bộ đội Cụ Hồ” đó là?",
+    "options": {
+      "A": "Chấp hành nghiêm pháp luật, kỷ luật, bảo đảm an toàn.",
+      "B": "Chấp hành nghiêm nguyên tắc tập trung dân chủ, đoàn kết trong đơn vị.",
+      "C": "Thực hành dân chủ, kỷ luật tự giác, nghiêm minh.",
+      "D": "Thực hành dân chủ, đoàn kết nội bộ, đoàn kết quân dân."
+    },
+    "answer_key": "C",
+    "answer": "Thực hành dân chủ, kỷ luật tự giác, nghiêm minh."
+  },
+  {
+    "question": "Theo Chỉ thị số 855 CT/QUTW ngày 12/8/2019 của Thường vụ Quân ủy Trung ương, một trong những chuẩn mực “Bộ đội Cụ Hồ” đó là?",
+    "options": {
+      "A": "Bản lĩnh chính trị vững vàng, động cơ trong sáng, trách nhiệm cao.",
+      "B": "Trung thành với chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh, hoàn thành tốt nhiệm vụ được giao.",
+      "C": "Bản lĩnh chính trị vững vàng, trung thành với sự nghiệp cách mạng của Đảng.",
+      "D": "Trung thành với sự nghiệp cách mạng của Đảng, sẵn sàng nhận và hoàn thành tốt mọi nhiệm vụ được giao"
+    },
+    "answer_key": "A",
+    "answer": "Bản lĩnh chính trị vững vàng, động cơ trong sáng, trách nhiệm cao."
+  },
+  {
+    "question": "Chỉ thị số 87 CT/QUTW ngày 07/10/2021 của Quân ủy Trung ương về đẩy mạnh việc học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh đã khái quát phương châm lãnh đạo, chỉ đạo thực hiện như thế nào?",
+    "options": {
+      "A": "“Phát huy truyền thống, giữ vững kỷ cương, sống có tình thương, đề cao trách nhiệm”.",
+      "B": "Trong trước, ngoài sau; trên trước, dưới sau; học tập đi đôi với làm theo, chú trọng việc “làm theo” bằng những hành động cụ thể, thiết thực; kết hợp giữa “xây” với “chống”, lấy xây làm chính.",
+      "C": "Trên trước, dưới sau; trong trước, ngoài sau; học tập đi đôi với làm theo, chú trọng việc “làm theo” bằng những hành động cụ thể, thiết thực; kết hợp giữa “xây” với “chống”, lấy xây làm chính.",
+      "D": "Trong trước, ngoài sau; trên trước, dưới sau; học đi đôi với hành, chú trọng việc “làm theo” bằng những hành động cụ thể, thiết thực; kết hợp giữa “xây” với “chống”, lấy xây làm chính."
+    },
+    "answer_key": "C",
+    "answer": "Trên trước, dưới sau; trong trước, ngoài sau; học tập đi đôi với làm theo, chú trọng việc “làm theo” bằng những hành động cụ thể, thiết thực; kết hợp giữa “xây” với “chống”, lấy xây làm chính."
+  },
+  {
+    "question": "Chỉ thị số 05-CT/TW ngày 15/5/2016 của Bộ Chính trị xác định: Phải làm cho tư tưởng, đạo đức, phong cách của Hồ Chí Minh thật sự trở thành…?",
+    "options": {
+      "A": "Nền tảng tinh thần vững chắc của đời sống xã hội.",
+      "B": "Công việc thường xuyên của cấp ủy, tổ chức đảng, chính quyền, mặt trận Tổ quốc Việt Nam và tổ chức chính trị - xã hội các cấp.",
+      "C": "Việc làm tự giác của mỗi cán bộ, đảng viên",
+      "D": "Nền tảng tinh thần vững chắc của Đảng, Quân đội và toàn dân."
+    },
+    "answer_key": "A",
+    "answer": "Nền tảng tinh thần vững chắc của đời sống xã hội."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, cấp nào được mời cán bộ, giáo viên, báo cáo viên cấp trên hoặc ngoài Quân đội để giảng dạy một số nội dung mà đơn vị không tự đảm nhiệm được nhưng phải báo cáo và được chính ủy, chính trị viên cấp trên trực tiếp đồng ý?",
+    "options": {
+      "A": "Cấp trung đoàn đủ quân và tương đương trở lên được mời cán bộ, giáo viên, báo cáo viên cấp trên hoặc ngoài Quân đội để giảng dạy một số nội dung mà đơn vị không tự đảm nhiệm được nhưng phải báo cáo và được chính ủy, chính trị viên cấp trên trực tiếp đồng ý.",
+      "B": "Cấp trung đoàn và tương đương trở lên được mời cán bộ, giáo viên, báo cáo viên cấp trên hoặc ngoài Quân đội để giảng dạy một số nội dung mà đơn vị không tự đảm nhiệm được nhưng phải báo cáo và được chính ủy, chính trị viên cấp trên trực tiếp đồng ý.",
+      "C": "Cấp tiểu đoàn và tương đương trở lên được mời cán bộ, giáo viên, báo cáo viên cấp trên hoặc ngoài Quân đội để giảng dạy một số nội dung mà đơn vị không tự đảm nhiệm được nhưng phải báo cáo và được chính ủy, chính trị viên cấp trên trực tiếp đồng ý.",
+      "D": "Cấp tiểu đoàn đủ quân và tương đương trở lên được mời cán bộ, giáo viên, báo cáo viên cấp trên hoặc ngoài Quân đội để giảng dạy một số nội dung mà đơn vị không tự đảm nhiệm được nhưng phải báo cáo và được chính ủy, chính trị viên cấp trên trực tiếp đồng ý."
+    },
+    "answer_key": "D",
+    "answer": "Cấp tiểu đoàn đủ quân và tương đương trở lên được mời cán bộ, giáo viên, báo cáo viên cấp trên hoặc ngoài Quân đội để giảng dạy một số nội dung mà đơn vị không tự đảm nhiệm được nhưng phải báo cáo và được chính ủy, chính trị viên cấp trên trực tiếp đồng ý."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, cấp sư đoàn và tương đương tổ chức tập huấn cán bộ giảng dạy chính trị đến đối tượng nào?",
+    "options": {
+      "A": "Cấp sư đoàn và tương đương tổ chức tập huấn đến chính trị viên phó đại đội và tương đương, cán bộ chuyên ngành.",
+      "B": "Cấp sư đoàn và tương đương tổ chức tập huấn đến chính trị viên đại đội và tương đương, cán bộ chuyên ngành.",
+      "C": "Cấp sư đoàn và tương đương tổ chức tập huấn đến chính trị viên tiểu đoàn và tương đương, cán bộ chuyên ngành.",
+      "D": "Cấp sư đoàn và tương đương tổ chức tập huấn đến chính trị viên phó tiểu đoàn và tương đương, cán bộ chuyên ngành."
+    },
+    "answer_key": "B",
+    "answer": "Cấp sư đoàn và tương đương tổ chức tập huấn đến chính trị viên đại đội và tương đương, cán bộ chuyên ngành."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, thời gian thông báo chính trị - thời sự trong tuần cho cán bộ, chiến sĩ như thế nào?",
+    "options": {
+      "A": "Thông báo chính trị - thời sự là một chế độ trong tuần của cán bộ, chiến sĩ, thời gian mỗi tuần 45 phút.",
+      "B": "Thông báo chính trị - thời sự là một chế độ trong tuần của cán bộ, chiến sĩ, thời gian mỗi tuần 20 phút.",
+      "C": "Thông báo chính trị - thời sự là một chế độ trong tuần của cán bộ, chiến sĩ, thời gian mỗi tuần 1 giờ.",
+      "D": "Thông báo chính trị - thời sự là một chế độ trong tuần của cán bộ, chiến sĩ, thời gian mỗi tuần 30 phút."
+    },
+    "answer_key": "D",
+    "answer": "Thông báo chính trị - thời sự là một chế độ trong tuần của cán bộ, chiến sĩ, thời gian mỗi tuần 30 phút."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, Sĩ quan, quân nhân chuyên nghiệp, công nhân và viên chức quốc phòng, học viên đào tạo sĩ quan 2 năm cuối, lao động hợp đồng mỗi tháng được nghe thông báo chính trị - thời sự theo chuyên đề một lần, thời gian bao lâu?",
+    "options": {
+      "A": "04 giờ.",
+      "B": "03 giờ.",
+      "C": "01 giờ.",
+      "D": "02 giờ."
+    },
+    "answer_key": "D",
+    "answer": "02 giờ."
+  },
+  {
+    "question": "Theo Hướng dẫn số 1826/HD-TH ngày 22/6/2016 của Cục Tuyên huấn, kết quả kiểm tra nhận thức chính trị của tập thể để đạt loại giỏi phải có 100% quân số được kiểm tra đạt yêu cầu trở lên và các yếu tố sau?",
+    "options": {
+      "A": "Có 75% đạt khá, giỏi trở lên, trong đó có ít nhất 15% giỏi.",
+      "B": "Có 70% đạt khá, giỏi trở lên, trong đó có ít nhất 15% giỏi.",
+      "C": "Có 75 -80% đạt khá, giỏi trở lên, trong đó có ít nhất 15 - 20 % giỏi.",
+      "D": "Có 80% đạt khá, giỏi trở lên, trong đó có ít nhất 10% giỏi."
+    },
+    "answer_key": "B",
+    "answer": "Có 70% đạt khá, giỏi trở lên, trong đó có ít nhất 15% giỏi."
+  },
+  {
+    "question": "Theo Hướng dẫn số 1826/HD-TH ngày 22/6/2016 của Cục Tuyên huấn, tập thể đạt loại khá có tỉ lệ % kết quả kiểm tra nhận thức chính trị như thế nào?",
+    "options": {
+      "A": "Đơn vị có 100% quân số được kiểm tra đạt yêu cầu trở lên, có 65% đạt khá trở lên.",
+      "B": "Đơn vị có 100% quân số được kiểm tra đạt yêu cầu trở lên, có 70% đạt khá trở lên.",
+      "C": "Đơn vị có 90% quân số được kiểm tra đạt yêu cầu trở lên, có 65% đạt khá trở lên.",
+      "D": "Đơn vị có 90% quân số được kiểm tra đạt yêu cầu trở lên, có 70% đạt khá trở lên."
+    },
+    "answer_key": "C",
+    "answer": "Đơn vị có 90% quân số được kiểm tra đạt yêu cầu trở lên, có 65% đạt khá trở lên."
+  },
+  {
+    "question": "Theo quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, có bao nhiêu hình thức giáo dục chính trị cơ bản?",
+    "options": {
+      "A": "4.",
+      "B": "5.",
+      "C": "6.",
+      "D": "7."
+    },
+    "answer_key": "C",
+    "answer": "6."
+  },
+  {
+    "question": "Theo Hướng dẫn số 1136/HD-TH, ngày 28/4/2016 của Cục Tuyên huấn (Ban hành kèm theo Quyết định số 438/QĐ-CT của Chủ nhiệm Tổng cục Chính trị Quân đội nhân dân Việt Nam), quy trình chuẩn bị bài giảng gồm bao nhiêu bước?",
+    "options": {
+      "A": "4.",
+      "B": "5.",
+      "C": "6.",
+      "D": "7."
+    },
+    "answer_key": "B",
+    "answer": "5."
+  },
+  {
+    "question": "Theo Hướng dẫn số 1136/HD-TH, ngày 28/4/2016 của Cục Tuyên huấn, bước đầu tiên trong quy trình chuẩn bị bài giảng là gì?",
+    "options": {
+      "A": "Nghiên cứu tổng quát chủ đề bài giảng và đối tượng người học.",
+      "B": "Nghiên cứu tài liệu, xử lý thông tin phục vụ bài giảng.",
+      "C": "Nghiên cứu tổng quát chủ đề bài giảng, xử lý thông tin phục vụ bài giảng.",
+      "D": "Nghiên cứu đối tượng người học và tài liệu phục vụ bài giảng."
+    },
+    "answer_key": "A",
+    "answer": "Nghiên cứu tổng quát chủ đề bài giảng và đối tượng người học."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, cấp trung đoàn, lữ đoàn và tương đương tổ chức học tập chính trị cho đối tượng nào?",
+    "options": {
+      "A": "Trực tiếp tổ chức học tập cho sĩ quan cấp thiếu tá, trung tá, cán bộ cấp tiểu đoàn và tương đương.",
+      "B": "Trực tiếp tổ chức học tập cho sĩ quan cấp úy, QNCN đã qua đào tạo tại các trường trung cấp, cao đẳng trong quân đội; QNCN, công nhân và viên chức quốc phòng, lao động hợp đồng là đảng viên, đảng viên mới, đối tượng kết nạp đảng.",
+      "C": "Trực tiếp tổ chức học tập cho sĩ quan cấp úy, QNCN chưa qua đào tạo tại các trường trung cấp, cao đẳng trong quân đội; QNCN, công nhân và viên chức quốc phòng, lao động hợp đồng chưa là đảng viên, đảng viên mới, đối tượng kết nạp đảng.",
+      "D": "Cả 3 đáp án trên đều sai."
+    },
+    "answer_key": "B",
+    "answer": "Trực tiếp tổ chức học tập cho sĩ quan cấp úy, QNCN đã qua đào tạo tại các trường trung cấp, cao đẳng trong quân đội; QNCN, công nhân và viên chức quốc phòng, lao động hợp đồng là đảng viên, đảng viên mới, đối tượng kết nạp đảng."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, cấp sư đoàn và tương đương tổ chức tập huấn, bồi dưỡng cán bộ giảng dạy chính trị đến cấp nào?",
+    "options": {
+      "A": "Tất cả cán bộ chính trị trong Sư đoàn.",
+      "B": "Chính trị viên tiểu đoàn và tương đương, cán bộ chuyên ngành.",
+      "C": "Chính trị viên đại đội và tương đương, cán bộ chuyên ngành.",
+      "D": "Chính trị viên đại đội và tương đương thực hiện nhiệm vụ giảng dạy chính trị tại đơn vị."
+    },
+    "answer_key": "C",
+    "answer": "Chính trị viên đại đội và tương đương, cán bộ chuyên ngành."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, cấp trung đoàn, lữ đoàn và tương đương tổ chức tập huấn, bồi dưỡng cán bộ giảng dạy chính trị đến cấp nào?",
+    "options": {
+      "A": "Chính trị viên tiểu đoàn và tương đương, cán bộ chuyên ngành.",
+      "B": "Chính trị viên đại đội và tương đương, cán bộ chuyên ngành.",
+      "C": "Chính trị viên phó đại đội và tương đương, cán bộ chuyên ngành.",
+      "D": "Chính trị viên phó tiểu đoàn và tương đương, cán bộ chuyên ngành."
+    },
+    "answer_key": "C",
+    "answer": "Chính trị viên phó đại đội và tương đương, cán bộ chuyên ngành."
+  },
+  {
+    "question": "Theo Quy chế giáo dục chính trị trong Quân đội nhân dân và Dân quân tự vệ Việt Nam, việc tổ chức bình giảng cấp tiểu đoàn thực hiện như thế nào?",
+    "options": {
+      "A": "1 tháng/2 lần.",
+      "B": "1 tháng/1 lần.",
+      "C": "1 tuần/1 lần.",
+      "D": "2 tháng/1 lần."
+    },
+    "answer_key": "B",
+    "answer": "1 tháng/1 lần."
+  },
+  {
+    "question": "Những chức năng cơ bản của công tác Tuyên huấn?",
+    "options": {
+      "A": "Chức năng nhận thức; chức năng định hướng tư tưởng và hành động; chức năng phê phán, bình luận; chức năng tổ chức.",
+      "B": "Chức năng nhận thức; chức năng định hướng tư tưởng và hành động; chức năng phê phán; chức năng tổ chức thực hiện.",
+      "C": "Chức năng nhận thức, tư duy; chức năng định hướng tư tưởng và hành động; chức năng phê phán; chức năng tổ chức.",
+      "D": "Chức năng nhận thức; chức năng định hướng tư tưởng và hành động; chức năng phê phán; chức năng tổ chức."
+    },
+    "answer_key": "D",
+    "answer": "Chức năng nhận thức; chức năng định hướng tư tưởng và hành động; chức năng phê phán; chức năng tổ chức."
+  },
+  {
+    "question": "Một trong những chức năng của công tác tuyên truyền miệng đó là?",
+    "options": {
+      "A": "Phổ biến thông tin; định hướng tư tưởng, hướng dẫn hành động; cổ vũ hành động.",
+      "B": "Phổ biến thông tin; định hướng tư tưởng; hướng dẫn hành động.",
+      "C": "Phổ biến thông tin; định hướng tư tưởng; cổ vũ hành động.",
+      "D": "Cập nhập thông tin, phổ biến nghị quyết; định hướng tư tưởng; cổ vũ hành động."
+    },
+    "answer_key": "C",
+    "answer": "Phổ biến thông tin; định hướng tư tưởng; cổ vũ hành động."
+  },
+  {
+    "question": "Một trong những nguyên tắc của công tác tuyên truyền miệng?",
+    "options": {
+      "A": "Tính Đảng; tính khoa học; tính chiến đấu; tính quần chúng; tính chân thực.",
+      "B": "Tính Đảng; tính khoa học; tính thực tế; tính quần chúng; tính chân thực.",
+      "C": "Tính Đảng; tính khoa học; tính logic; tính quần chúng; tính chân thực.",
+      "D": "Tính Đảng; tính khoa học; tính quần chúng; tính chân thực."
+    },
+    "answer_key": "A",
+    "answer": "Tính Đảng; tính khoa học; tính chiến đấu; tính quần chúng; tính chân thực."
+  },
+  {
+    "question": "Theo Đề án “Đổi mới công tác tuyên truyền miệng và hoạt động báo cáo viên trong Quân đội nhân dân Việt Nam đến năm 2025 và những năm tiếp theo”, báo cáo viên cấp Sư đoàn không quá bao nhiêu đồng chí?",
+    "options": {
+      "A": "03 đồng chí",
+      "B": "04 đồng chí",
+      "C": "05 đồng chí",
+      "D": "07 đồng chí"
+    },
+    "answer_key": "C",
+    "answer": "05 đồng chí"
+  },
+  {
+    "question": "Theo Đề án “Đổi mới công tác tuyên truyền miệng và hoạt động báo cáo viên trong Quân đội nhân dân Việt Nam đến năm 2025 và những năm tiếp theo”, báo cáo viên cấp trung đoàn do ai đảm nhiệm?",
+    "options": {
+      "A": "Bí thư cấp uỷ, chủ nhiệm chính trị, phó chủ nhiệm chính trị (trưởng ban chính trị) cùng cấp đảm nhiệm.",
+      "B": "Chính ủy, chủ nhiệm chính trị trung đoàn.",
+      "C": "Chủ nhiệm chính trị, phó chủ nhiệm chính trị và trợ lý tuyên huấn",
+      "D": "Chính ủy, chủ nhiệm chính trị, phó chủ nhiệm chính trị và trợ lý tuyên huấn"
+    },
+    "answer_key": "A",
+    "answer": "Bí thư cấp uỷ, chủ nhiệm chính trị, phó chủ nhiệm chính trị (trưởng ban chính trị) cùng cấp đảm nhiệm."
+  },
+  {
+    "question": "Theo Đề án “Đổi mới công tác tuyên truyền miệng và hoạt động báo cáo viên trong Quân đội nhân dân Việt Nam đến năm 2025 và những năm tiếp theo”, báo cáo viên cấp tiểu đoàn đủ quân do ai đảm nhiệm?",
+    "options": {
+      "A": "Chính trị viên, chính trị viên phó hoặc bí thư cấp uỷ cùng cấp đảm nhiệm.",
+      "B": "Chính trị viên, chính trị viên phó hoặc bí thư, phó bí thư cấp uỷ cùng cấp đảm nhiệm.",
+      "C": "Chính trị viên, chính trị viên phó cùng cấp đảm nhiệm.",
+      "D": "Chính trị viên, chính trị viên phó và các đồng chí cán bộ chính trị trong cấp uỷ cùng cấp đảm nhiệm."
+    },
+    "answer_key": "A",
+    "answer": "Chính trị viên, chính trị viên phó hoặc bí thư cấp uỷ cùng cấp đảm nhiệm."
+  },
+  {
+    "question": "Theo Đề án “Đổi mới công tác tuyên truyền miệng và hoạt động báo cáo viên trong Quân đội nhân dân Việt Nam đến năm 2025 và những năm tiếp theo”, đối tượng hạ sĩ quan, chiến sĩ mỗi tháng nghe nói chuyện thời sự mấy lần, thời gian mỗi lần bao lâu?",
+    "options": {
+      "A": "1 lần, không quá 120 phút.",
+      "B": "2 lần, mỗi lần 60 phút.",
+      "C": "1 lần, không quá 60 phút.",
+      "D": "2 lần, mỗi lần 120 phút."
+    },
+    "answer_key": "C",
+    "answer": "1 lần, không quá 60 phút."
+  },
+  {
+    "question": "Nghị quyết số 70-NQ/TW ngày 20/8/2025 của Bộ Chính trị về bảo đảm an ninh năng lượng quốc gia đến năm 2030, tầm nhìn đến năm 2045, xác định tỷ lệ năng lượng tái tạo trong tổng cung năng lượng sơ cấp đến năm 2030 mục tiêu đạt bao nhiêu?",
+    "options": {
+      "A": "15 - 20%",
+      "B": "20 - 25%",
+      "C": "25 - 30%",
+      "D": "30 - 35%"
+    },
+    "answer_key": "C",
+    "answer": "25 - 30%"
+  },
+  {
+    "question": "Nghị quyết số 71-NQ/TW, ngày 22/8/2025 của Bộ Chính trị về đột phá phát triển giáo dục và đào tạo, xác định mục tiêu đến năm 2030 về tỷ lệ người trong độ tuổi hoàn thành cấp Trung học phổ thông và tương đương là bao nhiêu?",
+    "options": {
+      "A": "Ít nhất 75%",
+      "B": "Ít nhất 80%",
+      "C": "Ít nhất 85%",
+      "D": "Ít nhất 90%"
+    },
+    "answer_key": "C",
+    "answer": "Ít nhất 85%"
+  },
+  {
+    "question": "Theo Đề án “Đổi mới công tác tuyên truyền miệng và hoạt động báo cáo viên trong Quân đội nhân dân Việt Nam đến năm 2025 và những năm tiếp theo”, việc tổ chức hội nghị bồi dưỡng báo cáo viên bằng hình thức trực tuyến có thể mở rộng tới đối tượng nào?",
+    "options": {
+      "A": "Chỉ đến BCV cấp trực thuộc Quân ủy Trung ương.",
+      "B": "Chỉ đến BCV cấp trên cơ sở.",
+      "C": "Có thể mở rộng tới BCV cấp cơ sở.",
+      "D": "Chỉ dành cho các đơn vị đóng quân ở thành phố."
+    },
+    "answer_key": "C",
+    "answer": "Có thể mở rộng tới BCV cấp cơ sở."
+  },
+  {
+    "question": "Theo Thông tư số 183/2017/TT-BQP ngày 04/8/2017 của Bộ Quốc phòng về quy định việc phát ngôn và cung cấp thông tin cho báo chí trong Bộ Quốc phòng thì người phát ngôn và cung cấp thông tin cho báo chí trong Quân khu là?",
+    "options": {
+      "A": "Tư lệnh hoặc chính ủy Quân khu.",
+      "B": "Chủ nhiệm chính trị Quân khu.",
+      "C": "Trưởng phòng Tuyên huấn Quân khu.",
+      "D": "Chính ủy hoặc Phó Chính ủy Quân khu."
+    },
+    "answer_key": "A",
+    "answer": "Tư lệnh hoặc chính ủy Quân khu."
+  },
+  {
+    "question": "Theo Thông tư số 183/2017/TT-BQP ngày 04/8/2017 của Bộ Quốc phòng về quy định việc phát ngôn và cung cấp thông tin cho báo chí trong Bộ Quốc phòng thì người phát ngôn và cung cấp thông tin cho báo chí trong cơ quan, đơn vị là?",
+    "options": {
+      "A": "a) Người chỉ huy hoặc chính ủy, chính trị viên.",
+      "B": "b) Thủ trưởng cơ quan chính trị.",
+      "C": "c) Cơ quan tuyên huấn.",
+      "D": "d) Người chỉ huy đơn vị."
+    },
+    "answer_key": "Đáp án: a",
+    "answer": "a) Người chỉ huy hoặc chính ủy, chính trị viên."
+  },
+  {
+    "question": "Theo Thông tư số 64/2018/TT-BQP ngày 15/5/2018 của Bộ Quốc phòng về quy định thực hiện cung cấp thông tin trong Bộ Quốc phòng thì đầu mối cung cấp thông tin trong Quân khu là?",
+    "options": {
+      "A": "Cục Chính trị Quân khu.",
+      "B": "Bộ Tham mưu Quân khu.",
+      "C": "Phòng Tuyên huấn.",
+      "D": "Văn phòng Bộ Tư lệnh."
+    },
+    "answer_key": "D",
+    "answer": "Văn phòng Bộ Tư lệnh."
+  },
+  {
+    "question": "Đấu tranh trên không gian mạng trong Quân đội nhân dân Việt Nam là nhiệm vụ của ai?",
+    "options": {
+      "A": "Là nhiệm vụ của cấp ủy, chỉ huy, cán bộ chính trị các cấp.",
+      "B": "Là nhiệm vụ của cán bộ chính trị và mọi tổ chức, mọi lực lượng trong toàn quân.",
+      "C": "Là nhiệm vụ của cấp ủy, chỉ huy và của mọi tổ chức, mọi lực lượng trong toàn quân.",
+      "D": "Là nhiệm vụ của cơ quan chính trị, cán bộ chính trị các cấp."
+    },
+    "answer_key": "C",
+    "answer": "Là nhiệm vụ của cấp ủy, chỉ huy và của mọi tổ chức, mọi lực lượng trong toàn quân."
+  },
+  {
+    "question": "Phụ trách trực tiếp lực lượng đấu tranh trên không gian mạng trong các đơn vị là ai?",
+    "options": {
+      "A": "Lãnh đạo, chỉ huy đơn vị.",
+      "B": "Cơ quan chính trị các cấp.",
+      "C": "Chính ủy, chính trị viên (bí thư, cấp ủy).",
+      "D": "Chỉ huy đơn vị, chính ủy, chính trị viên (bí thư, cấp ủy)."
+    },
+    "answer_key": "C",
+    "answer": "Chính ủy, chính trị viên (bí thư, cấp ủy)."
+  },
+  {
+    "question": "Chỉ thị số 47/CT-CT ngày 08/01/2016 của Chủ nhiệm Tổng Cục Chính trị nói về nội dung gì?",
+    "options": {
+      "A": "Về tăng cường công tác đảm bảo an toàn thông tin mạng.",
+      "B": "Về tăng cường công tác bảo đảm an ninh và an toàn thông tin mạng trong tình hình mới.",
+      "C": "Về tăng cường công tác bảo đảm an toàn thông tin và một số vấn đề tổ chức hoạt động tác chiến không gian mạng trong Quân đội.",
+      "D": "Về tổ chức lực lượng đấu tranh chống quan điểm sai trái, thù địch, cơ hội chính trị trên không gian mạng trong Quân đội."
+    },
+    "answer_key": "D",
+    "answer": "Về tổ chức lực lượng đấu tranh chống quan điểm sai trái, thù địch, cơ hội chính trị trên không gian mạng trong Quân đội."
+  },
+  {
+    "question": "Mục đích của hoạt động đấu tranh chống các quan điểm sai trái, thù địch, cơ hội chính trị trên không gian mạng trong Quân đội là gì?",
+    "options": {
+      "A": "Để bảo đảm an toàn thông tin mạng trong Quân đội.",
+      "B": "Để bảo vệ Đảng, bảo vệ chế độ, chống “phi chính trị hóa” Quân đội trong tình hình mới.",
+      "C": "Để bảo vệ chính trị nội bộ và an toàn thông tin mạng trong Quân đội trong tình hình mới.",
+      "D": "Để bảo vệ bí mật Quân đội, bí mật quốc gia trong quá trình hội nhập, toàn cầu hóa hiện nay."
+    },
+    "answer_key": "B",
+    "answer": "Để bảo vệ Đảng, bảo vệ chế độ, chống “phi chính trị hóa” Quân đội trong tình hình mới."
+  },
+  {
+    "question": "Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị đặt mục tiêu tỷ trọng xuất khẩu sản phẩm công nghệ cao đạt tối thiểu:",
+    "options": {
+      "A": "40%",
+      "B": "45%",
+      "C": "50%",
+      "D": "55%"
+    },
+    "answer_key": "C",
+    "answer": "50%"
+  },
+  {
+    "question": "Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị xác định chính sách ưu đãi khuyến khích doanh nghiệp đầu tư vào lĩnh vực nào để nâng cao hiệu quả sản xuất kinh doanh?",
+    "options": {
+      "A": "Nông nghiệp truyền thống",
+      "B": "Du lịch",
+      "C": "Nghiên cứu, ứng dụng khoa học, công nghệ, đổi mới sáng tạo",
+      "D": "Thương mại dịch vụ"
+    },
+    "answer_key": "C",
+    "answer": "Nghiên cứu, ứng dụng khoa học, công nghệ, đổi mới sáng tạo"
+  },
+  {
+    "question": "Nghị quyết số 72-NQ/TW ngày 09/9/2025 của Bộ Chính trị về một số giải pháp đột phá, tăng cường bảo vệ, chăm sóc và nâng cao sức khỏe Nhân dân, xác định mục tiêu về tỷ lệ bao phủ bảo hiểm y tế đến năm 2030 là bao nhiêu?",
+    "options": {
+      "A": "Đạt trên 95% dân số.",
+      "B": "Đạt trên 90% dân số.",
+      "C": "Đạt bao phủ bảo hiểm y tế toàn dân.",
+      "D": "Đạt 85% dân số, tập trung vào đối tượng nghèo."
+    },
+    "answer_key": "C",
+    "answer": "Đạt bao phủ bảo hiểm y tế toàn dân."
+  },
+  {
+    "question": "Nghị quyết 59-NQ/TW ngày 24/01/2025 của Bộ Chính trị đề cập chủ trương lớn của Đảng về lĩnh vực nào?",
+    "options": {
+      "A": "Hội nhập quốc tế trong tình hình mới",
+      "B": "Phát triển kinh tế biển",
+      "C": "Chuyển đổi số quốc gia",
+      "D": "Cải cách hành chính"
+    },
+    "answer_key": "A",
+    "answer": "Hội nhập quốc tế trong tình hình mới"
+  },
+  {
+    "question": "Theo Nghị quyết 59-NQ/TW ngày 24/01/2025 của Bộ Chính trị về hội nhập quốc tế trong tình hình mới, một trong những mục tiêu đến năm 2030 của hội nhập quốc tế là:",
+    "options": {
+      "A": "Việt Nam là quốc gia đang phát triển có thu nhập trung bình cao, trung tâm sản xuất công nghệ cao của khu vực",
+      "B": "Việt Nam là quốc gia đang phát triển có thu nhập trung bình cao, hội nhập sâu rộng, hiệu quả",
+      "C": "Việt Nam là quốc gia đang phát triển có thu nhập trung bình cao, đứng đầu ASEAN về công nghệ số",
+      "D": "Việt Nam là quốc gia đang phát triển có thu nhập trung bình cao, trung tâm nông nghiệp hữu cơ của khu vực"
+    },
+    "answer_key": "B",
+    "answer": "Việt Nam là quốc gia đang phát triển có thu nhập trung bình cao, hội nhập sâu rộng, hiệu quả"
+  },
+  {
+    "question": "Nghị quyết 66-NQ/TW ngày 20/4/2025 của Bộ Chính trị về đổi mới công tác xây dựng và thi hành pháp luật đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới xác định năm 2028 mục tiêu là hoàn thiện hệ thống pháp luật về lĩnh vực nào để Việt Nam nằm trong nhóm 3 nước dẫn đầu ASEAN?",
+    "options": {
+      "A": "Giáo dục",
+      "B": "Y tế",
+      "C": "Đầu tư, kinh doanh",
+      "D": "Giao thông"
+    },
+    "answer_key": "C",
+    "answer": "Đầu tư, kinh doanh"
+  },
+  {
+    "question": "Theo Nghị quyết 66-NQ/TW ngày 20/4/2025 của Bộ Chính trị về đổi mới công tác xây dựng và thi hành pháp luật đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới, một trong những giải pháp quan trọng là tạo cơ sở pháp lý cho khu vực kinh tế tư nhân tiếp cận các nguồn lực nào?",
+    "options": {
+      "A": "Tài nguyên, lao động, đất đai",
+      "B": "Vốn từ ngân sách nhà nước",
+      "C": "Hỗ trợ quốc tế",
+      "D": "Các nguồn đầu tư nước ngoài"
+    },
+    "answer_key": "A",
+    "answer": "Tài nguyên, lao động, đất đai"
+  },
+  {
+    "question": "Theo Nghị quyết 68-NQ/TW ngày 04/5/2025 của Bộ Chính trị về phát triển kinh tế tư nhân, mục tiêu đến năm 2030 là có bao nhiêu doanh nghiệp hoạt động hiệu quả?",
+    "options": {
+      "A": "1 triệu",
+      "B": "1,5 triệu",
+      "C": "2 triệu",
+      "D": "2,5 triệu"
+    },
+    "answer_key": "C",
+    "answer": "2 triệu"
+  },
+  {
+    "question": "Theo Nghị quyết 68-NQ/TW ngày 04/5/2025 của Bộ Chính trị về phát triển kinh tế tư nhân, tỷ trọng đóng góp của khu vực kinh tế tư nhân vào GDP đến năm 2030 được đặt mục tiêu đạt khoảng:",
+    "options": {
+      "A": "40 - 45%",
+      "B": "55 - 60%",
+      "C": "65 - 70%",
+      "D": "50 - 55%"
+    },
+    "answer_key": "B",
+    "answer": "55 - 60%"
+  },
+  {
+    "question": "Phương châm Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": {
+      "A": "“Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Sáng tạo”.",
+      "B": "“Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Vươn mình”.",
+      "C": "“Đoàn kết - Dân chủ - Kỷ luật - Đổi mới - Sáng tạo”.",
+      "D": "“Đoàn kết - Thống nhất - Kỷ cương - Đổi mới - Sáng tạo”."
+    },
+    "answer_key": "A",
+    "answer": "“Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Sáng tạo”."
+  },
+  {
+    "question": "Chủ đề Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": {
+      "A": "“Phát huy truyền thống, đổi mới, trách nhiệm; xây dựng Đảng bộ trong sạch vững mạnh, cơ quan, đơn vị vững mạnh toàn diện “Mẫu mực, tiêu biểu”, đáp ứng yêu cầu nhiệm vụ xây dựng và bảo vệ Tổ quốc trong tình hình mới”.",
+      "B": "“Phát huy truyền thống, đổi mới, trách nhiệm; đáp ứng yêu cầu nhiệm vụ xây dựng và bảo vệ Tổ quốc trong tình hình mới”.",
+      "C": "“Phát huy truyền thống; xây dựng Đảng bộ trong sạch vững mạnh, cơ quan, đơn vị vững mạnh toàn diện “Mẫu mực, tiêu biểu”, đáp ứng yêu cầu nhiệm vụ xây dựng và bảo vệ Tổ quốc trong tình hình mới”.",
+      "D": "“Phát huy truyền thống, đổi mới, trách nhiệm; xây dựng Đảng bộ trong sạch vững mạnh, cơ quan, đơn vị vững mạnh toàn diện “Mẫu mực, tiêu biểu”."
+    },
+    "answer_key": "A",
+    "answer": "“Phát huy truyền thống, đổi mới, trách nhiệm; xây dựng Đảng bộ trong sạch vững mạnh, cơ quan, đơn vị vững mạnh toàn diện “Mẫu mực, tiêu biểu”, đáp ứng yêu cầu nhiệm vụ xây dựng và bảo vệ Tổ quốc trong tình hình mới”."
+  },
+  {
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": {
+      "A": "Nâng cao năng lực tham mưu, chỉ đạo LLVT Quân khu thực hiện hiệu quả nhiệm vụ QS, QP.",
+      "B": "Chủ động, sáng tạo, lãnh đạo nâng cao năng lực tham mưu, chỉ đạo LLVT Quân khu thực hiện hiệu quả nhiệm vụ QS, QP.",
+      "C": "Chủ động, sáng tạo, chỉ đạo LLVT Quân khu thực hiện hiệu quả nhiệm vụ QS, QP.",
+      "D": "Nâng cao chất lượng thực hiện hiệu quả nhiệm vụ QS, QP."
+    },
+    "answer_key": "B",
+    "answer": "Chủ động, sáng tạo, lãnh đạo nâng cao năng lực tham mưu, chỉ đạo LLVT Quân khu thực hiện hiệu quả nhiệm vụ QS, QP."
+  },
+  {
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": {
+      "A": "Nâng cao năng lực nghiên cứu và ứng dụng KHCN; đẩy mạnh CCHCQS và CĐS.",
+      "B": "Nâng cao chất lượng huấn luyện, SSCĐ, xây dựng chính quy, chấp hành pháp luật, kỷ luật, bảo đảm an toàn cơ quan, đơn vị Bộ Tham mưu.",
+      "C": "Nâng cao chất lượng huấn luyện, SSCĐ; nâng cao năng lực nghiên cứu và ứng dụng KHCN; đẩy mạnh CCHCQS và CĐS.",
+      "D": "Nâng cao chất lượng huấn luyện, SSCĐ, xây dựng chính quy, chấp hành pháp luật, kỷ luật, bảo đảm an toàn cơ quan, đơn vị Bộ Tham mưu; nâng cao năng lực nghiên cứu và ứng dụng KHCN; đẩy mạnh CCHCQS và CĐS."
+    },
+    "answer_key": "D",
+    "answer": "Nâng cao chất lượng huấn luyện, SSCĐ, xây dựng chính quy, chấp hành pháp luật, kỷ luật, bảo đảm an toàn cơ quan, đơn vị Bộ Tham mưu; nâng cao năng lực nghiên cứu và ứng dụng KHCN; đẩy mạnh CCHCQS và CĐS."
+  },
+  {
+    "question": "Một trong những khâu đột phá của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 là gì ?",
+    "options": {
+      "A": "Nâng cao năng lực lãnh đạo, sức chiến đấu của các cấp ủy, tổ chức đảng.",
+      "B": "Xây dựng đội ngũ cán bộ mẫu mực, trách nhiệm cao, làm việc hiệu quả.",
+      "C": "Nâng cao năng lực lãnh đạo, sức chiến đấu của các cấp ủy, tổ chức đảng; xây dựng đội ngũ cán bộ mẫu mực, trách nhiệm cao, làm việc hiệu quả.",
+      "D": "Nâng cao năng lực lãnh đạo, sức chiến đấu của đảng; xây dựng đội ngũ đảng viên mẫu mực, trách nhiệm cao, làm việc hiệu quả."
+    },
+    "answer_key": "C",
+    "answer": "Nâng cao năng lực lãnh đạo, sức chiến đấu của các cấp ủy, tổ chức đảng; xây dựng đội ngũ cán bộ mẫu mực, trách nhiệm cao, làm việc hiệu quả."
+  },
+  {
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": {
+      "A": "Trên 20% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 90% các văn bản không mật.",
+      "B": "Trên 20% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 80% các văn bản không mật.",
+      "C": "Trên 30% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 100% các văn bản không mật.",
+      "D": "Hằng năm, phấn đấu xây dựng trên 20% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 100% các văn bản không mật."
+    },
+    "answer_key": "D",
+    "answer": "Hằng năm, phấn đấu xây dựng trên 20% CQ, ĐV đạt tiêu chuẩn VMTD “Mẫu mực, tiêu biểu”. Đẩy mạnh CCHC và CĐS; ký số đạt 100% các văn bản không mật."
+  },
+  {
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": {
+      "A": "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 75% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi",
+      "B": "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 80% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi",
+      "C": "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 85% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi",
+      "D": "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 90% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi"
+    },
+    "answer_key": "A",
+    "answer": "Huấn luyện bảo đảm quân số; kiểm tra 100% đạt yêu cầu, trên 75% đạt khá, giỏi; 100% cán bộ huấn luyện được theo phân cấp, trong đó: 90% cán bộ tiểu đoàn và tương đương, 75% cán bộ đại đội, trung đội huấn luyện khá, giỏi"
+  },
+  {
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": {
+      "A": "Định lượng thực phẩm chính vượt từ 15-20%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật).",
+      "B": "Định lượng thực phẩm chính vượt từ 10-15%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật).",
+      "C": "Định lượng thực phẩm chính vượt trên 15%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật).",
+      "D": "Định lượng thực phẩm chính vượt trên 20%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật)."
+    },
+    "answer_key": "B",
+    "answer": "Định lượng thực phẩm chính vượt từ 10-15%; quân số khỏe đạt trên 99%. Đảm bảo đồng bộ kỹ thuật; các đơn vị SSCĐ: Kbđ = 1, Kt = 1; nâng cấp 100% cơ sở bảo đảm kỹ thuật (90% đạt tiêu chuẩn kỹ thuật)."
+  },
+  {
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": {
+      "A": "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 80% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên.",
+      "B": "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 95% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên.",
+      "C": "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 90% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên.",
+      "D": "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 100% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên."
+    },
+    "answer_key": "C",
+    "answer": "100% tổ chức đảng đánh giá, xếp loại hoàn thành nhiệm vụ trở lên; trong đó: 90% trở lên cấp uỷ (BTV), tổ chức đảng, cán bộ chủ trì hoàn thành tốt và hoàn thành xuất sắc nhiệm vụ; kết nạp từ 25 đến 30 đảng viên."
+  },
+  {
+    "question": "Chỉ tiêu chủ yếu thực hiện trong nhiệm kỳ của Đại hội đại biểu Đảng bộ Bộ Tham mưu lần thứ XV, nhiệm kỳ 2025 - 2030 xác định là gì ?",
+    "options": {
+      "A": "Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 80% đảng viên.",
+      "B": "Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 90% đảng viên.",
+      "C": "Trong nhiệm kỳ, Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 100% đảng viên.",
+      "D": "Trong nhiệm kỳ, Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 95% đảng viên."
+    },
+    "answer_key": "C",
+    "answer": "Trong nhiệm kỳ, Đảng ủy và UBKT các cấp kiểm tra, giám sát 100% tổ chức đảng, cán bộ chủ trì cấp dưới trực tiếp; chi bộ kiểm tra 100% đảng viên."
+  },
+  {
+    "question": "Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị nói về nội dung gì?",
+    "options": {
+      "A": "Đột phá phát riển khoa học, công nghệ, đổi mới sáng tạo trong tình hình mới",
+      "B": "Đột phát phát triển khoa học, công nghệ, sáng tạo và chuyển đối số quốc gia",
+      "C": "Đột phát phát triển khoa học, công nghệ, đổi mới sáng tạo, tiến mạnh về chuyển đối số quốc gia",
+      "D": "Đột phát phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đối số quốc gia"
+    },
+    "answer_key": "D",
+    "answer": "Đột phát phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đối số quốc gia"
+  },
+  {
+    "question": "Nghị quyết số 59-NQ/TW về Hội nhập quốc tế trong tình hình mới được Bộ Chính trị ban hành vào thời gian nào?",
+    "options": {
+      "A": "Ngày 14/01/2025",
+      "B": "Ngày 24/01/2025",
+      "C": "Ngày 04/01/2025",
+      "D": "Ngày 25/01/2025"
+    },
+    "answer_key": "B",
+    "answer": "Ngày 24/01/2025"
+  },
+  {
+    "question": "Nghị quyết số 66-NQ/TW của Bộ Chính trị về đổi mới công tác xây dựng và thi hành pháp luật đáp ứng yêu cầu phát triển đất nước trong kỷ nguyên mới được ban hành vào thời gian nào?",
+    "options": {
+      "A": "Ngày 30/4/2025",
+      "B": "Ngày 30/5/2025",
+      "C": "Ngày 30/6/2025",
+      "D": "Ngày 30/7/2025"
+    },
+    "answer_key": "A",
+    "answer": "Ngày 30/4/2025"
+  },
+  {
+    "question": "Nghị quyết số 68-NQ/TW ngày 04/5/2025 của Bộ Chính trị nói về nội dung gì?",
+    "options": {
+      "A": "Phát triển kinh tế tư nhân, hộ gia đình",
+      "B": "Phát triển kinh tế tư nhân trong tình hình mới",
+      "C": "Phát triển kinh tế tư nhân đặt ra mục tiêu đến năm 2045",
+      "D": "Phát triển kinh tế tư nhân đặt ra mục tiêu đến năm 2030"
+    },
+    "answer_key": "D",
+    "answer": "Phát triển kinh tế tư nhân đặt ra mục tiêu đến năm 2030"
+  },
+  {
+    "question": "Phương châm “5 vững” theo tinh thần của đồng chí Tổng Bí thư là gì?",
+    "options": {
+      "A": "Chính trị vững - Kỷ luật vững - Công nghệ vững - Khoa học quân sự vững - Đời sống bộ đội vững",
+      "B": "Chính trị vững - Kỷ luật vững - Công nghệ vững - Nghệ thuật quân sự vững - Đời sống bộ đội vững",
+      "C": "Chính trị vững - Kỷ luật vững - Công nghệ vững - Khoa học quân sự vững - Nghệ thuật quân sự vững",
+      "D": "Chính trị vững - Kỷ luật, kỷ cương vững - Công nghệ vững - Nghệ thuật quân sự vững - Đời sống bộ đội vững"
+    },
+    "answer_key": "B",
+    "answer": "Chính trị vững - Kỷ luật vững - Công nghệ vững - Nghệ thuật quân sự vững - Đời sống bộ đội vững"
+  },
+  {
+    "question": "Nội dung “Hai kiên định” được nêu tại Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025-2030 là gì?",
+    "options": {
+      "A": "Kiên định về đường lối quân sự và nghệ thuật quân sự",
+      "B": "Kiên định về đường lối quân sự và khoa học quân sự",
+      "C": "Kiên định về nghệ thuật quân sự và sự lãnh đạo của Đảng",
+      "D": "Kiên định về đường lối quân sự và sự lãnh đạo của Đảng"
+    },
+    "answer_key": "D",
+    "answer": "Kiên định về đường lối quân sự và sự lãnh đạo của Đảng"
+  },
+  {
+    "question": "Nội dung “Hai đẩy mạnh” được nêu tại Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025-2030 là gì?",
+    "options": {
+      "A": "Đẩy mạnh xây dựng Quân đội hiện đại và hội nhập quốc tế",
+      "B": "Đẩy mạnh xây dựng Quân đội hiện đại và hội nhập quốc tế trong thời đại mới",
+      "C": "Đẩy mạnh xây dựng Quân đội chính quy và hội nhập quốc tế",
+      "D": "Đẩy mạnh xây dựng Quân đội chính quy và hội nhập quốc tế trong thời đại mới"
+    },
+    "answer_key": "A",
+    "answer": "Đẩy mạnh xây dựng Quân đội hiện đại và hội nhập quốc tế"
+  },
+  {
+    "question": "Nội dung “Hai ngăn ngừa” được nêu tại Đại hội đại biểu Đảng bộ Quân đội lần thứ XII, nhiệm kỳ 2025-2030 là gì?",
+    "options": {
+      "A": "Ngăn ngừa nguy cơ chiến tranh, xung đột vũ trang hiện đại và ngăn ngừa suy thoái tư tưởng, đạo đức",
+      "B": "Ngăn ngừa nguy cơ chiến tranh, xung đột và ngăn ngừa suy thoái tư tưởng, đạo đức",
+      "C": "Ngăn ngừa nguy cơ chiến tranh, xung đột vũ trang hiện đại và ngăn ngừa suy thoái chính trị, tư tưởng, đạo đức",
+      "D": "Ngăn ngừa nguy cơ chiến tranh, xung đột vũ trang và ngăn ngừa suy thoái tư tưởng, đạo đức"
+    },
+    "answer_key": "B",
+    "answer": "Ngăn ngừa nguy cơ chiến tranh, xung đột và ngăn ngừa suy thoái tư tưởng, đạo đức"
+  },
+  {
+    "question": "Nội dung “Năm tránh” theo tinh thần của đồng chí Chính uỷ Quân khu 5 là?",
+    "options": {
+      "A": "“Tránh buông lỏng nguyên tắc, coi thường kỷ luật, kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm; tránh thấy đúng không bảo vệ, thấy sai không đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm”",
+      "B": "“Tránh buông lỏng nguyên tắc, coi thường kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm, không đổi mới; tránh thấy đúng không bảo vệ, thấy sai không đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm”",
+      "C": "“Tránh buông lỏng nguyên tắc, coi thường kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm; tránh thấy đúng không bảo vệ, thấy sai không phế phán, đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm”",
+      "D": "“Tránh buông lỏng nguyên tắc, coi thường kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm; tránh thấy đúng không bảo vệ, thấy sai không đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm”"
+    },
+    "answer_key": "D",
+    "answer": "“Tránh buông lỏng nguyên tắc, coi thường kỷ cương; tránh để mất đoàn kết, mềm dẻo nhưng cương quyết; tránh làm việc theo lối mòn kinh nghiệm; tránh thấy đúng không bảo vệ, thấy sai không đấu tranh; tránh bệnh thành tích, báo cáo không đúng sự thật, che giấu khuyết điểm”"
+  },
+  {
+    "question": ": Nội dung nào sau đây không đúng khi nói về vai trò của “Bộ tứ trụ cột Nghị quyết”?",
+    "options": {
+      "A": "Đổi mới tư duy phát triển toàn diện, khơi thông nguồn lực",
+      "B": "Đưa đất nước Việt Nam bứt phá, hội nhập sâu rộng trong kỷ nguyên mới",
+      "C": "Giải quyết được những vấn đề tồn đọng trước mắt về kinh tế",
+      "D": "d) Là đòn bẩy chiến lược để nước Việt Nam cất cánh, chuyển đổi mô hình tăng trưởng, hướng tới mục tiêu trở thành quốc gia phát triển, thu nhập cao"
+    },
+    "answer_key": "C",
+    "answer": "Giải quyết được những vấn đề tồn đọng trước mắt về kinh tế"
+  },
+  {
+    "question": "Tư tưởng Hồ Chí Minh về vai trò của người cán bộ trong phát huy tinh thần đổi mới, sáng tạo là gì ?",
+    "options": {
+      "A": "“Cán bộ là cái gốc của mọi công việc”.",
+      "B": "Cán bộ, đảng viên là lực lượng tiên phong trong đổi mới, sáng tạo.",
+      "C": "“Muôn việc thành công hay thất bại, đều do cán bộ tốt hay kém”.",
+      "D": "Đổi mới, sáng tạo của cán bộ, đảng viên không chỉ dừng lại ở việc thay đổi phương pháp công tác mà còn là khả năng tìm kiếm những cách làm phù hợp, hiệu quả hơn."
+    },
+    "answer_key": "B",
+    "answer": "Cán bộ, đảng viên là lực lượng tiên phong trong đổi mới, sáng tạo."
+  },
+  {
+    "question": "Tư tưởng Hồ Chí Minh về đổi mới, sáng tạo phải gắn với nhiệm vụ chính trị và yêu cầu thực tiễn của quân đội yêu cầu như thế nào ?",
+    "options": {
+      "A": "Phải có dũng khí để thực hiện những ý tưởng đổi mới và sáng tạo.",
+      "B": "Tinh thần đổi mới và sáng tạo được thể hiện qua việc hoàn thành nhiệm vụ được giao.",
+      "C": "“Chúng ta không sợ sai lầm, nhưng đã nhận biết sai lầm thì phải ra sức sửa chữa”.",
+      "D": "“Đổi mới không phải là xa rời lý tưởng, mà là cách để thực hiện lý tưởng một cách tốt hơn, hiệu quả hơn”."
+    },
+    "answer_key": "D",
+    "answer": "“Đổi mới không phải là xa rời lý tưởng, mà là cách để thực hiện lý tưởng một cách tốt hơn, hiệu quả hơn”."
+  },
+  {
+    "question": "Quy định số 144-QĐ/TW ngày 09/5/2024 của Bộ Chính trị về chuẩn mực đạo đức cách mạng của cán bộ, đảng viên trong giai đoạn mới đề ra 05 chuẩn mực đạo đức cách mạng cho cán bộ, đảng viên trong giai đoạn mới, trong đó có nội dung nào sau đây ?",
+    "options": {
+      "A": "Bản lĩnh, đổi mới, sáng tạo, hội nhập.",
+      "B": "Năng động, sáng tạo, dám nghĩ, dám làm, dám chịu trách nhiệm vì lợi ích chung.",
+      "C": "Năng động, sáng tạo, dám nghĩ, dám làm, dám chịu trách nhiệm và vì nhân dân phục vụ.",
+      "D": "Có kiến thức và năng lực tiếp thu và cụ thể hóa các nghị quyết của Đảng."
+    },
+    "answer_key": "A",
+    "answer": "Bản lĩnh, đổi mới, sáng tạo, hội nhập."
+  },
+  {
+    "question": "Một trong những giải pháp phát huy tinh thần đổi mới, sáng tạo của đội ngũ cán bộ, đảng viên góp phần xây dựng cơ quan, đơn vị vững mạnh toàn diện “mẫu mực, tiêu biểu” là gì ?",
+    "options": {
+      "A": "Đẩy mạnh việc giáo dục để cấp ủy, chỉ huy các cấp và đội ngũ cán bộ, đảng viên.",
+      "B": "Nâng cao nhận thức về vai trò của đổi mới, sáng tạo trong việc thực hiện nhiệm vụ chính trị.",
+      "C": "Đẩy mạnh tuyên truyền, giáo dục nâng cao nhận thức cho cán bộ, đảng viên về vai trò và giá trị của đổi mới, sáng tạo.",
+      "D": "Đổi mới nội dung và phương pháp tuyên truyền, giáo dục."
+    },
+    "answer_key": "C",
+    "answer": "Đẩy mạnh tuyên truyền, giáo dục nâng cao nhận thức cho cán bộ, đảng viên về vai trò và giá trị của đổi mới, sáng tạo."
+  },
+  {
+    "question": "Một trong những giải pháp chủ yếu để phát huy tinh thần đổi mới, sáng tạo của đội ngũ cán bộ, đảng viên góp phần xây dựng cơ quan, đơn vị vững mạnh toàn diện “mẫu mực, tiêu biểu” là gì ?",
+    "options": {
+      "A": "Xây dựng cơ chế, chính sách hỗ trợ sát thực tiễn; tạo điều kiện để tư duy đổi mới, cách làm sáng tạo được hiện thực hóa.",
+      "B": "Xây dựng cơ chế, chính sách hỗ trợ thực chất và linh hoạt để khuyến khích, bảo vệ và tạo điều kiện cho đội ngũ cán bộ, đảng viên phát huy tinh thần đổi mới, sáng tạo.",
+      "C": "Xây dựng cơ chế, chính sách bảo vệ cán bộ, đảng viên trong quá trình thực hiện các sáng kiến đổi mới.",
+      "D": "Xây dựng các chính sách hỗ trợ thực chất về nguồn lực, bao gồm tài chính, nhân lực, và thời gian để bảo đảm các sáng kiến đổi mới có đủ điều kiện để được triển khai."
+    },
+    "answer_key": "A",
+    "answer": "Xây dựng cơ chế, chính sách hỗ trợ sát thực tiễn; tạo điều kiện để tư duy đổi mới, cách làm sáng tạo được hiện thực hóa."
+  }
+]

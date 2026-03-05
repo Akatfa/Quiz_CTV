@@ -1,0 +1,126 @@
+/* Basic reset and fonts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f9fc;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  position: relative;
+}
+
+/* Watermark behind search bar */
+.watermark {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  z-index: 2;
+  /* no need to limit height here; results can extend down the page */
+}
+
+/* Hide H1 for accessibility */
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#searchInput:focus {
+  border-color: #4a90e2;
+}
+
+#clearButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#clearButton:hover {
+  background-color: #c0392b;
+}
+
+.results {
+  margin-top: 10px;
+}
+
+.qa-item {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.qa-item h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.qa-item ul {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 8px;
+}
+
+.qa-item ul li {
+  margin-bottom: 4px;
+}
+
+.qa-item .answer {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Style for answer key label (e.g., "Đáp án: C") */
+.qa-item .answer-key {
+  margin-top: 6px;
+  font-style: italic;
+  color: #555;
+}
